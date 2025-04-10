@@ -19,13 +19,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
     <Folder Include="CustomActionFilters\" />
-    <Folder Include="Data\" />
-    <Folder Include="Models\DTO\" />
-    <Folder Include="Models\Domain\" />
     <Folder Include="Mapping\" />
-    <Folder Include="Repositories\" />
   </ItemGroup>
 
 </Project>
