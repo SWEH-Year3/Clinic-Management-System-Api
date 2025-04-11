@@ -4,6 +4,7 @@ using ClinicAPI.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ClinicAPI.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250410220907_AddDoctorModel")]
+    partial class AddDoctorModel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -141,21 +144,21 @@ namespace ClinicAPI.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "77f5142c-b574-4580-93f5-63c9254265cd",
+                            Id = "47a50f86-18e0-49ec-8e7d-61ff864cc9f9",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "475346f0-bdbc-44d5-b3f3-3266ec5fcf5e",
+                            Id = "6b37752e-ec82-45a0-ad05-53907df51b91",
                             Name = "Doctor",
                             NormalizedName = "DOCTOR"
                         },
                         new
                         {
-                            Id = "1ab63bbb-8ef4-4a00-9b79-fd955b4f7089",
-                            Name = "Patient",
-                            NormalizedName = "PATIENT"
+                            Id = "02802b89-67c8-453a-b983-00a8a5aace4a",
+                            Name = "User",
+                            NormalizedName = "USER"
                         });
                 });
 

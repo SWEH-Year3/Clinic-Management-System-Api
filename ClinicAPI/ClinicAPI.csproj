@@ -20,7 +20,6 @@
 
   <ItemGroup>
     <Folder Include="CustomActionFilters\" />
-    <Folder Include="Mapping\" />
   </ItemGroup>
 
 </Project>
