@@ -15,10 +15,19 @@ namespace ClinicAPI
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAllOrigins",
+                    builder =>
+                    {
+                        builder.AllowAnyOrigin()
+                            .AllowAnyMethod()
+                            .AllowAnyHeader();
+                    });
+            });
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("con")));
 
@@ -56,7 +65,7 @@ namespace ClinicAPI
             builder.Services.AddScoped<ITokenRepository,TokenRepository>();
 
             var app = builder.Build();
-
+            app.UseCors("AllowAllOrigins");
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
