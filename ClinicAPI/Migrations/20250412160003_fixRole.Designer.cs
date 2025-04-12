@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ClinicAPI.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250411133600_fixRole")]
+    [Migration("20250412160003_fixRole")]
     partial class fixRole
     {
         /// <inheritdoc />
@@ -24,6 +24,31 @@ namespace ClinicAPI.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("ClinicAPI.Models.Domain.Doctor", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
+
+                    b.Property<string>("Specialty")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId")
+                        .IsUnique();
+
+                    b.ToTable("Doctors");
+                });
 
             modelBuilder.Entity("ClinicAPI.Models.Domain.UserApplication", b =>
                 {
@@ -119,21 +144,21 @@ namespace ClinicAPI.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "ae4214fd-e933-41d1-a9de-6eb00af20d11",
+                            Id = "8634cd78-9c63-4fb2-815f-3e8274288a00",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "fec639c0-9f09-4e99-88f2-d52a7efaf522",
+                            Id = "c7e2a59b-b51e-4dc8-8039-0d912fee2033",
                             Name = "Doctor",
                             NormalizedName = "DOCTOR"
                         },
                         new
                         {
-                            Id = "9b015a4a-90da-4f55-9024-ad362c639bb3",
-                            Name = "User",
-                            NormalizedName = "USER"
+                            Id = "dfb600ef-203b-4b3f-b6dd-38848df615ca",
+                            Name = "Patient",
+                            NormalizedName = "PATIENT"
                         });
                 });
 
@@ -241,6 +266,17 @@ namespace ClinicAPI.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("ClinicAPI.Models.Domain.Doctor", b =>
+                {
+                    b.HasOne("ClinicAPI.Models.Domain.UserApplication", "userApplication")
+                        .WithOne()
+                        .HasForeignKey("ClinicAPI.Models.Domain.Doctor", "UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("userApplication");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

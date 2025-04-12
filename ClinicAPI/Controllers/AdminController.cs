@@ -11,7 +11,7 @@ namespace ClinicAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = "Admin")]
+    //[Authorize(Roles = "Admin")]
     public class AdminController : ControllerBase
     {
         private readonly UserManager<UserApplication> userManager;
@@ -29,9 +29,10 @@ namespace ClinicAPI.Controllers
             {
                 Email = addDoctorRequestDto.Name,
                 UserName = addDoctorRequestDto.Name,
-                PhoneNumber = addDoctorRequestDto.Phone
+                PhoneNumber = addDoctorRequestDto.Phone,
             };
-            var resultIdentity = await userManager.CreateAsync(userIdentity, addDoctorRequestDto.Name);
+            var resultIdentity = await userManager.CreateAsync(userIdentity, addDoctorRequestDto.Name + '@' + addDoctorRequestDto.Phone);
+            Console.WriteLine(resultIdentity.ToString());
             if (resultIdentity.Succeeded)
             {
                 resultIdentity = await userManager.AddToRoleAsync(userIdentity, "Doctor");
@@ -48,7 +49,7 @@ namespace ClinicAPI.Controllers
                     var response = new AddDoctorResponseDto
                     {
                         Email = userIdentity.Email,
-                        Password = addDoctorRequestDto.Name
+                        Password = addDoctorRequestDto.Name+'@' + addDoctorRequestDto.Phone
                     };
                     return Ok(response);
 

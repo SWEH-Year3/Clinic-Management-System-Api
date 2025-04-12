@@ -141,19 +141,19 @@ namespace ClinicAPI.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "77f5142c-b574-4580-93f5-63c9254265cd",
+                            Id = "8634cd78-9c63-4fb2-815f-3e8274288a00",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "475346f0-bdbc-44d5-b3f3-3266ec5fcf5e",
+                            Id = "c7e2a59b-b51e-4dc8-8039-0d912fee2033",
                             Name = "Doctor",
                             NormalizedName = "DOCTOR"
                         },
                         new
                         {
-                            Id = "1ab63bbb-8ef4-4a00-9b79-fd955b4f7089",
+                            Id = "dfb600ef-203b-4b3f-b6dd-38848df615ca",
                             Name = "Patient",
                             NormalizedName = "PATIENT"
                         });
