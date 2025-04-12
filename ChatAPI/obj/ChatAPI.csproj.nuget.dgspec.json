@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Personal Data\\college\\Third_Year\\Second_Term\\Projects\\IA\\sourceCode\\Clinic-Management-System-Api\\ChatAPI\\ChatAPI.csproj": {}
+    "E:\\Study\\Year3Sem2\\Internet Applications\\Project\\Clinic-Management-System-Api\\ChatAPI\\ChatApi.csproj": {}
   },
   "projects": {
-    "D:\\Personal Data\\college\\Third_Year\\Second_Term\\Projects\\IA\\sourceCode\\Clinic-Management-System-Api\\ChatAPI\\ChatAPI.csproj": {
+    "E:\\Study\\Year3Sem2\\Internet Applications\\Project\\Clinic-Management-System-Api\\ChatAPI\\ChatApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Personal Data\\college\\Third_Year\\Second_Term\\Projects\\IA\\sourceCode\\Clinic-Management-System-Api\\ChatAPI\\ChatAPI.csproj",
-        "projectName": "ChatAPI",
-        "projectPath": "D:\\Personal Data\\college\\Third_Year\\Second_Term\\Projects\\IA\\sourceCode\\Clinic-Management-System-Api\\ChatAPI\\ChatAPI.csproj",
-        "packagesPath": "C:\\Users\\Ahmed\\.nuget\\packages\\",
-        "outputPath": "D:\\Personal Data\\college\\Third_Year\\Second_Term\\Projects\\IA\\sourceCode\\Clinic-Management-System-Api\\ChatAPI\\obj\\",
+        "projectUniqueName": "E:\\Study\\Year3Sem2\\Internet Applications\\Project\\Clinic-Management-System-Api\\ChatAPI\\ChatApi.csproj",
+        "projectName": "ChatApi",
+        "projectPath": "E:\\Study\\Year3Sem2\\Internet Applications\\Project\\Clinic-Management-System-Api\\ChatAPI\\ChatApi.csproj",
+        "packagesPath": "C:\\Users\\Habiba\\.nuget\\packages\\",
+        "outputPath": "E:\\Study\\Year3Sem2\\Internet Applications\\Project\\Clinic-Management-System-Api\\ChatAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Habiba\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -50,15 +50,21 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "AutoMapper": {
+            "Microsoft.AspNetCore.SignalR": {
               "target": "Package",
-              "version": "[14.0.0, )"
+              "version": "[1.2.0, )"
             },
-            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+            "Microsoft.AspNetCore.SignalR.Client": {
               "target": "Package",
               "version": "[8.0.13, )"
             },
-            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.13, )"
             },
@@ -96,7 +102,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
