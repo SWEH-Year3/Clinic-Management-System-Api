@@ -1,4 +1,6 @@
+﻿using System.Security.Claims;
 using System.Text;
+using AutoMapper;
 using ClinicAPI.Data;
 using ClinicAPI.Models.Domain; // <-- Make sure this is included for UserModel
 using ClinicAPI.Repositories;
@@ -14,7 +16,6 @@ namespace ClinicAPI
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-
             builder.Services.AddCors(options =>
             {
                 options.AddPolicy("AllowAllOrigins",
@@ -28,10 +29,11 @@ namespace ClinicAPI
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddAutoMapper(typeof(Mapper));
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("con")));
 
-            
+
             builder.Services.AddIdentity<UserApplication, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
@@ -48,21 +50,36 @@ namespace ClinicAPI
             });
 
             builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                .AddJwtBearer(options =>
-                {
-                    options.TokenValidationParameters = new TokenValidationParameters
+                    .AddJwtBearer(options =>
                     {
-                        ValidateLifetime = true,
-                        ValidateIssuer = true,
-                        ValidateAudience = true,
-                        ValidateIssuerSigningKey = true,
-                        ValidIssuer = builder.Configuration["Jwt:Issuer"],
-                        ValidAudience = builder.Configuration["Jwt:Audience"],
-                        IssuerSigningKey = new SymmetricSecurityKey(
-                            Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
-                    };
-                });
-            builder.Services.AddScoped<ITokenRepository,TokenRepository>();
+                        options.TokenValidationParameters = new TokenValidationParameters
+                        {
+                            ValidateLifetime = true,
+                            ValidateIssuer = true,
+                            ValidateAudience = true,
+                            ValidateIssuerSigningKey = true,
+                            ValidIssuer = builder.Configuration["Jwt:Issuer"],
+                            ValidAudience = builder.Configuration["Jwt:Audience"],
+                            IssuerSigningKey = new SymmetricSecurityKey(
+                                Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"])),
+                            RoleClaimType = ClaimTypes.Role
+                        };
+
+
+                        options.Events = new JwtBearerEvents
+                        {
+                            OnChallenge = context =>
+                            {
+                                context.HandleResponse();
+                                context.Response.StatusCode = 401;
+                                context.Response.ContentType = "application/json";
+                                return context.Response.WriteAsync("{\"error\": \"Unauthorized\"}");
+                            }
+                        };
+                    });
+
+            builder.Services.AddScoped<ITokenRepository, TokenRepository>();
+            builder.Services.AddScoped<IDoctorRepository, SqlDoctorRepository>();
 
             var app = builder.Build();
             app.UseCors("AllowAllOrigins");
@@ -73,6 +90,12 @@ namespace ClinicAPI
             }
 
             app.UseHttpsRedirection();
+            app.Use(async (context, next) =>
+            {
+                Console.WriteLine($"Request: {context.Request.Method} {context.Request.Path}");
+                await next();
+            });
+
             app.UseAuthentication();
             app.UseAuthorization();
 
