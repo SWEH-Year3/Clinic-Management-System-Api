@@ -1,4 +1,5 @@
-﻿using ClinicAPI.Models.Domain;
+﻿using ClinicAPI.CustomActionFilters;
+using ClinicAPI.Models.Domain;
 using ClinicAPI.Models.DTO;
 using ClinicAPI.Repositories;
 using Microsoft.AspNetCore.Authorization;
@@ -11,7 +12,7 @@ namespace ClinicAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    //[Authorize(Roles = "Admin")]
+    [RoleAuthorize("Admin")]
     public class AdminController : ControllerBase
     {
         private readonly UserManager<UserApplication> userManager;
@@ -22,7 +23,7 @@ namespace ClinicAPI.Controllers
             this.userManager = userManager;
             this.doctorRepository = doctorRepository;
         }
-        [HttpPost]
+        [HttpPost("hhhhh")]
         public async Task<IActionResult> CreateDoctor([FromBody] AddDoctorRequestDto addDoctorRequestDto)
         {
             var userIdentity = new UserApplication
@@ -60,6 +61,8 @@ namespace ClinicAPI.Controllers
             return BadRequest("something wrong");
         }
         [HttpGet]
+
+        //[Authorize(Roles = "Admin")]
         public async Task<IActionResult> GetAll()
         {
             var doctors = await doctorRepository.GetDoctorsAsync();

@@ -1,22 +1,6 @@
 [
   {
     "ContainingType": "ClinicAPI.Controllers.AdminController",
-    "Method": "CreateDoctor",
-    "RelativePath": "api/Admin",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "addDoctorRequestDto",
-        "Type": "ClinicAPI.Models.DTO.AddDoctorRequestDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ClinicAPI.Controllers.AdminController",
     "Method": "GetAll",
     "RelativePath": "api/Admin",
     "HttpMethod": "GET",
@@ -73,6 +57,22 @@
       {
         "Name": "id",
         "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClinicAPI.Controllers.AdminController",
+    "Method": "CreateDoctor",
+    "RelativePath": "api/Admin/hhhhh",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addDoctorRequestDto",
+        "Type": "ClinicAPI.Models.DTO.AddDoctorRequestDto",
         "IsRequired": true
       }
     ],

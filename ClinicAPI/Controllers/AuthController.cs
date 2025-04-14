@@ -32,7 +32,9 @@ namespace ClinicAPI.Controllers
             var identity = await userManager.CreateAsync(user, registerRequestDto.Password);
             if (identity.Succeeded)
             {
-                identity = await userManager.AddToRoleAsync(user, "Patient");
+                //identity = await userManager.AddToRoleAsync(user, "Patient");
+
+                identity = await userManager.AddToRoleAsync(user, "Admin");
                 if (identity.Succeeded)
                 {
                     return Ok("Successful Register");

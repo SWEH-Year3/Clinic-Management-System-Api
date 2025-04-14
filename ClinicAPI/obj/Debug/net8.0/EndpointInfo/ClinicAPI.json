@@ -1,11 +1,11 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "ClinicAPI",
-    "version": "1.0"
+    "title": "AttendanceSystemApi",
+    "version": "v1"
   },
   "paths": {
-    "/api/Admin": {
+    "/api/Admin/hhhhh": {
       "post": {
         "tags": [
           "Admin"
@@ -34,7 +34,9 @@
             "description": "OK"
           }
         }
-      },
+      }
+    },
+    "/api/Admin": {
       "get": {
         "tags": [
           "Admin"
@@ -301,6 +303,19 @@
         },
         "additionalProperties": false
       }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "description": "JWT Authorization header using the Bearer scheme. Example: \"Bearer {token}\"",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
     }
-  }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
 }
