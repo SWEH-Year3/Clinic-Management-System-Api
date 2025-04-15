@@ -1,4 +1,5 @@
-﻿using ClinicAPI.Models.Domain;
+﻿using ClinicAPI.CustomActionFilters;
+using ClinicAPI.Models.Domain;
 using ClinicAPI.Models.DTO;
 using ClinicAPI.Repositories;
 using Microsoft.AspNetCore.Authorization;
@@ -11,7 +12,7 @@ namespace ClinicAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    //[Authorize(Roles = "Admin")]
+    [RoleAuthorize("Admin")]
     public class AdminController : ControllerBase
     {
         private readonly UserManager<UserApplication> userManager;
@@ -22,6 +23,7 @@ namespace ClinicAPI.Controllers
             this.userManager = userManager;
             this.doctorRepository = doctorRepository;
         }
+        [RoleAuthorize("Admin")]
         [HttpPost]
         public async Task<IActionResult> CreateDoctor([FromBody] AddDoctorRequestDto addDoctorRequestDto)
         {
@@ -49,7 +51,7 @@ namespace ClinicAPI.Controllers
                     var response = new AddDoctorResponseDto
                     {
                         Email = userIdentity.Email,
-                        Password = addDoctorRequestDto.Name+'@' + addDoctorRequestDto.Phone
+                        Password = addDoctorRequestDto.Name + '@' + addDoctorRequestDto.Phone
                     };
                     return Ok(response);
 
@@ -60,6 +62,7 @@ namespace ClinicAPI.Controllers
             return BadRequest("something wrong");
         }
         [HttpGet]
+        [RoleAuthorize("Admin","Patient")]
         public async Task<IActionResult> GetAll()
         {
             var doctors = await doctorRepository.GetDoctorsAsync();
@@ -91,6 +94,8 @@ namespace ClinicAPI.Controllers
         }
         [HttpGet]
         [Route("{id:guid}")]
+        [RoleAuthorize("Admin", "Patient")]
+
         public async Task<IActionResult> GetDoctor([FromRoute] Guid id)
         {
             var doctor = await doctorRepository.GetDoctorAsync(id);
@@ -113,6 +118,8 @@ namespace ClinicAPI.Controllers
         }
         [HttpPut]
         [Route("{id:guid}")]
+        [RoleAuthorize("Admin")]
+
         public async Task<IActionResult> EditDoctor([FromRoute] Guid id, EditDoctorDto editDoctor)
         {
             var doctorDomainModel = new Doctor
@@ -136,6 +143,8 @@ namespace ClinicAPI.Controllers
         }
         [HttpDelete]
         [Route("{id:guid}")]
+        [RoleAuthorize("Admin")]
+
         public async Task<IActionResult> Delete([FromRoute] Guid id)
         {
             var deleteDoctor = await doctorRepository.DeleteAsync(id);
