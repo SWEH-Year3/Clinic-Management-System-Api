@@ -24,7 +24,24 @@ namespace ClinicAPI.Repositories
             return await dbContext.Appointments
                 .Include(u => u.Doctor).ThenInclude(d => d.userApplication)
                 .Include(u => u.Patient)
-                .Where(a => a.Patient != null).ToListAsync();
+                .Where(a => a.Patient != null).Where(u=>u.State=="pending").ToListAsync();
+        }
+
+        public async Task<List<Appointment?>> GetAppointmentDoctorAsync(Guid id)
+        {
+            return await dbContext.Appointments
+                .Include(u => u.Doctor).ThenInclude(d => d.userApplication)
+                .Include(u => u.Patient)
+                .Where(a => a.Patient != null).Where(u => u.DoctorId ==id)
+                .Where(u =>  u.State == "closed" || u.State=="ongoing" ).ToListAsync();
+        }
+        public async Task<List<Appointment?>> GetAppointmentPatientAsync(Guid id)
+        {
+            return await dbContext.Appointments
+                .Include(u => u.Doctor).ThenInclude(d => d.userApplication)
+                .Include(u => u.Patient)
+                .Where(a => a.Patient != null).Where(u => u.PatientId==id.ToString())
+                .ToListAsync();
         }
 
         public async Task<Appointment?> UpdateAsync(Guid id, Appointment appointment)

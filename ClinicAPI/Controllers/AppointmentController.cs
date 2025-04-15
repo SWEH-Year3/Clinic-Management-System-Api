@@ -72,6 +72,7 @@ namespace ClinicAPI.Controllers
         [RoleAuthorize("Patient")]
         public async Task<IActionResult> RescheduleAppointent([FromBody] ReschedulaAppointentRequestDto reschedula)
         {
+
             var setOldAppointment = new Appointment
             {
                 PatientId = "not found",
@@ -120,8 +121,8 @@ namespace ClinicAPI.Controllers
             return Ok();
         }
         [HttpGet]
-        [RoleAuthorize("Doctor", "Admin", "Patient")]
-        public async Task<IActionResult> GetAppointment()
+        [RoleAuthorize("Admin")]
+        public async Task<IActionResult> GetAppointments()
         {
             var appointments = await appointmentRepository.GetAllAsync();
 
@@ -146,7 +147,65 @@ namespace ClinicAPI.Controllers
 
             return Ok(response);
         }
+        [HttpGet("{id:guid}/doctor")]
+        [RoleAuthorize("Doctor")]
+        public async Task<IActionResult> GetDoctorAppointment([FromRoute] Guid id)
+        {
+            var appointments = await appointmentRepository.GetAppointmentDoctorAsync(id);
+
+            if (appointments == null) { return NotFound(); }
+            var response = new List<GetAppointmentResponseDto>();
+
+            foreach (var appointment in appointments)
+            {
+                var dto = new GetAppointmentResponseDto
+                {
+                    Date = appointment.Date,
+                    Time = appointment.Time,
+                    Id = appointment.Id,
+                    DoctorId = appointment.DoctorId.ToString(),
+                    PatientId = appointment.PatientId ?? null,
+                    State = appointment.State,
+                    PatientName = appointment.Patient?.UserName ?? "not found",
+                    DoctorName = appointment.Doctor?.userApplication?.UserName ?? "not found"
+                };
+
+                response.Add(dto);
+            }
+
+            return Ok(response);
 
 
+        }
+        [HttpGet("{id:guid}/patient")]
+        [RoleAuthorize("Patient")]
+        public async Task<IActionResult> GetPatientAppointment([FromRoute] Guid id)
+        {
+            var appointments = await appointmentRepository.GetAppointmentPatientAsync(id);
+
+            if (appointments == null) { return NotFound(); }
+            var response = new List<GetAppointmentResponseDto>();
+
+            foreach (var appointment in appointments)
+            {
+                var dto = new GetAppointmentResponseDto
+                {
+                    Date = appointment.Date,
+                    Time = appointment.Time,
+                    Id = appointment.Id,
+                    DoctorId = appointment.DoctorId.ToString(),
+                    PatientId = appointment.PatientId ?? null,
+                    State = appointment.State,
+                    PatientName = appointment.Patient?.UserName ?? "not found",
+                    DoctorName = appointment.Doctor?.userApplication?.UserName ?? "not found"
+                };
+
+                response.Add(dto);
+            }
+
+            return Ok(response);
+
+
+        }
     }
 }

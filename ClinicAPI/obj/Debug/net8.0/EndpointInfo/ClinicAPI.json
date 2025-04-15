@@ -370,6 +370,52 @@
         }
       }
     },
+    "/api/Appointment/{id}/doctor": {
+      "get": {
+        "tags": [
+          "Appointment"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Appointment/{id}/patient": {
+      "get": {
+        "tags": [
+          "Appointment"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Auth/Register": {
       "post": {
         "tags": [

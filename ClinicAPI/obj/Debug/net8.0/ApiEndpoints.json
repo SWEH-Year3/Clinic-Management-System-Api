@@ -96,7 +96,7 @@
   },
   {
     "ContainingType": "ClinicAPI.Controllers.AppointmentController",
-    "Method": "GetAppointment",
+    "Method": "GetAppointments",
     "RelativePath": "api/Appointment",
     "HttpMethod": "GET",
     "IsController": true,
@@ -162,6 +162,38 @@
       {
         "Name": "book",
         "Type": "ClinicAPI.Models.DTO.BookAppointmentRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClinicAPI.Controllers.AppointmentController",
+    "Method": "GetDoctorAppointment",
+    "RelativePath": "api/Appointment/{id}/doctor",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClinicAPI.Controllers.AppointmentController",
+    "Method": "GetPatientAppointment",
+    "RelativePath": "api/Appointment/{id}/patient",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],

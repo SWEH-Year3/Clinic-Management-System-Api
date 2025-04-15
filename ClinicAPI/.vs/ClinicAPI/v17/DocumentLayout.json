@@ -11,16 +11,24 @@
       "RelativeMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|solutionrelative:repositories\\sqlappointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|c:\\users\\lenovo\\source\\repos\\clinic-management-system-api\\clinicapi\\models\\dto\\reschedulaappointentrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|solutionrelative:models\\dto\\reschedulaappointentrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|c:\\users\\lenovo\\source\\repos\\clinic-management-system-api\\clinicapi\\repositories\\iappointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|solutionrelative:repositories\\iappointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|c:\\users\\lenovo\\source\\repos\\clinic-management-system-api\\clinicapi\\repositories\\tokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|solutionrelative:repositories\\tokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|c:\\users\\lenovo\\source\\repos\\clinic-management-system-api\\clinicapi\\repositories\\sqldoctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|solutionrelative:repositories\\sqldoctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|c:\\users\\lenovo\\source\\repos\\clinic-management-system-api\\clinicapi\\repositories\\idoctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|solutionrelative:repositories\\idoctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|c:\\users\\lenovo\\source\\repos\\clinic-management-system-api\\clinicapi\\models\\dto\\reschedulaappointentrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|solutionrelative:models\\dto\\reschedulaappointentrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|c:\\users\\lenovo\\source\\repos\\clinic-management-system-api\\clinicapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,10 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|c:\\users\\lenovo\\source\\repos\\clinic-management-system-api\\clinicapi\\models\\dto\\getappointmentresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|solutionrelative:models\\dto\\getappointmentresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|c:\\users\\lenovo\\source\\repos\\clinic-management-system-api\\clinicapi\\repositories\\idoctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|solutionrelative:repositories\\idoctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|c:\\users\\lenovo\\source\\repos\\clinic-management-system-api\\clinicapi\\models\\dto\\treatappointmentrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -93,10 +97,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|c:\\users\\lenovo\\source\\repos\\clinic-management-system-api\\clinicapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|c:\\users\\lenovo\\source\\repos\\clinic-management-system-api\\clinicapi\\repositories\\tokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|solutionrelative:repositories\\tokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -106,7 +106,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -118,15 +118,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AppointmentController.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Controllers\\AppointmentController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AppointmentController.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Controllers\\AppointmentController.cs*",
-              "RelativeToolTip": "Controllers\\AppointmentController.cs*",
-              "ViewState": "AgIAADwAAAAAAAAAAIAwwEwAAAAnAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "IAppointmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Repositories\\IAppointmentRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IAppointmentRepository.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Repositories\\IAppointmentRepository.cs*",
+              "RelativeToolTip": "Repositories\\IAppointmentRepository.cs*",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAcwAoAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T23:35:30.839Z",
+              "WhenOpened": "2025-04-14T23:43:05.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TokenRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Repositories\\TokenRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\TokenRepository.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Repositories\\TokenRepository.cs",
+              "RelativeToolTip": "Repositories\\TokenRepository.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAcwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T22:36:18.797Z",
               "EditorCaption": ""
             },
             {
@@ -137,34 +150,23 @@
               "RelativeDocumentMoniker": "Repositories\\SqlAppointmentRepository.cs",
               "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Repositories\\SqlAppointmentRepository.cs*",
               "RelativeToolTip": "Repositories\\SqlAppointmentRepository.cs*",
-              "ViewState": "AgIAACkAAAAAAAAAAAAMwDwAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwCUAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-14T23:45:11.954Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IAppointmentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Repositories\\IAppointmentRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\IAppointmentRepository.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Repositories\\IAppointmentRepository.cs",
-              "RelativeToolTip": "Repositories\\IAppointmentRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAuAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "AppointmentController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Controllers\\AppointmentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AppointmentController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Controllers\\AppointmentController.cs*",
+              "RelativeToolTip": "Controllers\\AppointmentController.cs*",
+              "ViewState": "AgIAAKoAAAAAAAAAAIAwwLcAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T23:43:05.371Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ReschedulaAppointentRequestDto.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Models\\DTO\\ReschedulaAppointentRequestDto.cs",
-              "RelativeDocumentMoniker": "Models\\DTO\\ReschedulaAppointentRequestDto.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Models\\DTO\\ReschedulaAppointentRequestDto.cs",
-              "RelativeToolTip": "Models\\DTO\\ReschedulaAppointentRequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T01:38:04.393Z"
+              "WhenOpened": "2025-04-14T23:35:30.839Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -176,11 +178,37 @@
               "RelativeToolTip": "Repositories\\SqlDoctorRepository.cs",
               "ViewState": "AgIAACMAAAAAAAAAAIAwwAwAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T23:46:04.588Z"
+              "WhenOpened": "2025-04-14T23:46:04.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IDoctorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Repositories\\IDoctorRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IDoctorRepository.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Repositories\\IDoctorRepository.cs",
+              "RelativeToolTip": "Repositories\\IDoctorRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T00:20:23.656Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "ReschedulaAppointentRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Models\\DTO\\ReschedulaAppointentRequestDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTO\\ReschedulaAppointentRequestDto.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Models\\DTO\\ReschedulaAppointentRequestDto.cs",
+              "RelativeToolTip": "Models\\DTO\\ReschedulaAppointentRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T01:38:04.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "UserApplication.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Models\\Domain\\UserApplication.cs",
               "RelativeDocumentMoniker": "Models\\Domain\\UserApplication.cs",
@@ -192,7 +220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Doctor.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Models\\Domain\\Doctor.cs",
               "RelativeDocumentMoniker": "Models\\Domain\\Doctor.cs",
@@ -204,7 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
@@ -216,7 +244,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Appointment.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Models\\Domain\\Appointment.cs",
               "RelativeDocumentMoniker": "Models\\Domain\\Appointment.cs",
@@ -228,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "GetAppointmentResponseDto.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Models\\DTO\\GetAppointmentResponseDto.cs",
               "RelativeDocumentMoniker": "Models\\DTO\\GetAppointmentResponseDto.cs",
@@ -240,19 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IDoctorRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Repositories\\IDoctorRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\IDoctorRepository.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Repositories\\IDoctorRepository.cs",
-              "RelativeToolTip": "Repositories\\IDoctorRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T00:20:23.656Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "TreatAppointmentRequestDto.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Models\\DTO\\TreatAppointmentRequestDto.cs",
               "RelativeDocumentMoniker": "Models\\DTO\\TreatAppointmentRequestDto.cs",
@@ -264,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "SwaggerServiceExtensions.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\CustomActionFilters\\SwaggerServiceExtensions.cs",
               "RelativeDocumentMoniker": "CustomActionFilters\\SwaggerServiceExtensions.cs",
@@ -276,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "BookAppointmentRequestDto.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Models\\DTO\\BookAppointmentRequestDto.cs",
               "RelativeDocumentMoniker": "Models\\DTO\\BookAppointmentRequestDto.cs",
@@ -288,7 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "RoleAuthorizeAttribute.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\CustomActionFilters\\RoleAuthorizeAttribute.cs",
               "RelativeDocumentMoniker": "CustomActionFilters\\RoleAuthorizeAttribute.cs",
@@ -300,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "EditAppointmentRequestDto.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Models\\DTO\\EditAppointmentRequestDto.cs",
               "RelativeDocumentMoniker": "Models\\DTO\\EditAppointmentRequestDto.cs",
@@ -312,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -324,7 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
@@ -336,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "AddAppointmentRequestDto.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Models\\DTO\\AddAppointmentRequestDto.cs",
               "RelativeDocumentMoniker": "Models\\DTO\\AddAppointmentRequestDto.cs",
@@ -348,7 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "20250414233052_AddAppointmentTable.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Migrations\\20250414233052_AddAppointmentTable.cs",
               "RelativeDocumentMoniker": "Migrations\\20250414233052_AddAppointmentTable.cs",
@@ -360,7 +376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "ApplicationDbContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Migrations\\ApplicationDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "Migrations\\ApplicationDbContextModelSnapshot.cs",
@@ -372,7 +388,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
@@ -384,7 +400,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -393,18 +409,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAB3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-04-14T22:52:46.883Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "TokenRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Repositories\\TokenRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\TokenRepository.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Repositories\\TokenRepository.cs",
-              "RelativeToolTip": "Repositories\\TokenRepository.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAcwDAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T22:36:18.797Z"
             }
           ]
         }
