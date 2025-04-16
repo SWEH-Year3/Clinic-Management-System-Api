@@ -58,6 +58,10 @@ namespace ClinicAPI
             builder.Services.AddAuthorization(options =>
             {
                 options.AddPolicy("Admin", policy => policy.RequireRole("Admin"));
+                options.AddPolicy("Doctor", policy => policy.RequireRole("Doctor"));
+                options.AddPolicy("Patient", policy => policy.RequireRole("Patient"));
+
+
             });
 
 
@@ -102,6 +106,7 @@ namespace ClinicAPI
             builder.Services.AddScoped<ITokenRepository, TokenRepository>();
             builder.Services.AddScoped<IDoctorRepository, SqlDoctorRepository>();
             builder.Services.AddScoped<IAppointmentRepository, SqlAppointmentRepository>();
+            builder.Services.AddScoped<IPrescriptionRespository, SqlPrescriptionRepository>();
 
             var app = builder.Build();
             app.UseCors("AllowAllOrigins");

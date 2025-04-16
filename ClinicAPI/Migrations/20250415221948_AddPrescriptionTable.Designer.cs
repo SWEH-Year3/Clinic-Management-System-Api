@@ -4,6 +4,7 @@ using ClinicAPI.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ClinicAPI.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250415221948_AddPrescriptionTable")]
+    partial class AddPrescriptionTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -199,19 +202,19 @@ namespace ClinicAPI.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "c8ee4210-e6bc-4a16-8284-cef6a74bd60f",
+                            Id = "cd276094-a15b-435c-94c0-0ad9d8caba0f",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "364f971c-8f16-44b2-a10a-f20403302f9e",
+                            Id = "808965c0-5548-4afa-b2fc-1dc1c02bb261",
                             Name = "Doctor",
                             NormalizedName = "DOCTOR"
                         },
                         new
                         {
-                            Id = "6394d61e-d5ca-40ff-bee9-8963f5a2aaf1",
+                            Id = "d55ba242-ca94-425b-b9c0-8fdf1f204425",
                             Name = "Patient",
                             NormalizedName = "PATIENT"
                         });

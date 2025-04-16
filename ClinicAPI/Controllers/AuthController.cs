@@ -55,10 +55,12 @@ namespace ClinicAPI.Controllers
                 {
                     var roles = await userManager.GetRolesAsync(user);
 
-                    var userRole = roles.FirstOrDefault() ?? "NoRoleAssigned"; 
-                    if (userRole.Contains("User")) userRole = "Patient";
-                    var token = tokenRepository.CreateToken(user, roles.ToList());
+                    var userRole = roles.FirstOrDefault() ?? "NoRoleAssigned";
+                    
+                    var token = tokenRepository.CreateToken(user,roles.ToList()
+                                                                  );
 
+                    Console.WriteLine(userRole);
                     var response = new LoginResponseDto
                     {
                         Id = user.Id,

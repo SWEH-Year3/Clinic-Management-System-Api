@@ -13,6 +13,7 @@ namespace ClinicAPI.Data
         }
         public DbSet<Doctor> Doctors { get; set; }
         public DbSet<Appointment> Appointments { get; set; }
+        public DbSet<Prescription> Prescriptions { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
@@ -37,6 +38,10 @@ namespace ClinicAPI.Data
                 .HasOne(u => u.Patient)
                 .WithMany(u => u.Appointments)
                 .HasForeignKey(u => u.PatientId);
+            builder.Entity<Prescription>()
+                .HasOne(u => u.Appointment)
+                .WithOne(u => u.Prescription)
+                .HasForeignKey<Prescription>(u => u.AppointmentId);
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace ClinicAPI.Models.Domain
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+
+namespace ClinicAPI.Models.Domain
 {
     public class Doctor
     {
@@ -7,8 +9,10 @@
         public double Price { get; set; }
 
         public string UserId { get; set; }
+        [ValidateNever]
 
         public UserApplication userApplication { get; set; }
+        [ValidateNever]
 
         public ICollection<Appointment> Appointments { get; set; }
     }
