@@ -478,6 +478,52 @@
         }
       }
     },
+    "/api/Dashboard_Report/{id}": {
+      "get": {
+        "tags": [
+          "Dashboard_Report"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Dashboard_Report/{id}/Report": {
+      "get": {
+        "tags": [
+          "Dashboard_Report"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Prescription": {
       "post": {
         "tags": [

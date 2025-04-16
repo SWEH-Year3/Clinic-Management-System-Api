@@ -269,6 +269,38 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ClinicAPI.Controllers.Dashboard_ReportController",
+    "Method": "GetDoctorDashboard",
+    "RelativePath": "api/Dashboard_Report/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClinicAPI.Controllers.Dashboard_ReportController",
+    "Method": "Report",
+    "RelativePath": "api/Dashboard_Report/{id}/Report",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ClinicAPI.Controllers.PrescriptionController",
     "Method": "CreatePrescription",
     "RelativePath": "api/Prescription",
