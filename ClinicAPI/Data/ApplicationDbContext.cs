@@ -18,12 +18,15 @@ namespace ClinicAPI.Data
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
+            var doctorRoleId = "2f1a1ad3-aa6b-4e9f-b6dc-9294e071a797";
+            var patientRoleId = "72235979-4cb2-4bb1-9de9-9e931f98610e";
+            var adminRoleId = "675b578c-8739-4b1b-a706-816fb14910bd";
 
             var roles = new List<IdentityRole>
             {
-                new IdentityRole { Name = "Admin", NormalizedName = "ADMIN" },
-                new IdentityRole { Name = "Doctor", NormalizedName = "DOCTOR" },
-                new IdentityRole { Name = "Patient", NormalizedName = "PATIENT" }
+                new IdentityRole {Id=adminRoleId, Name = "Admin", NormalizedName = "ADMIN" },
+                new IdentityRole {Id=doctorRoleId, Name = "Doctor", NormalizedName = "DOCTOR" },
+                new IdentityRole {Id=patientRoleId, Name = "Patient", NormalizedName = "PATIENT" }
             };
 
             builder.Entity<IdentityRole>().HasData(roles);
