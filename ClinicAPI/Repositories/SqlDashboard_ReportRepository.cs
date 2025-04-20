@@ -1,5 +1,6 @@
 ﻿using ClinicAPI.Data;
 using ClinicAPI.Models.Domain;
+using ClinicAPI.Models.DTO;
 using Microsoft.EntityFrameworkCore;
 
 namespace ClinicAPI.Repositories
@@ -47,15 +48,15 @@ namespace ClinicAPI.Repositories
 
 
 
-        public async Task<object?> GetDoctorNotGrouped(Guid id)
+        public async Task<Dashboard_ReportResponseDto?> GetDoctorNotGrouped(Guid id)
         {
             var doctor = await dbContext.Doctors.Where(u => u.Id == id)
                 .Include(u => u.userApplication)
-                .Include(u => u.Appointments).Select(u => new
+                .Include(u => u.Appointments).Select(u => new Dashboard_ReportResponseDto
                 {
-                    u.Id,
-                    name = u.userApplication.UserName,
-                    specialty = u.Specialty,
+                  Id=  u.Id,
+                   Name= u.userApplication.UserName,
+                    Specialty = u.Specialty,
                     NumberOfAppointment = u.Appointments.Count()
                 })
                 .FirstOrDefaultAsync();

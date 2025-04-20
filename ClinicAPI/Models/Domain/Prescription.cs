@@ -10,5 +10,8 @@ namespace ClinicAPI.Models.Domain
         public Guid AppointmentId { get; set; }
         [ValidateNever]
         public Appointment Appointment { get; set; }
+        [ValidateNever]
+        public FileImage FileImage { get; set; }
+
     }
 }

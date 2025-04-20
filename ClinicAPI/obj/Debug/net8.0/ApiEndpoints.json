@@ -301,6 +301,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ClinicAPI.Controllers.ImageFileController",
+    "Method": "CreateFile",
+    "RelativePath": "api/ImageFile/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "File",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "FileName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ClinicAPI.Controllers.PrescriptionController",
     "Method": "CreatePrescription",
     "RelativePath": "api/Prescription",

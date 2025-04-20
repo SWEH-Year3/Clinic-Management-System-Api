@@ -4,7 +4,7 @@ using System.Text;
 using AutoMapper;
 using ClinicAPI.CustomActionFilters;
 using ClinicAPI.Data;
-using ClinicAPI.Models.Domain; // <-- Make sure this is included for UserModel
+using ClinicAPI.Models.Domain; 
 using ClinicAPI.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
@@ -52,7 +52,7 @@ namespace ClinicAPI
                 options.Password.RequireDigit = false;
                 options.Password.RequireNonAlphanumeric = false;
                 options.Password.RequiredUniqueChars = 1;
-                options.SignIn.RequireConfirmedEmail = true; // Optional for email confirmation
+                options.SignIn.RequireConfirmedEmail = true; 
             });
 
             builder.Services.AddAuthorization(options =>
@@ -108,6 +108,7 @@ namespace ClinicAPI
             builder.Services.AddScoped<IAppointmentRepository, SqlAppointmentRepository>();
             builder.Services.AddScoped<IPrescriptionRespository, SqlPrescriptionRepository>();
             builder.Services.AddScoped<IDashboard_ReportRepository, SqlDashboard_ReportRepository>();
+            builder.Services.AddScoped<IImageRepository, LocalImagesRepository>();
 
             var app = builder.Build();
             app.UseCors("AllowAllOrigins");

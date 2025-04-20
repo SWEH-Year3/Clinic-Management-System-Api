@@ -1,4 +1,5 @@
 ﻿using ClinicAPI.CustomActionFilters;
+using ClinicAPI.Models.DTO;
 using ClinicAPI.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -25,10 +26,17 @@ namespace ClinicAPI.Controllers
 
                 return NotFound();
             }
-            else
+            var response = new Dashboard_ReportResponseDto
             {
-                return Ok(Doctor);
-            }
+                Id= Doctor.Id,
+                Name=Doctor.Name,
+                NumberOfAppointment=Doctor.NumberOfAppointment,
+                Specialty=Doctor.Specialty,
+            };
+
+
+                return Ok(response);
+            
         }
         [HttpGet("{id:guid}/Report")]
         [RoleAuthorize("Doctor")]

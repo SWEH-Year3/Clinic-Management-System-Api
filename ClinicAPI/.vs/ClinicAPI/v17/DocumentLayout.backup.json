@@ -3,20 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|c:\\users\\lenovo\\source\\repos\\clinic-management-system-api\\clinicapi\\controllers\\dashboard_reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|solutionrelative:controllers\\dashboard_reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|c:\\users\\lenovo\\source\\repos\\clinic-management-system-api\\clinicapi\\controllers\\imagefilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|solutionrelative:controllers\\imagefilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|c:\\users\\lenovo\\source\\repos\\clinic-management-system-api\\clinicapi\\repositories\\sqldashboard_reportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|solutionrelative:repositories\\sqldashboard_reportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|c:\\users\\lenovo\\source\\repos\\clinic-management-system-api\\clinicapi\\models\\dto\\addimagerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|solutionrelative:models\\dto\\addimagerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|c:\\users\\lenovo\\source\\repos\\clinic-management-system-api\\clinicapi\\repositories\\idashboard_reportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|solutionrelative:repositories\\idashboard_reportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|c:\\users\\lenovo\\source\\repos\\clinic-management-system-api\\clinicapi\\repositories\\localimagesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|solutionrelative:repositories\\localimagesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|c:\\users\\lenovo\\source\\repos\\clinic-management-system-api\\clinicapi\\repositories\\iimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|solutionrelative:repositories\\iimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|c:\\users\\lenovo\\source\\repos\\clinic-management-system-api\\clinicapi\\models\\domain\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|solutionrelative:models\\domain\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|c:\\users\\lenovo\\source\\repos\\clinic-management-system-api\\clinicapi\\models\\domain\\file.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|solutionrelative:models\\domain\\file.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|c:\\users\\lenovo\\source\\repos\\clinic-management-system-api\\clinicapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|c:\\users\\lenovo\\source\\repos\\clinic-management-system-api\\clinicapi\\clinicapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|solutionrelative:clinicapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|c:\\users\\lenovo\\source\\repos\\clinic-management-system-api\\clinicapi\\migrations\\20250419192649_addfileimagetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|solutionrelative:migrations\\20250419192649_addfileimagetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|c:\\users\\lenovo\\source\\repos\\clinic-management-system-api\\clinicapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|c:\\users\\lenovo\\source\\repos\\clinic-management-system-api\\clinicapi\\models\\domain\\prescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|solutionrelative:models\\domain\\prescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|c:\\users\\lenovo\\source\\repos\\clinic-management-system-api\\clinicapi\\models\\domain\\userapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|solutionrelative:models\\domain\\userapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|c:\\users\\lenovo\\source\\repos\\clinic-management-system-api\\clinicapi\\repositories\\sqldashboard_reportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{464092F5-BA8D-456A-BDF2-5954982178A5}|ClinicAPI.csproj|solutionrelative:repositories\\sqldashboard_reportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,63 +62,177 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Dashboard_ReportController.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Controllers\\Dashboard_ReportController.cs",
-              "RelativeDocumentMoniker": "Controllers\\Dashboard_ReportController.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Controllers\\Dashboard_ReportController.cs*",
-              "RelativeToolTip": "Controllers\\Dashboard_ReportController.cs*",
-              "ViewState": "AgIAABEAAAAAAAAAAIAwwCAAAAAiAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "AddImageRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Models\\DTO\\AddImageRequestDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTO\\AddImageRequestDto.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Models\\DTO\\AddImageRequestDto.cs",
+              "RelativeToolTip": "Models\\DTO\\AddImageRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T22:25:03.533Z",
+              "WhenOpened": "2025-04-20T10:53:30.46Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAMwG0AAABlAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ImageFileController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Controllers\\ImageFileController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ImageFileController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Controllers\\ImageFileController.cs*",
+              "RelativeToolTip": "Controllers\\ImageFileController.cs*",
+              "ViewState": "AgIAAA8AAAAAAAAAAAApwBYAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T22:21:49.942Z",
+              "WhenOpened": "2025-04-20T09:54:01.489Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IDashboard_ReportRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Repositories\\IDashboard_ReportRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\IDashboard_ReportRepository.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Repositories\\IDashboard_ReportRepository.cs",
-              "RelativeToolTip": "Repositories\\IDashboard_ReportRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
+              "Title": "LocalImagesRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Repositories\\LocalImagesRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\LocalImagesRepository.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Repositories\\LocalImagesRepository.cs",
+              "RelativeToolTip": "Repositories\\LocalImagesRepository.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAcwCsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T22:21:35.671Z",
+              "WhenOpened": "2025-04-20T09:12:37.412Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
+              "Title": "File.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Models\\Domain\\File.cs",
+              "RelativeDocumentMoniker": "Models\\Domain\\File.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Models\\Domain\\File.cs",
+              "RelativeToolTip": "Models\\Domain\\File.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAADwvw0AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T07:49:29.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Models\\Domain\\Doctor.cs",
+              "RelativeDocumentMoniker": "Models\\Domain\\Doctor.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Models\\Domain\\Doctor.cs",
+              "RelativeToolTip": "Models\\Domain\\Doctor.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAiwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T19:13:26.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IImageRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Repositories\\IImageRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IImageRepository.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Repositories\\IImageRepository.cs",
+              "RelativeToolTip": "Repositories\\IImageRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T09:09:53.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ClinicAPI.csproj",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Source\\Repos\\Clinic-Management-System-Api\\ClinicAPI\\ClinicAPI.csproj",
+              "RelativeDocumentMoniker": "ClinicAPI.csproj",
+              "ToolTip": "C:\\Users\\Lenovo\\Source\\Repos\\Clinic-Management-System-Api\\ClinicAPI\\ClinicAPI.csproj",
+              "RelativeToolTip": "ClinicAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-20T09:13:49.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG4AAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T09:51:07.691Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "20250419192649_AddFileImageTable.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Migrations\\20250419192649_AddFileImageTable.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250419192649_AddFileImageTable.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Migrations\\20250419192649_AddFileImageTable.cs",
+              "RelativeToolTip": "Migrations\\20250419192649_AddFileImageTable.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAMwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T19:26:49.512Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserApplication.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Models\\Domain\\UserApplication.cs",
+              "RelativeDocumentMoniker": "Models\\Domain\\UserApplication.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Models\\Domain\\UserApplication.cs",
+              "RelativeToolTip": "Models\\Domain\\UserApplication.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T19:21:10.443Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAcwDYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T19:15:00.818Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Prescription.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Models\\Domain\\Prescription.cs",
+              "RelativeDocumentMoniker": "Models\\Domain\\Prescription.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Models\\Domain\\Prescription.cs",
+              "RelativeToolTip": "Models\\Domain\\Prescription.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T19:14:23.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "SqlDashboard_ReportRepository.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Repositories\\SqlDashboard_ReportRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\SqlDashboard_ReportRepository.cs",
               "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\Repositories\\SqlDashboard_ReportRepository.cs",
               "RelativeToolTip": "Repositories\\SqlDashboard_ReportRepository.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAMwB4AAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAApwDQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T22:04:00.413Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-18T01:06:48.764Z"
             }
           ]
         }
