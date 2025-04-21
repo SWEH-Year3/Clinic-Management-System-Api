@@ -13,11 +13,13 @@ namespace ClinicAPI.Controllers
     {
         private readonly UserManager<UserApplication> userManager;
         private readonly ITokenRepository tokenRepository;
+        private readonly IEmailService email;
 
-        public AuthController(UserManager<UserApplication> userManager,ITokenRepository tokenRepository)
+        public AuthController(UserManager<UserApplication> userManager, ITokenRepository tokenRepository, IEmailService email)
         {
             this.userManager = userManager;
             this.tokenRepository = tokenRepository;
+            this.email = email;
         }
         [HttpPost]
         [Route("Register")]
@@ -37,7 +39,9 @@ namespace ClinicAPI.Controllers
                 //identity = await userManager.AddToRoleAsync(user, "Admin");
                 if (identity.Succeeded)
                 {
+                    await email.SendEmailAsync(user.Email, "Register", "Successful Register");
                     return Ok("Successful Register");
+
                 }
             }
             return BadRequest("something wrong");
@@ -56,8 +60,8 @@ namespace ClinicAPI.Controllers
                     var roles = await userManager.GetRolesAsync(user);
 
                     var userRole = roles.FirstOrDefault() ?? "NoRoleAssigned";
-                    
-                    var token = tokenRepository.CreateToken(user,roles.ToList()
+
+                    var token = tokenRepository.CreateToken(user, roles.ToList()
                                                                   );
 
                     Console.WriteLine(userRole);
@@ -67,7 +71,7 @@ namespace ClinicAPI.Controllers
                         Name = user.UserName,
                         Token = token,
                         Email = user.Email,
-                        Role = userRole, 
+                        Role = userRole,
                         isLoggedIN = true
                     };
 

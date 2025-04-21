@@ -463,3 +463,8 @@ C:\Users\Lenovo\source\repos\Clinic-Management-System-Api\ClinicAPI\obj\Debug\ne
 C:\Users\Lenovo\source\repos\Clinic-Management-System-Api\ClinicAPI\obj\Debug\net8.0\ClinicAPI.pdb
 C:\Users\Lenovo\source\repos\Clinic-Management-System-Api\ClinicAPI\obj\Debug\net8.0\ClinicAPI.genruntimeconfig.cache
 C:\Users\Lenovo\source\repos\Clinic-Management-System-Api\ClinicAPI\obj\Debug\net8.0\ref\ClinicAPI.dll
+C:\Users\Lenovo\Source\Repos\Clinic-Management-System-Api\ClinicAPI\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\Lenovo\Source\Repos\Clinic-Management-System-Api\ClinicAPI\bin\Debug\net8.0\MailKit.dll
+C:\Users\Lenovo\Source\Repos\Clinic-Management-System-Api\ClinicAPI\bin\Debug\net8.0\MimeKit.dll
+C:\Users\Lenovo\Source\Repos\Clinic-Management-System-Api\ClinicAPI\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Lenovo\Source\Repos\Clinic-Management-System-Api\ClinicAPI\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll

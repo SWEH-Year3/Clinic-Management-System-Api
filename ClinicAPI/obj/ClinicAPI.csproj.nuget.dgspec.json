@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\ClinicAPI.csproj": {}
+    "C:\\Users\\Lenovo\\Source\\Repos\\Clinic-Management-System-Api\\ClinicAPI\\ClinicAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\ClinicAPI.csproj": {
+    "C:\\Users\\Lenovo\\Source\\Repos\\Clinic-Management-System-Api\\ClinicAPI\\ClinicAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\ClinicAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Source\\Repos\\Clinic-Management-System-Api\\ClinicAPI\\ClinicAPI.csproj",
         "projectName": "ClinicAPI",
-        "projectPath": "C:\\Users\\Lenovo\\source\\repos\\Clinic-Management-System-Api\\ClinicAPI\\ClinicAPI.csproj",
+        "projectPath": "C:\\Users\\Lenovo\\Source\\Repos\\Clinic-Management-System-Api\\ClinicAPI\\ClinicAPI.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Lenovo\\Source\\Repos\\Clinic-Management-System-Api\\ClinicAPI\\obj\\",
         "projectStyle": "PackageReference",
@@ -54,6 +54,10 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[14.0.0, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.11.0, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",

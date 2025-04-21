@@ -13,10 +13,12 @@ namespace ClinicAPI.Controllers
     public class AppointmentController : ControllerBase
     {
         private readonly IAppointmentRepository appointmentRepository;
+        private readonly IEmailService email;
 
-        public AppointmentController(IAppointmentRepository appointmentRepository)
+        public AppointmentController(IAppointmentRepository appointmentRepository, IEmailService email)
         {
             this.appointmentRepository = appointmentRepository;
+            this.email = email;
         }
 
         [HttpPost]
@@ -94,6 +96,7 @@ namespace ClinicAPI.Controllers
             {
                 return NotFound();
             }
+            await email.SendEmailAsync(updateNewAppointment.Patient.Email, "ChangeSchedula", "change successfully");
             return Ok();
         }
         [HttpPut("{id:guid}/treat")]
@@ -118,6 +121,7 @@ namespace ClinicAPI.Controllers
             };
             update = await appointmentRepository.UpdateAsync(id, update);
             if (update == null) { return NotFound(); }
+            await email.SendEmailAsync(update.Patient.Email, "AdminApproved", "you are accepted");
             return Ok();
         }
         [HttpGet]

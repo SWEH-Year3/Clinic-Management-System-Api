@@ -109,6 +109,7 @@ namespace ClinicAPI
             builder.Services.AddScoped<IPrescriptionRespository, SqlPrescriptionRepository>();
             builder.Services.AddScoped<IDashboard_ReportRepository, SqlDashboard_ReportRepository>();
             builder.Services.AddScoped<IImageRepository, LocalImagesRepository>();
+            builder.Services.AddScoped<IEmailService, EmailService>();
 
             var app = builder.Build();
             app.UseCors("AllowAllOrigins");
