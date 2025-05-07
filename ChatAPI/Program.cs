@@ -1,4 +1,9 @@
 
+using ChatAPI.Data;
+using Microsoft.EntityFrameworkCore;
+using ChatAPI.Hubs;
+using Microsoft.Extensions.Options;
+
 namespace ChatAPI
 {
     public class Program
@@ -6,8 +11,24 @@ namespace ChatAPI
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("myPolicy", policy =>
+                {
+                    policy.WithOrigins("http://localhost:5173") // Only allow frontend origin
+                          .AllowAnyMethod()
+                          .AllowAnyHeader()
+                          .AllowCredentials(); // ?? This is key when using SignalR
+                });
+            });
+
+            builder.Services.AddSignalR();
 
             // Add services to the container.
+
+            builder.Services.AddDbContext<ChatContext>(options =>
+            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -15,6 +36,7 @@ namespace ChatAPI
             builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
+            app.UseCors("myPolicy");
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
@@ -29,6 +51,8 @@ namespace ChatAPI
 
 
             app.MapControllers();
+
+            app.MapHub<ChatHub>("/hubs/chat");
 
             app.Run();
         }

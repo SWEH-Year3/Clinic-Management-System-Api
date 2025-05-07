@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Study\\Year3Sem2\\Internet Applications\\Project\\Clinic-Management-System-Api\\ChatAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2137E418-E9CC-4BAB-A49C-52110ED19238}|ChatApi.csproj|e:\\study\\year3sem2\\internet applications\\project\\clinic-management-system-api\\chatapi\\data\\chatcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2137E418-E9CC-4BAB-A49C-52110ED19238}|ChatApi.csproj|solutionrelative:data\\chatcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2137E418-E9CC-4BAB-A49C-52110ED19238}|ChatApi.csproj|e:\\study\\year3sem2\\internet applications\\project\\clinic-management-system-api\\chatapi\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2137E418-E9CC-4BAB-A49C-52110ED19238}|ChatApi.csproj|solutionrelative:models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2137E418-E9CC-4BAB-A49C-52110ED19238}|ChatApi.csproj|e:\\study\\year3sem2\\internet applications\\project\\clinic-management-system-api\\chatapi\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2137E418-E9CC-4BAB-A49C-52110ED19238}|ChatApi.csproj|solutionrelative:hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChatContext.cs",
+              "DocumentMoniker": "E:\\Study\\Year3Sem2\\Internet Applications\\Project\\Clinic-Management-System-Api\\ChatAPI\\Data\\ChatContext.cs",
+              "RelativeDocumentMoniker": "Data\\ChatContext.cs",
+              "ToolTip": "E:\\Study\\Year3Sem2\\Internet Applications\\Project\\Clinic-Management-System-Api\\ChatAPI\\Data\\ChatContext.cs",
+              "RelativeToolTip": "Data\\ChatContext.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwAMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T00:17:49.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ChatHub.cs",
+              "DocumentMoniker": "E:\\Study\\Year3Sem2\\Internet Applications\\Project\\Clinic-Management-System-Api\\ChatAPI\\Hubs\\ChatHub.cs",
+              "RelativeDocumentMoniker": "Hubs\\ChatHub.cs",
+              "ToolTip": "E:\\Study\\Year3Sem2\\Internet Applications\\Project\\Clinic-Management-System-Api\\ChatAPI\\Hubs\\ChatHub.cs",
+              "RelativeToolTip": "Hubs\\ChatHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T00:17:24.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Message.cs",
+              "DocumentMoniker": "E:\\Study\\Year3Sem2\\Internet Applications\\Project\\Clinic-Management-System-Api\\ChatAPI\\Models\\Message.cs",
+              "RelativeDocumentMoniker": "Models\\Message.cs",
+              "ToolTip": "E:\\Study\\Year3Sem2\\Internet Applications\\Project\\Clinic-Management-System-Api\\ChatAPI\\Models\\Message.cs",
+              "RelativeToolTip": "Models\\Message.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T00:17:19.33Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
