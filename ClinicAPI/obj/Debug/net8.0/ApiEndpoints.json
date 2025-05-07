@@ -303,13 +303,18 @@
   {
     "ContainingType": "ClinicAPI.Controllers.ImageFileController",
     "Method": "CreateFile",
-    "RelativePath": "api/ImageFile/{id}",
+    "RelativePath": "api/ImageFile/{id}/{pre_id}",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "pre_id",
         "Type": "System.Guid",
         "IsRequired": true
       },

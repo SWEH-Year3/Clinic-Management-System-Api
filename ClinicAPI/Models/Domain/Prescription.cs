@@ -11,7 +11,7 @@ namespace ClinicAPI.Models.Domain
         [ValidateNever]
         public Appointment Appointment { get; set; }
         [ValidateNever]
-        public FileImage FileImage { get; set; }
+        public List< FileImage> FileImage { get; set; }= new List<FileImage>();
 
     }
 }

@@ -1,11 +1,8 @@
 ﻿using ClinicAPI.CustomActionFilters;
-using ClinicAPI.Data;
 using ClinicAPI.Models.Domain;
 using ClinicAPI.Models.DTO;
 using ClinicAPI.Repositories;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.OpenApi.Validations;
 
 namespace ClinicAPI.Controllers
 {
@@ -19,41 +16,49 @@ namespace ClinicAPI.Controllers
         {
             this.imageRepository = imageRepository;
         }
-        [HttpPost("{id:guid}")]
-        [RoleAuthorize("Doctor")]
-        public async Task<IActionResult> CreateFile([FromRoute] Guid id, [FromForm] AddImageRequestDto requestDto)
-        {
-            ValidationFile(requestDto);
-            if (ModelState.IsValid)
-            {
 
-            var ImageDomainModel=new FileImage
+        [HttpPost("{id:guid}/{pre_id:guid}")]
+        [RoleAuthorize("Doctor")]
+        public async Task<IActionResult> CreateFile(
+            [FromRoute] Guid id,
+            [FromRoute] Guid pre_id,
+            [FromForm] AddImageRequestDto requestDto)
+        {
+            ValidateFile(requestDto);
+
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var imageDomainModel = new FileImage
             {
-                File=requestDto.File,
-                FileLength=requestDto.File.Length,
-                FileName=requestDto.FileName
+                File = requestDto.File,
+                FileLength = requestDto.File.Length,
+                FileName = requestDto.FileName
             };
 
-               
-                await imageRepository.CreateAsync(id,ImageDomainModel);
-                return Ok();
-            }
-            return BadRequest(ModelState);
+            var savedFile = await imageRepository.CreateAsync(id, pre_id, imageDomainModel);
+            return Ok();
         }
 
-        private void ValidationFile(AddImageRequestDto requestDto)
+        private void ValidateFile(AddImageRequestDto requestDto)
         {
             if (requestDto.File == null)
             {
                 ModelState.AddModelError("File", "File is required.");
                 return;
             }
-            if (requestDto.File.Length > 10485760)
-            {
-                ModelState.AddModelError("File", "this is out of length");
 
+            if (requestDto.File.Length > 10 * 1024 * 1024)
+            {
+                ModelState.AddModelError("File", "File size exceeds 10 MB.");
+            }
+
+            var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".pdf", ".docx" };
+            var extension = Path.GetExtension(requestDto.File.FileName).ToLower();
+            if (!allowedExtensions.Contains(extension))
+            {
+                ModelState.AddModelError("File", "Unsupported file type.");
             }
         }
-
     }
 }

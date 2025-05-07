@@ -4,7 +4,7 @@ namespace ClinicAPI.Repositories
 {
     public interface IImageRepository
     {
-        Task<FileImage> CreateAsync(Guid id,FileImage file);
+        Task<FileImage> CreateAsync(Guid id, Guid Pre_id, FileImage file);
 
     }
 }

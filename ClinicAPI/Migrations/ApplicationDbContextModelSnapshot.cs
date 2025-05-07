@@ -57,181 +57,181 @@ namespace ClinicAPI.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("4b77b84f-42f0-4efd-b35c-290b75caabcb"),
+                            Id = new Guid("49908c9e-d1c6-4c18-b0f0-40327cf45dca"),
                             Date = "2025-05-01",
-                            DoctorId = new Guid("aa0c65cf-a02e-4674-8422-3f713f6632f2"),
-                            PatientId = "52cbe818-dd65-46ce-8764-830a3d9008f6",
+                            DoctorId = new Guid("f4e7dabf-894c-4971-9363-05416e0027d0"),
+                            PatientId = "155af4cd-9869-4ae2-bf58-5c743184adc9",
                             State = "Scheduled",
                             Time = "9:00 AM"
                         },
                         new
                         {
-                            Id = new Guid("f4d86dcb-838c-4d6b-93e0-dde2f1a5ebae"),
+                            Id = new Guid("dd4bdfb7-a500-4ce2-8888-b449a268eb29"),
                             Date = "2025-05-02",
-                            DoctorId = new Guid("1d67eaef-637d-47b3-b6f4-3914e5e07472"),
-                            PatientId = "0df249dc-078d-4f0a-9709-d3f628d5fce7",
+                            DoctorId = new Guid("5f15c5a4-435c-46a2-b7fe-f68ac615f3d9"),
+                            PatientId = "83519268-6998-43f9-b36e-52a61fd2ebea",
                             State = "Scheduled",
                             Time = "10:00 AM"
                         },
                         new
                         {
-                            Id = new Guid("1caad92d-bac0-4527-b80f-7ea7cf0ea111"),
+                            Id = new Guid("8a907523-ab91-408d-894e-800302e25591"),
                             Date = "2025-05-03",
-                            DoctorId = new Guid("6ca827fc-10f0-4329-85a6-a25916ba22ac"),
-                            PatientId = "29e30fb1-8998-4b05-adeb-5a75884e2aca",
+                            DoctorId = new Guid("21068e8e-8129-4cb0-a74e-75bd69d1ef9e"),
+                            PatientId = "0dd15ea2-0b87-4a71-a344-822c4f81c31b",
                             State = "Scheduled",
                             Time = "11:00 AM"
                         },
                         new
                         {
-                            Id = new Guid("2a64bbf9-583f-4112-966f-d46740a872bc"),
+                            Id = new Guid("45adfd40-9894-425e-9750-0d04e1fa31cf"),
                             Date = "2025-05-04",
-                            DoctorId = new Guid("eae35e10-9825-4944-adfa-9961a25d6f55"),
-                            PatientId = "29cb3ec1-e138-439b-9128-922bf2b3c338",
+                            DoctorId = new Guid("0dcb619d-545f-4542-b8ba-244c8dc886e6"),
+                            PatientId = "a4779ae0-81c9-46b7-b989-709460127449",
                             State = "Scheduled",
                             Time = "12:00 AM"
                         },
                         new
                         {
-                            Id = new Guid("fe7462a6-f917-4d32-b742-3e67ea67a3e4"),
+                            Id = new Guid("b4c4b0e8-3ddb-405c-a2ad-de661735065b"),
                             Date = "2025-05-05",
-                            DoctorId = new Guid("428d16f9-acc5-477e-8157-484d88e54c7e"),
-                            PatientId = "9f1d1b06-f65f-49e9-96e4-4c2b73b83983",
+                            DoctorId = new Guid("e63f7ca7-ae0b-40ea-a92e-2d5649746b47"),
+                            PatientId = "4e1b7bf2-f505-4c17-944b-4455e450adc2",
                             State = "Scheduled",
                             Time = "13:00 AM"
                         },
                         new
                         {
-                            Id = new Guid("9ee67f13-e69d-41cd-9cb7-7aa6a8725f7e"),
+                            Id = new Guid("0543724f-5b29-4a27-b7c7-6a6665fc5c2e"),
                             Date = "2025-05-06",
-                            DoctorId = new Guid("e25eff5e-9a84-478e-ac04-ee5567fde919"),
-                            PatientId = "a05a6664-68b9-48ff-a760-42b2f5b16e7f",
+                            DoctorId = new Guid("8954939b-d108-4541-ab33-5040dea77a2a"),
+                            PatientId = "d13b4c2f-13ca-4f64-8ffc-9be8489b923e",
                             State = "Scheduled",
                             Time = "14:00 AM"
                         },
                         new
                         {
-                            Id = new Guid("3731761a-ebb4-4f64-a520-f98f9cac23e6"),
+                            Id = new Guid("d4a65d73-7a7b-467e-b525-03389c3dd8df"),
                             Date = "2025-05-07",
-                            DoctorId = new Guid("cab0f693-2a97-43d2-bee3-01e4da18a12d"),
-                            PatientId = "f8962ac8-7736-429c-8370-b6a5706114c5",
+                            DoctorId = new Guid("71fa449f-b3a8-4058-9783-206211aae399"),
+                            PatientId = "1c163814-12e4-47d8-aa17-68bcbdbf897a",
                             State = "Scheduled",
                             Time = "15:00 AM"
                         },
                         new
                         {
-                            Id = new Guid("9501cc24-b228-4837-8f9b-8bfe9de64832"),
+                            Id = new Guid("7e6f1328-0bb7-4245-866f-9e9bab8801a9"),
                             Date = "2025-05-08",
-                            DoctorId = new Guid("9ea2cd4a-2c48-429a-b04a-c48a58c977d8"),
-                            PatientId = "ae9e4a55-1221-440a-9e81-26436f64666a",
+                            DoctorId = new Guid("ceab535d-051a-4c24-9824-d61940ccd8e2"),
+                            PatientId = "b728a214-1340-475f-b13a-c62e618669b2",
                             State = "Scheduled",
                             Time = "16:00 AM"
                         },
                         new
                         {
-                            Id = new Guid("36218d0f-f9b6-4246-84b2-d78c1bd75b02"),
+                            Id = new Guid("e768c293-9fc2-436f-896a-2be868e7e35d"),
                             Date = "2025-05-09",
-                            DoctorId = new Guid("06d45262-87d8-4219-bb23-8acff618d7f5"),
-                            PatientId = "82624f06-56f4-49c8-84e4-dc5bb33c5247",
+                            DoctorId = new Guid("bcb929a5-f78f-4037-af2a-ab83825819b2"),
+                            PatientId = "a9d51468-2a82-41cc-9503-2662a256a4b4",
                             State = "Scheduled",
                             Time = "17:00 AM"
                         },
                         new
                         {
-                            Id = new Guid("212a8a00-70ea-4ddd-afb7-e034e65148be"),
+                            Id = new Guid("3ba70cd3-fa33-49c8-8d3b-bc3ebb5ab5e6"),
                             Date = "2025-05-10",
-                            DoctorId = new Guid("34a5d994-d051-4f61-936c-8a9851f8b7d6"),
-                            PatientId = "507c3fc0-7ba1-45b6-8f4e-70daeee6a87b",
+                            DoctorId = new Guid("acd364c0-2600-45f3-9286-8ea9c26d99bf"),
+                            PatientId = "4896696a-191d-4bdf-a628-55ec955890c8",
                             State = "Scheduled",
                             Time = "18:00 AM"
                         },
                         new
                         {
-                            Id = new Guid("f31a040b-2eb0-4661-9d58-3c3fbffd6402"),
+                            Id = new Guid("14ccac34-95b0-4263-ad0a-691777ba05fd"),
                             Date = "2025-05-11",
-                            DoctorId = new Guid("1c164853-7e4d-4afa-9ad8-9fe98385802e"),
-                            PatientId = "1c63783b-affc-40f1-9d4f-f4d4593ff09d",
+                            DoctorId = new Guid("61d25a72-8d70-4164-a8c6-56eb8d3c502b"),
+                            PatientId = "c69e9027-ee3b-456c-876f-209a391adafe",
                             State = "Scheduled",
                             Time = "19:00 AM"
                         },
                         new
                         {
-                            Id = new Guid("4a9aa06f-481e-42a3-9102-780c16504f88"),
+                            Id = new Guid("7ca31116-8dae-48d8-b0ea-53deda6916cb"),
                             Date = "2025-05-12",
-                            DoctorId = new Guid("457be12e-9fcf-4509-a7ac-fe97a46229a6"),
-                            PatientId = "26f898b8-0deb-4ba9-8058-354a737a4687",
+                            DoctorId = new Guid("e7f2ae3d-4354-4fc7-86aa-4c023557fef7"),
+                            PatientId = "bbc7e4b4-8cd2-4ec9-8fc0-4d171783972d",
                             State = "Scheduled",
                             Time = "20:00 AM"
                         },
                         new
                         {
-                            Id = new Guid("e2c9aec5-98bf-45b3-a9df-ab27262dc4b3"),
+                            Id = new Guid("cec7123b-5f10-4a0b-9444-cc6fac7fff15"),
                             Date = "2025-05-13",
-                            DoctorId = new Guid("58e9b0ca-4cb2-40b1-a834-ba50ee16b3df"),
-                            PatientId = "cbff071f-b407-4dd2-a5c5-e4381cf5a5b7",
+                            DoctorId = new Guid("1503e0d0-f89d-4f39-af48-401a94804ed9"),
+                            PatientId = "d3d69fd0-f486-482d-a248-e4ef7ed938da",
                             State = "Scheduled",
                             Time = "9:00 AM"
                         },
                         new
                         {
-                            Id = new Guid("6e897d9a-896d-469b-8243-886bb116ea3d"),
+                            Id = new Guid("2d8947f4-de8c-48aa-9f46-664c51c82ccc"),
                             Date = "2025-05-14",
-                            DoctorId = new Guid("4d186b3c-69a4-4956-9657-49b81ad7938e"),
-                            PatientId = "4319c960-bf8a-4a56-8591-ac477d434d0e",
+                            DoctorId = new Guid("2acd9da2-9f47-447f-93fc-ed01eac15e76"),
+                            PatientId = "27bc3900-c570-42a9-968a-388cc321ce04",
                             State = "Scheduled",
                             Time = "10:00 AM"
                         },
                         new
                         {
-                            Id = new Guid("825ed25d-b7e1-4a69-bd8d-3d23678adc38"),
+                            Id = new Guid("bd590969-6632-4e59-8bc4-7722f64f7dbd"),
                             Date = "2025-05-15",
-                            DoctorId = new Guid("7426cc31-387c-4357-b0f3-05c06b3e57ce"),
-                            PatientId = "ca9d8238-f49e-46e1-a9d7-9f5dc745e22c",
+                            DoctorId = new Guid("dd2c460f-1676-46cb-a4fa-74968e721cbd"),
+                            PatientId = "50583878-1af1-4c74-bc91-47bb6eb09889",
                             State = "Scheduled",
                             Time = "11:00 AM"
                         },
                         new
                         {
-                            Id = new Guid("9c45c14e-3653-43f8-a411-e43b4a1d58f7"),
+                            Id = new Guid("6ae2157d-1e58-4543-a7a6-8bb2cea19f86"),
                             Date = "2025-05-16",
-                            DoctorId = new Guid("79c290a0-dcce-4ecc-be7a-7b841e83ea09"),
-                            PatientId = "0b1b1a02-ff25-46e8-add7-b55bc94596db",
+                            DoctorId = new Guid("6d14cbd4-a354-4481-b918-706732e1405e"),
+                            PatientId = "be8a8bb7-c229-467c-988b-5934ceaa1432",
                             State = "Scheduled",
                             Time = "12:00 AM"
                         },
                         new
                         {
-                            Id = new Guid("a2a3c34d-54f5-4ea2-b3a6-35e9d03b41bb"),
+                            Id = new Guid("d3a060a8-b02a-4109-9fd0-158025c58cfd"),
                             Date = "2025-05-17",
-                            DoctorId = new Guid("5fca8307-11e7-48c3-9f30-d36c205ffb58"),
-                            PatientId = "31a5d5ca-755b-4295-a6b5-1c6e90a4f051",
+                            DoctorId = new Guid("f17bdbd8-26b4-4e1e-be73-9114360bb881"),
+                            PatientId = "1e04d179-7281-4106-8744-88dc51d83d78",
                             State = "Scheduled",
                             Time = "13:00 AM"
                         },
                         new
                         {
-                            Id = new Guid("bea03a0a-a2e0-4781-b423-d42860218600"),
+                            Id = new Guid("6f0a43d4-4ac9-4dfe-9690-e136dc8a35ac"),
                             Date = "2025-05-18",
-                            DoctorId = new Guid("1a2f49ba-da0e-4535-a79e-cc158fce99c1"),
-                            PatientId = "e8d1902f-57d2-4718-85c7-1cf5f0a1ca18",
+                            DoctorId = new Guid("fb64d66d-adc7-45f6-918d-33060785c27d"),
+                            PatientId = "471ff9a6-382a-42d5-ae41-5350c22d3056",
                             State = "Scheduled",
                             Time = "14:00 AM"
                         },
                         new
                         {
-                            Id = new Guid("e6345352-3410-464c-8578-0f5e2ef83cfe"),
+                            Id = new Guid("9545615a-c638-461a-9680-9883bfb3c59b"),
                             Date = "2025-05-19",
-                            DoctorId = new Guid("2a0b83bf-316d-4bf4-b4a1-c9951bf23464"),
-                            PatientId = "f6c65f86-cf25-455b-b8e9-cf7ce3da6616",
+                            DoctorId = new Guid("ce2b3ac0-85f1-4018-8a8e-2546ba347125"),
+                            PatientId = "9ea01535-9542-444a-872f-08d09cb4b654",
                             State = "Scheduled",
                             Time = "15:00 AM"
                         },
                         new
                         {
-                            Id = new Guid("f4ea6c65-2b12-4690-8b95-887f9ea4ffe3"),
+                            Id = new Guid("28481353-9f09-44c0-aeae-625e4200468f"),
                             Date = "2025-05-20",
-                            DoctorId = new Guid("622131d6-49bc-40a4-848c-41af48f51b48"),
-                            PatientId = "66f7c3ff-cf5d-4022-9d03-4bcefc1e0a25",
+                            DoctorId = new Guid("a3f47e3f-eed3-40cf-9255-3aff83c64014"),
+                            PatientId = "3c429440-8760-40f6-9aa6-cfed9f0c197a",
                             State = "Scheduled",
                             Time = "16:00 AM"
                         });
@@ -264,143 +264,143 @@ namespace ClinicAPI.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("aa0c65cf-a02e-4674-8422-3f713f6632f2"),
+                            Id = new Guid("f4e7dabf-894c-4971-9363-05416e0027d0"),
                             Price = 101.0,
                             Specialty = "Specialty 1",
-                            UserId = "ee9464c4-72dd-487e-abae-f28eb1f283d6"
+                            UserId = "54313667-8d2c-444e-8dc3-291a46c27d0c"
                         },
                         new
                         {
-                            Id = new Guid("1d67eaef-637d-47b3-b6f4-3914e5e07472"),
+                            Id = new Guid("5f15c5a4-435c-46a2-b7fe-f68ac615f3d9"),
                             Price = 102.0,
                             Specialty = "Specialty 2",
-                            UserId = "d329a52a-f062-483b-8ee0-5ee8bddec3cd"
+                            UserId = "4bcbf4c1-97c3-4672-9613-73adec3ac42e"
                         },
                         new
                         {
-                            Id = new Guid("6ca827fc-10f0-4329-85a6-a25916ba22ac"),
+                            Id = new Guid("21068e8e-8129-4cb0-a74e-75bd69d1ef9e"),
                             Price = 103.0,
                             Specialty = "Specialty 3",
-                            UserId = "a3d69e15-a1a0-40b7-b29d-4c509ef3abb2"
+                            UserId = "3b98d85c-0738-4834-91d6-ff8243b6bb78"
                         },
                         new
                         {
-                            Id = new Guid("eae35e10-9825-4944-adfa-9961a25d6f55"),
+                            Id = new Guid("0dcb619d-545f-4542-b8ba-244c8dc886e6"),
                             Price = 104.0,
                             Specialty = "Specialty 4",
-                            UserId = "06ef133d-a03d-4045-9dff-03ba2353c36b"
+                            UserId = "388a7b3c-6bf5-4bed-a8e2-c94d4748ee73"
                         },
                         new
                         {
-                            Id = new Guid("428d16f9-acc5-477e-8157-484d88e54c7e"),
+                            Id = new Guid("e63f7ca7-ae0b-40ea-a92e-2d5649746b47"),
                             Price = 105.0,
                             Specialty = "Specialty 5",
-                            UserId = "640ba30c-0831-4e9d-b677-fc4dbd052882"
+                            UserId = "9e395a1b-9a82-46a2-8b36-7e11ea2afc8f"
                         },
                         new
                         {
-                            Id = new Guid("e25eff5e-9a84-478e-ac04-ee5567fde919"),
+                            Id = new Guid("8954939b-d108-4541-ab33-5040dea77a2a"),
                             Price = 106.0,
                             Specialty = "Specialty 6",
-                            UserId = "93b598d1-17b3-427f-9488-a1e9e998aa6c"
+                            UserId = "332f34b3-de2d-4319-882a-d5b5e6257f31"
                         },
                         new
                         {
-                            Id = new Guid("cab0f693-2a97-43d2-bee3-01e4da18a12d"),
+                            Id = new Guid("71fa449f-b3a8-4058-9783-206211aae399"),
                             Price = 107.0,
                             Specialty = "Specialty 7",
-                            UserId = "88f16ccb-22ec-44f0-9f07-092241c4643c"
+                            UserId = "48b56279-bb35-4703-92a4-4ae6788693e0"
                         },
                         new
                         {
-                            Id = new Guid("9ea2cd4a-2c48-429a-b04a-c48a58c977d8"),
+                            Id = new Guid("ceab535d-051a-4c24-9824-d61940ccd8e2"),
                             Price = 108.0,
                             Specialty = "Specialty 8",
-                            UserId = "670ab904-39e1-4d71-b77d-9058c4fb3826"
+                            UserId = "cf6e8fc8-6d58-456e-86ca-c61a518f9636"
                         },
                         new
                         {
-                            Id = new Guid("06d45262-87d8-4219-bb23-8acff618d7f5"),
+                            Id = new Guid("bcb929a5-f78f-4037-af2a-ab83825819b2"),
                             Price = 109.0,
                             Specialty = "Specialty 9",
-                            UserId = "1e6e6d31-1208-4254-84a0-666ef240af48"
+                            UserId = "08fa64d7-4992-4b42-bc61-543bae5f14fe"
                         },
                         new
                         {
-                            Id = new Guid("34a5d994-d051-4f61-936c-8a9851f8b7d6"),
+                            Id = new Guid("acd364c0-2600-45f3-9286-8ea9c26d99bf"),
                             Price = 110.0,
                             Specialty = "Specialty 10",
-                            UserId = "1d74cdaa-fe65-4358-88c6-cd1d2eeb86b4"
+                            UserId = "239278b6-d460-46d5-a67b-65b2ea8bff56"
                         },
                         new
                         {
-                            Id = new Guid("1c164853-7e4d-4afa-9ad8-9fe98385802e"),
+                            Id = new Guid("61d25a72-8d70-4164-a8c6-56eb8d3c502b"),
                             Price = 111.0,
                             Specialty = "Specialty 11",
-                            UserId = "39f173ee-43e0-4b2d-a5bd-973e513472cc"
+                            UserId = "f8630862-4ec6-4b00-a1ad-10b319de03c1"
                         },
                         new
                         {
-                            Id = new Guid("457be12e-9fcf-4509-a7ac-fe97a46229a6"),
+                            Id = new Guid("e7f2ae3d-4354-4fc7-86aa-4c023557fef7"),
                             Price = 112.0,
                             Specialty = "Specialty 12",
-                            UserId = "38d495e2-af91-4b97-89e1-60827bb63a24"
+                            UserId = "208a800c-b8bc-4f7c-aa27-b1f5d1f75ce0"
                         },
                         new
                         {
-                            Id = new Guid("58e9b0ca-4cb2-40b1-a834-ba50ee16b3df"),
+                            Id = new Guid("1503e0d0-f89d-4f39-af48-401a94804ed9"),
                             Price = 113.0,
                             Specialty = "Specialty 13",
-                            UserId = "73e422a2-ff2d-40da-ae75-82c96d3d0778"
+                            UserId = "9f27b9fb-1ba1-45ee-a85d-c3b190b2fc44"
                         },
                         new
                         {
-                            Id = new Guid("4d186b3c-69a4-4956-9657-49b81ad7938e"),
+                            Id = new Guid("2acd9da2-9f47-447f-93fc-ed01eac15e76"),
                             Price = 114.0,
                             Specialty = "Specialty 14",
-                            UserId = "1e7230ac-2344-47e4-b698-ef958bc93868"
+                            UserId = "7ac5d4de-d0fd-4958-bc83-dd478b22e4f5"
                         },
                         new
                         {
-                            Id = new Guid("7426cc31-387c-4357-b0f3-05c06b3e57ce"),
+                            Id = new Guid("dd2c460f-1676-46cb-a4fa-74968e721cbd"),
                             Price = 115.0,
                             Specialty = "Specialty 15",
-                            UserId = "1660ddf2-fc20-40ae-a0e0-a9b3c6ef1489"
+                            UserId = "9c825ad4-18e1-4368-8dbc-329f78534d91"
                         },
                         new
                         {
-                            Id = new Guid("79c290a0-dcce-4ecc-be7a-7b841e83ea09"),
+                            Id = new Guid("6d14cbd4-a354-4481-b918-706732e1405e"),
                             Price = 116.0,
                             Specialty = "Specialty 16",
-                            UserId = "b2b74884-dc36-40af-a889-de4b0d44030a"
+                            UserId = "e1ce6150-1488-404b-9e32-636fbee7f133"
                         },
                         new
                         {
-                            Id = new Guid("5fca8307-11e7-48c3-9f30-d36c205ffb58"),
+                            Id = new Guid("f17bdbd8-26b4-4e1e-be73-9114360bb881"),
                             Price = 117.0,
                             Specialty = "Specialty 17",
-                            UserId = "b7041f80-6512-4fa9-b99e-7fa037fe1383"
+                            UserId = "b7c5a217-ca8f-430e-82bc-6b5228e4ffd9"
                         },
                         new
                         {
-                            Id = new Guid("1a2f49ba-da0e-4535-a79e-cc158fce99c1"),
+                            Id = new Guid("fb64d66d-adc7-45f6-918d-33060785c27d"),
                             Price = 118.0,
                             Specialty = "Specialty 18",
-                            UserId = "1db9741a-8ead-4416-8207-d6ed26176eb9"
+                            UserId = "ad16ed51-e493-49ad-a1ee-4c04707de040"
                         },
                         new
                         {
-                            Id = new Guid("2a0b83bf-316d-4bf4-b4a1-c9951bf23464"),
+                            Id = new Guid("ce2b3ac0-85f1-4018-8a8e-2546ba347125"),
                             Price = 119.0,
                             Specialty = "Specialty 19",
-                            UserId = "c7758f2b-c854-4002-b334-1700df4c9a96"
+                            UserId = "d5dd7440-fd7c-4ea2-a6e0-fad0d4ff3556"
                         },
                         new
                         {
-                            Id = new Guid("622131d6-49bc-40a4-848c-41af48f51b48"),
+                            Id = new Guid("a3f47e3f-eed3-40cf-9255-3aff83c64014"),
                             Price = 120.0,
                             Specialty = "Specialty 20",
-                            UserId = "2db8c815-4497-4a2c-9567-eb555115d05b"
+                            UserId = "37d40e73-452e-4d21-83cd-a233c182a675"
                         });
                 });
 
@@ -429,13 +429,9 @@ namespace ClinicAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("DoctorId")
-                        .IsUnique()
-                        .HasFilter("[DoctorId] IS NOT NULL");
+                    b.HasIndex("DoctorId");
 
-                    b.HasIndex("PrescriptionId")
-                        .IsUnique()
-                        .HasFilter("[PrescriptionId] IS NOT NULL");
+                    b.HasIndex("PrescriptionId");
 
                     b.ToTable("FileImages");
                 });
@@ -467,143 +463,143 @@ namespace ClinicAPI.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("37ecd7c3-ca7f-41af-b336-818aad0d2ac0"),
-                            AppointmentId = new Guid("4b77b84f-42f0-4efd-b35c-290b75caabcb"),
+                            Id = new Guid("e2058588-f4aa-43a3-884b-e9931f60956a"),
+                            AppointmentId = new Guid("49908c9e-d1c6-4c18-b0f0-40327cf45dca"),
                             Description = "Prescription for appointment 1",
-                            Modification_date = "2025-04-21"
+                            Modification_date = "2025-05-07"
                         },
                         new
                         {
-                            Id = new Guid("8e74b5c0-da63-4131-8957-29d690e2974e"),
-                            AppointmentId = new Guid("f4d86dcb-838c-4d6b-93e0-dde2f1a5ebae"),
+                            Id = new Guid("3204a864-ad87-4227-bab5-3f0dceb08590"),
+                            AppointmentId = new Guid("dd4bdfb7-a500-4ce2-8888-b449a268eb29"),
                             Description = "Prescription for appointment 2",
-                            Modification_date = "2025-04-21"
+                            Modification_date = "2025-05-07"
                         },
                         new
                         {
-                            Id = new Guid("1c8f1052-d43c-445c-a644-78af76fcbd40"),
-                            AppointmentId = new Guid("1caad92d-bac0-4527-b80f-7ea7cf0ea111"),
+                            Id = new Guid("6dd90d34-9af7-453f-8946-5b4adeb00adc"),
+                            AppointmentId = new Guid("8a907523-ab91-408d-894e-800302e25591"),
                             Description = "Prescription for appointment 3",
-                            Modification_date = "2025-04-21"
+                            Modification_date = "2025-05-07"
                         },
                         new
                         {
-                            Id = new Guid("06fb88b0-a3f4-4695-86e7-a6a55d7d1381"),
-                            AppointmentId = new Guid("2a64bbf9-583f-4112-966f-d46740a872bc"),
+                            Id = new Guid("ffda7880-b053-4324-ba47-1021f3c2a203"),
+                            AppointmentId = new Guid("45adfd40-9894-425e-9750-0d04e1fa31cf"),
                             Description = "Prescription for appointment 4",
-                            Modification_date = "2025-04-21"
+                            Modification_date = "2025-05-07"
                         },
                         new
                         {
-                            Id = new Guid("bb84d3e2-f9c5-4bb3-80ca-ecea4332613a"),
-                            AppointmentId = new Guid("fe7462a6-f917-4d32-b742-3e67ea67a3e4"),
+                            Id = new Guid("daac7753-b2ce-4c46-a2cb-d7a2ef1e1e96"),
+                            AppointmentId = new Guid("b4c4b0e8-3ddb-405c-a2ad-de661735065b"),
                             Description = "Prescription for appointment 5",
-                            Modification_date = "2025-04-21"
+                            Modification_date = "2025-05-07"
                         },
                         new
                         {
-                            Id = new Guid("186bb93b-1d1e-4653-b9ab-8dd17952fe54"),
-                            AppointmentId = new Guid("9ee67f13-e69d-41cd-9cb7-7aa6a8725f7e"),
+                            Id = new Guid("a64ae0d5-4806-483f-aa31-4dcf7d7ccc37"),
+                            AppointmentId = new Guid("0543724f-5b29-4a27-b7c7-6a6665fc5c2e"),
                             Description = "Prescription for appointment 6",
-                            Modification_date = "2025-04-21"
+                            Modification_date = "2025-05-07"
                         },
                         new
                         {
-                            Id = new Guid("d9355738-e01a-4c49-8b4a-12d5885ec39c"),
-                            AppointmentId = new Guid("3731761a-ebb4-4f64-a520-f98f9cac23e6"),
+                            Id = new Guid("43280530-0277-4eec-86a1-75c64fe14a40"),
+                            AppointmentId = new Guid("d4a65d73-7a7b-467e-b525-03389c3dd8df"),
                             Description = "Prescription for appointment 7",
-                            Modification_date = "2025-04-21"
+                            Modification_date = "2025-05-07"
                         },
                         new
                         {
-                            Id = new Guid("35aa7d28-c3fa-4009-91d9-02e92fb697a5"),
-                            AppointmentId = new Guid("9501cc24-b228-4837-8f9b-8bfe9de64832"),
+                            Id = new Guid("78d24d40-0fff-46ac-ac22-efa22f9a09e4"),
+                            AppointmentId = new Guid("7e6f1328-0bb7-4245-866f-9e9bab8801a9"),
                             Description = "Prescription for appointment 8",
-                            Modification_date = "2025-04-21"
+                            Modification_date = "2025-05-07"
                         },
                         new
                         {
-                            Id = new Guid("fbc09132-f975-4c50-8dd2-34851d46c601"),
-                            AppointmentId = new Guid("36218d0f-f9b6-4246-84b2-d78c1bd75b02"),
+                            Id = new Guid("3bcb737a-d69f-4031-a436-ca092842fffd"),
+                            AppointmentId = new Guid("e768c293-9fc2-436f-896a-2be868e7e35d"),
                             Description = "Prescription for appointment 9",
-                            Modification_date = "2025-04-21"
+                            Modification_date = "2025-05-07"
                         },
                         new
                         {
-                            Id = new Guid("171772ac-4f55-4352-acd3-984fc24fd21e"),
-                            AppointmentId = new Guid("212a8a00-70ea-4ddd-afb7-e034e65148be"),
+                            Id = new Guid("7fa9927c-96c7-49c6-a0f4-97e671360866"),
+                            AppointmentId = new Guid("3ba70cd3-fa33-49c8-8d3b-bc3ebb5ab5e6"),
                             Description = "Prescription for appointment 10",
-                            Modification_date = "2025-04-21"
+                            Modification_date = "2025-05-07"
                         },
                         new
                         {
-                            Id = new Guid("ccb9531f-d8a5-4d06-bb7f-4a29951dfb2c"),
-                            AppointmentId = new Guid("f31a040b-2eb0-4661-9d58-3c3fbffd6402"),
+                            Id = new Guid("412492d5-4111-4aca-9577-482ed1aa3668"),
+                            AppointmentId = new Guid("14ccac34-95b0-4263-ad0a-691777ba05fd"),
                             Description = "Prescription for appointment 11",
-                            Modification_date = "2025-04-21"
+                            Modification_date = "2025-05-07"
                         },
                         new
                         {
-                            Id = new Guid("7acb50e7-40ac-4b1f-a0a2-e21f6e4a0133"),
-                            AppointmentId = new Guid("4a9aa06f-481e-42a3-9102-780c16504f88"),
+                            Id = new Guid("4ac0affb-7382-4e85-a514-95b7eb465a20"),
+                            AppointmentId = new Guid("7ca31116-8dae-48d8-b0ea-53deda6916cb"),
                             Description = "Prescription for appointment 12",
-                            Modification_date = "2025-04-21"
+                            Modification_date = "2025-05-07"
                         },
                         new
                         {
-                            Id = new Guid("0a4e6800-29f9-4ea8-acda-762843d1a5e7"),
-                            AppointmentId = new Guid("e2c9aec5-98bf-45b3-a9df-ab27262dc4b3"),
+                            Id = new Guid("deec07b7-a289-4ac4-84fe-72a95ebc1cab"),
+                            AppointmentId = new Guid("cec7123b-5f10-4a0b-9444-cc6fac7fff15"),
                             Description = "Prescription for appointment 13",
-                            Modification_date = "2025-04-21"
+                            Modification_date = "2025-05-07"
                         },
                         new
                         {
-                            Id = new Guid("51316038-270f-4515-81d2-a6aa49fea6f3"),
-                            AppointmentId = new Guid("6e897d9a-896d-469b-8243-886bb116ea3d"),
+                            Id = new Guid("34e518ca-6b7e-4f73-9248-98fe86c9155b"),
+                            AppointmentId = new Guid("2d8947f4-de8c-48aa-9f46-664c51c82ccc"),
                             Description = "Prescription for appointment 14",
-                            Modification_date = "2025-04-21"
+                            Modification_date = "2025-05-07"
                         },
                         new
                         {
-                            Id = new Guid("07c58e22-edfb-4862-a5a6-fe67fef640b6"),
-                            AppointmentId = new Guid("825ed25d-b7e1-4a69-bd8d-3d23678adc38"),
+                            Id = new Guid("7347daab-a080-490d-9723-69de3e11940e"),
+                            AppointmentId = new Guid("bd590969-6632-4e59-8bc4-7722f64f7dbd"),
                             Description = "Prescription for appointment 15",
-                            Modification_date = "2025-04-21"
+                            Modification_date = "2025-05-07"
                         },
                         new
                         {
-                            Id = new Guid("ff3bc475-cf1e-4581-8d30-de2155f3799f"),
-                            AppointmentId = new Guid("9c45c14e-3653-43f8-a411-e43b4a1d58f7"),
+                            Id = new Guid("f11fed2b-5506-4c03-be75-3ff4152d3c89"),
+                            AppointmentId = new Guid("6ae2157d-1e58-4543-a7a6-8bb2cea19f86"),
                             Description = "Prescription for appointment 16",
-                            Modification_date = "2025-04-21"
+                            Modification_date = "2025-05-07"
                         },
                         new
                         {
-                            Id = new Guid("a1a09032-f9fb-4e70-9a61-18299f48912f"),
-                            AppointmentId = new Guid("a2a3c34d-54f5-4ea2-b3a6-35e9d03b41bb"),
+                            Id = new Guid("96cd8fc6-a897-454c-a6ea-e2e0d842c504"),
+                            AppointmentId = new Guid("d3a060a8-b02a-4109-9fd0-158025c58cfd"),
                             Description = "Prescription for appointment 17",
-                            Modification_date = "2025-04-21"
+                            Modification_date = "2025-05-07"
                         },
                         new
                         {
-                            Id = new Guid("ee977b97-7362-4eb1-aac8-c2de724a2f5d"),
-                            AppointmentId = new Guid("bea03a0a-a2e0-4781-b423-d42860218600"),
+                            Id = new Guid("0f7e3ffe-d440-4663-8d8b-57cba195d0a2"),
+                            AppointmentId = new Guid("6f0a43d4-4ac9-4dfe-9690-e136dc8a35ac"),
                             Description = "Prescription for appointment 18",
-                            Modification_date = "2025-04-21"
+                            Modification_date = "2025-05-07"
                         },
                         new
                         {
-                            Id = new Guid("7c4a3156-2e4e-45bc-9def-94c35f2d39d7"),
-                            AppointmentId = new Guid("e6345352-3410-464c-8578-0f5e2ef83cfe"),
+                            Id = new Guid("2b2aa4ce-5beb-4856-abb8-e7ff7a0c7ee3"),
+                            AppointmentId = new Guid("9545615a-c638-461a-9680-9883bfb3c59b"),
                             Description = "Prescription for appointment 19",
-                            Modification_date = "2025-04-21"
+                            Modification_date = "2025-05-07"
                         },
                         new
                         {
-                            Id = new Guid("8fc62aee-d315-459f-84ab-224e37f95ba8"),
-                            AppointmentId = new Guid("f4ea6c65-2b12-4690-8b95-887f9ea4ffe3"),
+                            Id = new Guid("9fda5945-3c8f-4645-90ef-37f93f692341"),
+                            AppointmentId = new Guid("28481353-9f09-44c0-aeae-625e4200468f"),
                             Description = "Prescription for appointment 20",
-                            Modification_date = "2025-04-21"
+                            Modification_date = "2025-05-07"
                         });
                 });
 
@@ -674,681 +670,681 @@ namespace ClinicAPI.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "52cbe818-dd65-46ce-8764-830a3d9008f6",
+                            Id = "155af4cd-9869-4ae2-bf58-5c743184adc9",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "4e8d966a-02f0-4978-9f98-2a28848574d9",
+                            ConcurrencyStamp = "6154583d-5433-4476-869f-004ce0a24304",
                             Email = "patient1@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "PATIENT1@CLINIC.COM",
                             NormalizedUserName = "PATIENT1@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEFzta9Vkotow/DhK5F3bab23pPMx0B3yloqUarzheWlSELqD5XZ+TQqyd+fUnKaDFw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEM5OVfhQ22b5JEfILSWyIyiHe5DvXmf+Stj681xqeFDvpJDdSUaogZ8q+ygdqzjOGg==",
                             PhoneNumber = "01000000001",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "3ffbc2c3-aedb-46eb-b807-18afee10835c",
+                            SecurityStamp = "5f548e44-5494-438a-844a-c09b965cd650",
                             TwoFactorEnabled = false,
                             UserName = "patient1@clinic.com"
                         },
                         new
                         {
-                            Id = "0df249dc-078d-4f0a-9709-d3f628d5fce7",
+                            Id = "83519268-6998-43f9-b36e-52a61fd2ebea",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "128c13c5-0c34-4e1c-9420-60297984e720",
+                            ConcurrencyStamp = "73fa63bd-4bf4-4116-a3d3-4b3b4bb40605",
                             Email = "patient2@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "PATIENT2@CLINIC.COM",
                             NormalizedUserName = "PATIENT2@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEKtvb8JjoKfZAmjg6EYWU+eWrM+1CVlreLBHyXIJW/fOM5Sn0i2XUi+Xe4G9rZvLeg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEAgt603wL72x8SMAksOv7fQ0IMZCfas4nsN287358ermsvoZDG7+LiL9GazGNUi6yQ==",
                             PhoneNumber = "01000000002",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "22169dbf-42a6-41ae-8712-218d8612381e",
+                            SecurityStamp = "a7a05b69-5f98-4d56-93d3-06dc4467b996",
                             TwoFactorEnabled = false,
                             UserName = "patient2@clinic.com"
                         },
                         new
                         {
-                            Id = "29e30fb1-8998-4b05-adeb-5a75884e2aca",
+                            Id = "0dd15ea2-0b87-4a71-a344-822c4f81c31b",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "a589b910-4b17-487b-9014-cb9ead2478b8",
+                            ConcurrencyStamp = "4f795bbb-f4c1-42af-8e6a-570d3c9627f8",
                             Email = "patient3@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "PATIENT3@CLINIC.COM",
                             NormalizedUserName = "PATIENT3@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEPFADMai7cqKo9PkgkwUtHzSfXX24RjKSXeptM4lwBI0BJB3EM7kvHU7hLHqFE45Hg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEOip256a89yocxldVKkzZ34m727moJeejBkwxBv/mOTLTv/1aSLIoEO8g0WE/fyn4g==",
                             PhoneNumber = "01000000003",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "701117d2-88d6-4ff9-9d92-5c8fd85ebd98",
+                            SecurityStamp = "d1ae3168-fb47-4cad-9d0b-1d4f9e7b68a9",
                             TwoFactorEnabled = false,
                             UserName = "patient3@clinic.com"
                         },
                         new
                         {
-                            Id = "29cb3ec1-e138-439b-9128-922bf2b3c338",
+                            Id = "a4779ae0-81c9-46b7-b989-709460127449",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "cc0be3d8-9881-4483-a07d-a969980cb046",
+                            ConcurrencyStamp = "f967c5e9-dd5b-4908-b905-951e450efecf",
                             Email = "patient4@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "PATIENT4@CLINIC.COM",
                             NormalizedUserName = "PATIENT4@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEAYL+J61EsgX903JLM8WXK4bOr7kdsvIXp8IwtyTUjpbQk9wKeuARZ3XFXWPnSeQBg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEGnGTFzgi4CVx7Tp8w0V5TbOqgOraK6mrZpzVqxHon52TgHaZAvadMhijixAYN0W1w==",
                             PhoneNumber = "01000000004",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "6edd982e-f0f7-44fc-b817-61c2332fd40b",
+                            SecurityStamp = "c6973e65-6c05-428d-9aa2-7b362b58546f",
                             TwoFactorEnabled = false,
                             UserName = "patient4@clinic.com"
                         },
                         new
                         {
-                            Id = "9f1d1b06-f65f-49e9-96e4-4c2b73b83983",
+                            Id = "4e1b7bf2-f505-4c17-944b-4455e450adc2",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "02cb0b7d-b2c1-4285-b8af-b71ab8fd7fa1",
+                            ConcurrencyStamp = "b6e85fa0-bb5a-41ef-af05-0b06b4a4cc09",
                             Email = "patient5@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "PATIENT5@CLINIC.COM",
                             NormalizedUserName = "PATIENT5@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEHrsP2nEb65mWDXjgFtlrku8mGMY7Mjmf4w1vh+PLwApHR4qFz+xdD+ZD9S9CvNlgA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAECPbMdr7bCuELXj5eadQpJthtkeTmCrh8OR0PDD/Kgz2eAqcnDV2wTMjthj1QnykWw==",
                             PhoneNumber = "01000000005",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "87589296-abd8-4786-a258-5d764e1d20ba",
+                            SecurityStamp = "b5e4cfa5-1c7c-4dd2-a4cd-041c49a8e127",
                             TwoFactorEnabled = false,
                             UserName = "patient5@clinic.com"
                         },
                         new
                         {
-                            Id = "a05a6664-68b9-48ff-a760-42b2f5b16e7f",
+                            Id = "d13b4c2f-13ca-4f64-8ffc-9be8489b923e",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "874e58f7-d9f2-4324-978f-26491611353f",
+                            ConcurrencyStamp = "eb2f029c-21c0-4c2a-aaf3-5c6a7c68d814",
                             Email = "patient6@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "PATIENT6@CLINIC.COM",
                             NormalizedUserName = "PATIENT6@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEMlEebxbXx1FfkV9GdUAohp0/KLOhtt1uNW9idrxHJ+apSG3gMC8NJNcgUJOS7Z0xw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEGw0ssQo5JSBfUHQAGZsrS84gDWzmChNkwM1nJAi2Nayg+69zDfA77NU7LhZmPXnfQ==",
                             PhoneNumber = "01000000006",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "1ba3727d-7fa3-48c2-927d-09118c46b36a",
+                            SecurityStamp = "db8fd649-a1fb-4e1d-88aa-d4e0491ac0cc",
                             TwoFactorEnabled = false,
                             UserName = "patient6@clinic.com"
                         },
                         new
                         {
-                            Id = "f8962ac8-7736-429c-8370-b6a5706114c5",
+                            Id = "1c163814-12e4-47d8-aa17-68bcbdbf897a",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "d81c072c-db3b-4e0e-86cb-16ae464b622a",
+                            ConcurrencyStamp = "98627825-bf99-4167-918d-87e0c86bde5d",
                             Email = "patient7@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "PATIENT7@CLINIC.COM",
                             NormalizedUserName = "PATIENT7@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAENUvvdyNj9ZjrMDzdP9ku+j3+S0muUMZjcScYFkniBfaTxoRHu5ZkTnTW1NABX6JDg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEKBaGQ+/54ArO5Ubzz7Jt9GKlBxPS5qIxCoLnkFjOlVkdvqqWHaVI8Q5b4MN2J8xTQ==",
                             PhoneNumber = "01000000007",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "0df2a937-368d-4667-a4ee-08cb2bfce631",
+                            SecurityStamp = "40bc8688-5a49-48bf-9b78-1397486ab0e8",
                             TwoFactorEnabled = false,
                             UserName = "patient7@clinic.com"
                         },
                         new
                         {
-                            Id = "ae9e4a55-1221-440a-9e81-26436f64666a",
+                            Id = "b728a214-1340-475f-b13a-c62e618669b2",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "58c95c23-896d-41c2-b12c-93fdc1e0f1c9",
+                            ConcurrencyStamp = "ccf12655-7b06-4c85-a643-60d89498b30e",
                             Email = "patient8@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "PATIENT8@CLINIC.COM",
                             NormalizedUserName = "PATIENT8@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEDmi/tp6KawMhkSn8X931acEZA2YjSR15vz864RCa3lESdxjg5EQO+xGhMnM5Udr+A==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEI9tOXTv7cesZleHxmeRLFnAQT90CLXYiO/U9+7AMjHytXK8Rsb17pi3q5laP/62/A==",
                             PhoneNumber = "01000000008",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "1214581b-1017-4677-9a6c-996b6ae9cb96",
+                            SecurityStamp = "0b7784ac-4d54-4c19-9d54-b4af44fe16f2",
                             TwoFactorEnabled = false,
                             UserName = "patient8@clinic.com"
                         },
                         new
                         {
-                            Id = "82624f06-56f4-49c8-84e4-dc5bb33c5247",
+                            Id = "a9d51468-2a82-41cc-9503-2662a256a4b4",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "7d41cd5f-aae2-4ba3-b0d1-014713a3f309",
+                            ConcurrencyStamp = "4b8441f8-051e-4be0-b9ba-ef7791e4ab0b",
                             Email = "patient9@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "PATIENT9@CLINIC.COM",
                             NormalizedUserName = "PATIENT9@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAED1Aoh4DoWnt+YAmnJ5T1kfANgK35FWYCVEo44pCevFbxKeC5B5APhuyCi9ArNt9IA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEIei6KW8m7fJeLcbnNxqeRYx0kZS5n3xJQyQDPABOKR8OQkVriYEEe2uGXctVMafAg==",
                             PhoneNumber = "01000000009",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "50ffae3c-cdb6-46e8-9f6f-076fce39d3ce",
+                            SecurityStamp = "d8f0c810-1eec-43e2-8405-c1f9ca88f4dc",
                             TwoFactorEnabled = false,
                             UserName = "patient9@clinic.com"
                         },
                         new
                         {
-                            Id = "507c3fc0-7ba1-45b6-8f4e-70daeee6a87b",
+                            Id = "4896696a-191d-4bdf-a628-55ec955890c8",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "e937187c-a7e3-4aa1-a988-14e9c2d1964e",
+                            ConcurrencyStamp = "f96d0d98-110f-4a19-b63d-d149d6486771",
                             Email = "patient10@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "PATIENT10@CLINIC.COM",
                             NormalizedUserName = "PATIENT10@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEPvINf1CzJW1nLC4tJZG9te7LuqCRW9OrDBb1+Dozp3cNJuwlgkcX6lzVZtTqfhN4g==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEEJN+pzoliv5xxeMMlQ+Aho/+UVpixZGHHCE/3G8HfTGLqLM8TboMuT2OjRmWgkF9w==",
                             PhoneNumber = "01000000010",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "1f6cd537-def2-430c-8ec9-cd459cf55788",
+                            SecurityStamp = "969ae3fc-49ca-4ca8-b32d-fc8119e04d6a",
                             TwoFactorEnabled = false,
                             UserName = "patient10@clinic.com"
                         },
                         new
                         {
-                            Id = "1c63783b-affc-40f1-9d4f-f4d4593ff09d",
+                            Id = "c69e9027-ee3b-456c-876f-209a391adafe",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "f2f8a9b4-858e-4e5d-9bee-dda8f082b60f",
+                            ConcurrencyStamp = "912a717c-43a8-4557-a26b-4a0ba65faff1",
                             Email = "patient11@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "PATIENT11@CLINIC.COM",
                             NormalizedUserName = "PATIENT11@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAECsLNfA4H0HIgM+Eo7q0ar7gAEYu8TIG/kAZkM+nP9H5X1O0bwxHn2AW6AJaNgmBUQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEBLpb4taZdZn9ZFm3saIKmz+ZCRTLRN3nCUqzekZsOj3LKj4197BarbPn8CLjt1lMA==",
                             PhoneNumber = "01000000011",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "62389492-e0b6-4a77-878e-285d38c8367d",
+                            SecurityStamp = "6a9dbff0-9827-4e3f-9d24-1ee84f302b7d",
                             TwoFactorEnabled = false,
                             UserName = "patient11@clinic.com"
                         },
                         new
                         {
-                            Id = "26f898b8-0deb-4ba9-8058-354a737a4687",
+                            Id = "bbc7e4b4-8cd2-4ec9-8fc0-4d171783972d",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "11ce92eb-ab87-46a8-8c01-7a740c52855e",
+                            ConcurrencyStamp = "642df629-782d-4d10-bd75-4c17638ce02f",
                             Email = "patient12@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "PATIENT12@CLINIC.COM",
                             NormalizedUserName = "PATIENT12@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEIM5UV0a3QBf6zvWzS/0yHAwEX3XLcRv0Y2bkvgZtMxxmACWVJ9Y5fXILnLXkIAhWA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEMNryKYQoQruSOhCe2NLxN4LRGLJ1oIrdVGLHCSds4OFWRS8Deh+S2PCX0aXCCfU9w==",
                             PhoneNumber = "01000000012",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "070da9fb-4d83-4d74-a3f8-751ba83e4bb4",
+                            SecurityStamp = "8dbf7d02-c7ac-4b70-8ffe-ad01da587937",
                             TwoFactorEnabled = false,
                             UserName = "patient12@clinic.com"
                         },
                         new
                         {
-                            Id = "cbff071f-b407-4dd2-a5c5-e4381cf5a5b7",
+                            Id = "d3d69fd0-f486-482d-a248-e4ef7ed938da",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "ea9b5b07-a029-489e-bfb7-3e4df326de5b",
+                            ConcurrencyStamp = "2445318b-4708-41fd-81f4-090c45e5a1f0",
                             Email = "patient13@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "PATIENT13@CLINIC.COM",
                             NormalizedUserName = "PATIENT13@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEHUx6ZfKzY5mztNjofoKuZPPqi6JuXsY2wF7UO7FM9F65XxhLJLkiaqUO+uENbvl1A==",
+                            PasswordHash = "AQAAAAIAAYagAAAAELdDR973FmH1+HotEh2BMwR4bnGD1GuI8Uisp/TdkBdengLVL7S4uY3+i/DuO+psgQ==",
                             PhoneNumber = "01000000013",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "02cba3b7-4e82-4e13-99b8-5a8de1272601",
+                            SecurityStamp = "548605b3-15a7-464a-826c-84d01b627b3d",
                             TwoFactorEnabled = false,
                             UserName = "patient13@clinic.com"
                         },
                         new
                         {
-                            Id = "4319c960-bf8a-4a56-8591-ac477d434d0e",
+                            Id = "27bc3900-c570-42a9-968a-388cc321ce04",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "8244cafe-fb42-48d7-9b51-1c26f28ec469",
+                            ConcurrencyStamp = "22d72e2e-22e6-4040-862a-55aa19a8f0bc",
                             Email = "patient14@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "PATIENT14@CLINIC.COM",
                             NormalizedUserName = "PATIENT14@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEDYHMtWghu64alx8zUSwCpZof21/GNA+ptJ+4MRxk5anaCys9nWVCBzA0TGQdERsnw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEBqHYS3pbJgDOdbemlkKGdMt+RXYQXeotH5ckDgFHkVoVuCJLSc1jNXkypP0ts3SKQ==",
                             PhoneNumber = "01000000014",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "dcf023b0-b6ca-4863-9858-ae2dc7215499",
+                            SecurityStamp = "06db4b99-8c94-4001-a4c9-a02502bcd343",
                             TwoFactorEnabled = false,
                             UserName = "patient14@clinic.com"
                         },
                         new
                         {
-                            Id = "ca9d8238-f49e-46e1-a9d7-9f5dc745e22c",
+                            Id = "50583878-1af1-4c74-bc91-47bb6eb09889",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "80945fd6-6b0c-4e12-8a5d-2e8af3695f05",
+                            ConcurrencyStamp = "e4323992-6b90-42c4-b69c-10c10a4343b6",
                             Email = "patient15@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "PATIENT15@CLINIC.COM",
                             NormalizedUserName = "PATIENT15@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEOeTo0HH2H6K4etZCNfg0NUGGusvemVTLBHxmJNlK7xiaiIKjCrKjJZSTnTe6gnfOQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEPl3RiqrjMK3ifd7Ll9ZHunp2SFAY9NZHO2yt/3atnwTAI8Zs+Aj7v+xBO969fhUDw==",
                             PhoneNumber = "01000000015",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "5b4c0b81-1303-4a02-afd1-d14626e50eb7",
+                            SecurityStamp = "2af2e0bc-9c0d-460d-93d8-a4e51024e9a3",
                             TwoFactorEnabled = false,
                             UserName = "patient15@clinic.com"
                         },
                         new
                         {
-                            Id = "0b1b1a02-ff25-46e8-add7-b55bc94596db",
+                            Id = "be8a8bb7-c229-467c-988b-5934ceaa1432",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "de088424-62f7-42b6-9719-5d3e35a96f3a",
+                            ConcurrencyStamp = "d71e1dac-bd33-4bfa-bff0-7e1a08952f3e",
                             Email = "patient16@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "PATIENT16@CLINIC.COM",
                             NormalizedUserName = "PATIENT16@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAECEwyPIvdfqHQ6EWxzi0uf4mi+Z1YFAZf/XTToVjffnhNjKKi/+O7/VF4vCHwayniQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEM/4lWWJdFlIqeUJl6QlrVaH2/y14NCniHtsd6tETeazregiNOo5mb5Pu11uhpAuSw==",
                             PhoneNumber = "01000000016",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "0ebcffc5-9a3f-4709-ab95-739997005484",
+                            SecurityStamp = "5c9bcad8-32f8-4b8a-ad16-044fbee2ee5d",
                             TwoFactorEnabled = false,
                             UserName = "patient16@clinic.com"
                         },
                         new
                         {
-                            Id = "31a5d5ca-755b-4295-a6b5-1c6e90a4f051",
+                            Id = "1e04d179-7281-4106-8744-88dc51d83d78",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "42eb0ab5-9888-4881-81f4-3838c3878e45",
+                            ConcurrencyStamp = "01ff0d77-a20a-44f3-b518-669ade0c37b7",
                             Email = "patient17@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "PATIENT17@CLINIC.COM",
                             NormalizedUserName = "PATIENT17@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEOx94haA5UYD2TJ39rDdlwQQVrjXlR0PRr5ZTJab6KGS+Mh+ublbNMyfqZp8LA4xKQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEJ+vFdk0exYYe2zn/myTFobF7wo1iC1Cf5VAFDF5ssJ8+WwWD03FQDGnYP2eFvF/tw==",
                             PhoneNumber = "01000000017",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "608bfba0-afba-484c-9ee7-9b194d126715",
+                            SecurityStamp = "c37d1d63-7d11-48de-a538-c46ffc6b25d4",
                             TwoFactorEnabled = false,
                             UserName = "patient17@clinic.com"
                         },
                         new
                         {
-                            Id = "e8d1902f-57d2-4718-85c7-1cf5f0a1ca18",
+                            Id = "471ff9a6-382a-42d5-ae41-5350c22d3056",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "2a85c041-7817-4d44-986f-3aacb8d82e56",
+                            ConcurrencyStamp = "18a28e36-93e6-4b76-8fda-2ebaf93efe03",
                             Email = "patient18@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "PATIENT18@CLINIC.COM",
                             NormalizedUserName = "PATIENT18@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAECAmJkUGHUTe2OfzEMjhyj6pnF4Y/257qc1rabcciNXyQ62ZIkIJ0UAwjYKGBVeBaw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEMKdLQa9v8M6DlaCR2XEDLXX8c0J/mNc8QHnCBoGc66qcnMUuF+ZfKkyG3GaDjb/0g==",
                             PhoneNumber = "01000000018",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "27f56009-2bcc-4fb2-9a70-194a7089df5a",
+                            SecurityStamp = "17935b3c-9fd0-49db-a192-f32f43253ae3",
                             TwoFactorEnabled = false,
                             UserName = "patient18@clinic.com"
                         },
                         new
                         {
-                            Id = "f6c65f86-cf25-455b-b8e9-cf7ce3da6616",
+                            Id = "9ea01535-9542-444a-872f-08d09cb4b654",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "4b10d7fe-31e4-4d35-97ef-be504b3650ab",
+                            ConcurrencyStamp = "a58e7f91-bf33-478e-9d9c-1c5254959afe",
                             Email = "patient19@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "PATIENT19@CLINIC.COM",
                             NormalizedUserName = "PATIENT19@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEPPNs1b+O90DbHLJEmusWt2jvxlcNknoiAM5sZH1u0DoMWT76OODWIGB8SR+I8chvg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEHvZV/pa5iOO3QS4uR84p3f4bsXOnYjFF5e/CeMrhRTKCExICic4i0AYG4rPBCyceg==",
                             PhoneNumber = "01000000019",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "713657b5-4226-4b00-9ec5-2b1b4308da7a",
+                            SecurityStamp = "c887b94b-9340-4e2b-83ae-59281fc992f2",
                             TwoFactorEnabled = false,
                             UserName = "patient19@clinic.com"
                         },
                         new
                         {
-                            Id = "66f7c3ff-cf5d-4022-9d03-4bcefc1e0a25",
+                            Id = "3c429440-8760-40f6-9aa6-cfed9f0c197a",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "33e84adb-3475-4c47-8dc2-068a43c73cc5",
+                            ConcurrencyStamp = "01ac467c-b3b8-46a3-ba95-cc8a3d196508",
                             Email = "patient20@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "PATIENT20@CLINIC.COM",
                             NormalizedUserName = "PATIENT20@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAENgbcqQi8NxZmgjrbIvzpnrOJI0J58zDjVd2soxI20Yw2jYZNKZcMagIa+oLXHkHVQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAELljl5zOVRYcOGgtBAjVJrTHJeVgEGieEq0rMQow4Es3oX+3W8JElvfP0vjIAwjltw==",
                             PhoneNumber = "01000000020",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "536884c9-e0fb-4caf-ac0b-50675eaa7e08",
+                            SecurityStamp = "e1908580-e95a-4aa8-8800-f79ccf0dbbd6",
                             TwoFactorEnabled = false,
                             UserName = "patient20@clinic.com"
                         },
                         new
                         {
-                            Id = "ee9464c4-72dd-487e-abae-f28eb1f283d6",
+                            Id = "54313667-8d2c-444e-8dc3-291a46c27d0c",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "5fdf2825-8ca6-4fc7-b290-167338d79a49",
+                            ConcurrencyStamp = "802301f2-23cb-401a-b1f8-a8d03cd6106d",
                             Email = "doctor1@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "DOCTOR1@CLINIC.COM",
                             NormalizedUserName = "DOCTOR1@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEEH9FIkQSclacw1sRNDPzUqJTTYpfA6Cp8q6OLQG4jcrU0DmPZFZ1IuIIy0CJAo2Dg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAECilJ5gdJnXQIkeqlKRziTdFfuTj85B06rbe8YzxKfK52yM5JKcAK1knB1nKsOJkOA==",
                             PhoneNumber = "01100000001",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "06b3a41a-17d4-4085-8d57-2047412479b9",
+                            SecurityStamp = "26da348c-d340-4e05-ab69-d632c8a5073b",
                             TwoFactorEnabled = false,
                             UserName = "doctor1@clinic.com"
                         },
                         new
                         {
-                            Id = "d329a52a-f062-483b-8ee0-5ee8bddec3cd",
+                            Id = "4bcbf4c1-97c3-4672-9613-73adec3ac42e",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "beb8726b-5362-474b-b201-b295c1dda66f",
+                            ConcurrencyStamp = "88b6ae85-cc79-4803-adb2-b22c9b4808fe",
                             Email = "doctor2@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "DOCTOR2@CLINIC.COM",
                             NormalizedUserName = "DOCTOR2@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEHbW1796BbIVXmI6Kbjue0t5hOQNlE3YFTvlQgt2MYjeBSRSZ2ix33ff3z4xDZ3yMw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEIN1RLVq1T42Xz0Unt0VLuWoBYxyMubZWDXvX37CzNlr1x91jMLws7bCmr/3ZM5rgg==",
                             PhoneNumber = "01100000002",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "0e5c401e-9a97-4905-adfa-6701a408a6ba",
+                            SecurityStamp = "93ac3fd9-8577-4184-ae57-547b7f12573e",
                             TwoFactorEnabled = false,
                             UserName = "doctor2@clinic.com"
                         },
                         new
                         {
-                            Id = "a3d69e15-a1a0-40b7-b29d-4c509ef3abb2",
+                            Id = "3b98d85c-0738-4834-91d6-ff8243b6bb78",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "f6f6258f-1c67-41b0-8c92-d4473e52146c",
+                            ConcurrencyStamp = "e470f107-fb70-4442-afc4-a9fba7496a55",
                             Email = "doctor3@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "DOCTOR3@CLINIC.COM",
                             NormalizedUserName = "DOCTOR3@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAELJCzyYUTosckjd82FGqXTKcIknOO/DUZoOYxGfoTQSUpV2c8MvJQeUfV4RdwQnPDA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEG4/sNh1MUs9Pn0Sr2FKFODVg1G3BpXr1lKsrbCc7tNmFhrkiMQ9glaU2chsLyThiA==",
                             PhoneNumber = "01100000003",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "e55e3846-7890-4a60-a3aa-0631a89b8648",
+                            SecurityStamp = "dc4f666c-0c23-4174-909e-2f8e4f359861",
                             TwoFactorEnabled = false,
                             UserName = "doctor3@clinic.com"
                         },
                         new
                         {
-                            Id = "06ef133d-a03d-4045-9dff-03ba2353c36b",
+                            Id = "388a7b3c-6bf5-4bed-a8e2-c94d4748ee73",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "c1d07609-db92-42e2-b53f-72608f3e6b0c",
+                            ConcurrencyStamp = "e895bb86-ed79-4e1f-bfa5-3d724e4cc067",
                             Email = "doctor4@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "DOCTOR4@CLINIC.COM",
                             NormalizedUserName = "DOCTOR4@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEKdtNM+/b4XCdHu8RWoY1WAbnHyohQsfqTihsmfbMwkSXiEOtHQBKpUbY5Lum9Tb5Q==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEF9d/j5qD9Wb78c3d9IjrwWPMQN0QakufpSOb2MvDQrpcmfemsuZDC407oEOpVrQ8w==",
                             PhoneNumber = "01100000004",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "89825f74-ef07-43d2-938e-0e9ec1b653ee",
+                            SecurityStamp = "158d2bef-44be-4a9d-9322-d45a2288022c",
                             TwoFactorEnabled = false,
                             UserName = "doctor4@clinic.com"
                         },
                         new
                         {
-                            Id = "640ba30c-0831-4e9d-b677-fc4dbd052882",
+                            Id = "9e395a1b-9a82-46a2-8b36-7e11ea2afc8f",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "3e4ffbbc-4db6-41f7-b1de-dbce2cab4a40",
+                            ConcurrencyStamp = "02eb7f99-78b8-43f4-86fd-be1a68a03b4c",
                             Email = "doctor5@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "DOCTOR5@CLINIC.COM",
                             NormalizedUserName = "DOCTOR5@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEKw2RV3YRofgdHTzLQshj1UdBOFl+qutPpH+fE+B4+DZMC2eRKV4xJ3tntVHQWa+tg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEEpdRAyCukzlpZJo5JOkBjhIpIbU2UWr9zmvZgqKVapHpzQfxWjRFSvNevICZJU/Bg==",
                             PhoneNumber = "01100000005",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "89106df2-17bd-4acd-9ffd-fdc1e04df2fb",
+                            SecurityStamp = "38d14990-a544-414c-893b-c8c25c51687d",
                             TwoFactorEnabled = false,
                             UserName = "doctor5@clinic.com"
                         },
                         new
                         {
-                            Id = "93b598d1-17b3-427f-9488-a1e9e998aa6c",
+                            Id = "332f34b3-de2d-4319-882a-d5b5e6257f31",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "baf573bf-04d5-4007-addc-f2a24a13b257",
+                            ConcurrencyStamp = "ae20e1e7-21cb-4746-a19c-db0678f9eeea",
                             Email = "doctor6@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "DOCTOR6@CLINIC.COM",
                             NormalizedUserName = "DOCTOR6@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEK+/IaVzgAq3IkDLB/6s0+Ks2p+WcS3fXUNR3DiOXzek4K94M2j/J40tAYWKNmggGA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEMxZph5j0ingQLn+r/pTUv8uP3leV2Lcv/svU/kciF84hTvxcym2RVFmvVI8gcjZ6w==",
                             PhoneNumber = "01100000006",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "45fe89cf-a991-488f-ac81-168b9cfcc99b",
+                            SecurityStamp = "114338de-a517-470c-823e-9abd4580e030",
                             TwoFactorEnabled = false,
                             UserName = "doctor6@clinic.com"
                         },
                         new
                         {
-                            Id = "88f16ccb-22ec-44f0-9f07-092241c4643c",
+                            Id = "48b56279-bb35-4703-92a4-4ae6788693e0",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "e3e04159-007a-415a-bf13-d7fdb6671d66",
+                            ConcurrencyStamp = "3e0bb603-edb9-4b8b-b1ab-41923855b9c5",
                             Email = "doctor7@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "DOCTOR7@CLINIC.COM",
                             NormalizedUserName = "DOCTOR7@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEA3tepPwlgP5kCtDrBGQhd5fIm1bawzlDU+EMsg9e73Dh3uERf4kTd+7agAYyTwgEg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAELWjMZo7ZSlQDqwaVc49QBftHH5HRqDZEePdOzOQu+Lz8z+Mgdiv8dwv0Sw3uZi2vg==",
                             PhoneNumber = "01100000007",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "3fe93ff8-631a-4fd5-8633-857e12968ff9",
+                            SecurityStamp = "dd67df17-132d-4b8f-be76-8563423ced64",
                             TwoFactorEnabled = false,
                             UserName = "doctor7@clinic.com"
                         },
                         new
                         {
-                            Id = "670ab904-39e1-4d71-b77d-9058c4fb3826",
+                            Id = "cf6e8fc8-6d58-456e-86ca-c61a518f9636",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "3fd395c8-6645-49d5-95f2-96860f68f1d6",
+                            ConcurrencyStamp = "dc852e70-8b5a-4a5e-a679-d9a07763e86e",
                             Email = "doctor8@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "DOCTOR8@CLINIC.COM",
                             NormalizedUserName = "DOCTOR8@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEE8XyVOg94FnQISLycw8qfhH7kC+8TPcC6RRJRdMrzQ+aESyan7pq/gjPZ5u04B5nQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEMhb2CPIJgo064Js71bbIPX94JQgQhoP/L6qYfkXKc+rw3dUyIc0D9dC+ATbWcjEKA==",
                             PhoneNumber = "01100000008",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "d1761ecc-a690-4bc6-b24f-05926c774d3c",
+                            SecurityStamp = "e748de6b-0578-4a30-8f05-5eef59d41919",
                             TwoFactorEnabled = false,
                             UserName = "doctor8@clinic.com"
                         },
                         new
                         {
-                            Id = "1e6e6d31-1208-4254-84a0-666ef240af48",
+                            Id = "08fa64d7-4992-4b42-bc61-543bae5f14fe",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "ff2be00a-72a8-4d88-afce-11925044e513",
+                            ConcurrencyStamp = "73e78618-d196-44df-aafe-bb056c74f011",
                             Email = "doctor9@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "DOCTOR9@CLINIC.COM",
                             NormalizedUserName = "DOCTOR9@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEKU9WQ9BRQskCcAe3crQs8apn1ZFBFUbGohRxskCgFpwUtT8cvv3OilJYhvKm2Y18w==",
+                            PasswordHash = "AQAAAAIAAYagAAAAELjz5NqgcJBHAeNl07MCwZXGNPBxmIZJoFAJUEMOmwH4qOHtzWoX4NERF0bUOfXIDw==",
                             PhoneNumber = "01100000009",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "1182da7d-6cf7-4d5f-8e2d-2ae5fbec150d",
+                            SecurityStamp = "855eac10-2f21-42fa-a129-2cda51861d85",
                             TwoFactorEnabled = false,
                             UserName = "doctor9@clinic.com"
                         },
                         new
                         {
-                            Id = "1d74cdaa-fe65-4358-88c6-cd1d2eeb86b4",
+                            Id = "239278b6-d460-46d5-a67b-65b2ea8bff56",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "d461a036-2c42-4f87-89f2-8449d64858f1",
+                            ConcurrencyStamp = "3ce45508-cc7a-4255-b7f2-be229250ae49",
                             Email = "doctor10@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "DOCTOR10@CLINIC.COM",
                             NormalizedUserName = "DOCTOR10@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEAhMqai3y70YdpwQHSHLvxE77anjuMEEIXeLYPFREo46fj6yNmu5mnzPkWoFhytlcg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAENzSMNJ/43eJ0sNV9I9Ed+ENewNoG3OQViSSjmSPRSYfjsN/uCWXsGh2/f4K7bNRCQ==",
                             PhoneNumber = "01100000010",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "d7b9ff28-907a-40aa-ae9c-eb118b7386e2",
+                            SecurityStamp = "22e09971-2548-4703-be16-0f17190ab017",
                             TwoFactorEnabled = false,
                             UserName = "doctor10@clinic.com"
                         },
                         new
                         {
-                            Id = "39f173ee-43e0-4b2d-a5bd-973e513472cc",
+                            Id = "f8630862-4ec6-4b00-a1ad-10b319de03c1",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "76582f60-8c9a-49ad-b223-c8a20080a1db",
+                            ConcurrencyStamp = "488810b8-55fb-486e-ad5d-089f5cb21286",
                             Email = "doctor11@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "DOCTOR11@CLINIC.COM",
                             NormalizedUserName = "DOCTOR11@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEFlt4M++I0HONzK1rCgAkT0xBr/dL8Q239WWhQ24n7/P+T7dEqJUgrCQ3ePx4h7uaw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEPqgdMboJH8OW+0IDSCmS44l9GLjdgiuNgE/Gbht2RMWa/ZGlC1WQUr+iTm9JRwdnA==",
                             PhoneNumber = "01100000011",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "ce32660e-74ba-4d57-9d8f-3ecf0f28cc0e",
+                            SecurityStamp = "6dae7221-4755-4352-8ce7-df8297ea68f4",
                             TwoFactorEnabled = false,
                             UserName = "doctor11@clinic.com"
                         },
                         new
                         {
-                            Id = "38d495e2-af91-4b97-89e1-60827bb63a24",
+                            Id = "208a800c-b8bc-4f7c-aa27-b1f5d1f75ce0",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "5d5aec81-118b-44c5-b9e6-e6710ca73aa3",
+                            ConcurrencyStamp = "c7c22ebc-e261-490f-9507-9c624e62c226",
                             Email = "doctor12@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "DOCTOR12@CLINIC.COM",
                             NormalizedUserName = "DOCTOR12@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEPcLrP7wIk7aKmJ+b/XknrRALoYfU+ZNjk3ulJrTZYWnPFlYkwCi+8d1Q4PXLsDcCg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEM4p+J+e6MgFVlA7oMRTagfANLuY13suYNykV40yk6L7UG+2VWwnura6tkMzX0dn5w==",
                             PhoneNumber = "01100000012",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "b72ce1ce-3dae-49fd-b613-4999682a7f60",
+                            SecurityStamp = "0e3d4eb6-34f5-432b-9664-d42958d6fd44",
                             TwoFactorEnabled = false,
                             UserName = "doctor12@clinic.com"
                         },
                         new
                         {
-                            Id = "73e422a2-ff2d-40da-ae75-82c96d3d0778",
+                            Id = "9f27b9fb-1ba1-45ee-a85d-c3b190b2fc44",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "4d0f517b-bbb7-48b3-8178-968b92f3dcdf",
+                            ConcurrencyStamp = "6ef405f6-c0db-4091-ac27-a48860a294d9",
                             Email = "doctor13@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "DOCTOR13@CLINIC.COM",
                             NormalizedUserName = "DOCTOR13@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEOBdqI5cH3FbAEO3eS6+JwyDL0LT0B4PF/873svQIg1/Ft59cmdYcTo4MdyiD9pekA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEKi4ShXGTN0g1DV1BkUtgp/RRl+Xm0s9iDxG2OfxD8B39X2nSF73E60OKlrWCoBpPg==",
                             PhoneNumber = "01100000013",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "e06b5f55-e0cf-4170-8de3-5aa11d151e23",
+                            SecurityStamp = "9c13269a-8bbe-4df7-a8bb-e4e97140b085",
                             TwoFactorEnabled = false,
                             UserName = "doctor13@clinic.com"
                         },
                         new
                         {
-                            Id = "1e7230ac-2344-47e4-b698-ef958bc93868",
+                            Id = "7ac5d4de-d0fd-4958-bc83-dd478b22e4f5",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "51e21788-0268-4151-ad16-7fb5af438899",
+                            ConcurrencyStamp = "b122e653-f577-4237-831b-735483d3258e",
                             Email = "doctor14@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "DOCTOR14@CLINIC.COM",
                             NormalizedUserName = "DOCTOR14@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAELY+KXGKjDwuT+Z4NCVf9GjVTkITuPFaVEqPhD3D9KezIq89y67pSN3uX62fgLI7jw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEMvZbQvOk/QMRVgngMnS1ymmUPi458i+ovsX7fR6K6JgHgk8Hvibbgg2lML6zy2p3g==",
                             PhoneNumber = "01100000014",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "d270558c-c041-4797-b703-678edc240f01",
+                            SecurityStamp = "d09aaf19-6076-43e0-9fe7-2bfd0a988dd9",
                             TwoFactorEnabled = false,
                             UserName = "doctor14@clinic.com"
                         },
                         new
                         {
-                            Id = "1660ddf2-fc20-40ae-a0e0-a9b3c6ef1489",
+                            Id = "9c825ad4-18e1-4368-8dbc-329f78534d91",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "c6118e3f-3765-4d07-9dcf-1e5bf937c89c",
+                            ConcurrencyStamp = "33419765-40ec-4c02-b4e6-ac259889baa1",
                             Email = "doctor15@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "DOCTOR15@CLINIC.COM",
                             NormalizedUserName = "DOCTOR15@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEEG90KalWrqOjgNwULu9w6vgFUrqwylxzoGswGGF85muPDXTSi1PjYl/3ikNhBENfQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEImJyMUOMQ/rL/HYe3iCedS4SteSccdAldVlXZ8Ecm4RB0/CrNYvHfHgAxySv07KUQ==",
                             PhoneNumber = "01100000015",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "1575e5d6-d9a7-453f-ae39-ca686dfcf357",
+                            SecurityStamp = "93b827e1-ad62-4d45-a595-31984744df63",
                             TwoFactorEnabled = false,
                             UserName = "doctor15@clinic.com"
                         },
                         new
                         {
-                            Id = "b2b74884-dc36-40af-a889-de4b0d44030a",
+                            Id = "e1ce6150-1488-404b-9e32-636fbee7f133",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "88724701-3765-4751-be4d-17b2e2a299af",
+                            ConcurrencyStamp = "d4a227c7-0d4e-4e62-8a2f-da429a1d41ce",
                             Email = "doctor16@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "DOCTOR16@CLINIC.COM",
                             NormalizedUserName = "DOCTOR16@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEBjni34urTTGkrFsq17Qmn7pn67rxJ3EfokuzmKVdN5Vy3aG9pY+Z0CGE7wnl3abYA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEMY1IeeYlen7xYpY8m8EySaUyKM81Z4jSnq8eUZ39m7zRZTA2gT6YN8HOux4h+VGXA==",
                             PhoneNumber = "01100000016",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "c6ea1e5c-dcc0-4b70-bbac-de88575a6465",
+                            SecurityStamp = "dfb9d567-a281-4d65-af9c-251a9c45c741",
                             TwoFactorEnabled = false,
                             UserName = "doctor16@clinic.com"
                         },
                         new
                         {
-                            Id = "b7041f80-6512-4fa9-b99e-7fa037fe1383",
+                            Id = "b7c5a217-ca8f-430e-82bc-6b5228e4ffd9",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "aac5f08a-5f92-4a29-a227-1256be36ae57",
+                            ConcurrencyStamp = "aec11353-3841-4896-949c-aa110aba344e",
                             Email = "doctor17@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "DOCTOR17@CLINIC.COM",
                             NormalizedUserName = "DOCTOR17@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEOff+t8xRvTbLYwz7WOXEjY51P7nqv6KKaVhO7xqRkdwD4JJrxoP1URcY6n+Z7o88w==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEMFE/gG/RJ9OZ3+5Q5quHyV2ze2ncs0NPOYb/2Xq0mbK5rHw+enYeZwtkrfF6JCVAg==",
                             PhoneNumber = "01100000017",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "894d24cf-f390-4d4f-a5b1-a0b5345ab57a",
+                            SecurityStamp = "3c23ee73-1774-46c9-9b65-07724d96d1c4",
                             TwoFactorEnabled = false,
                             UserName = "doctor17@clinic.com"
                         },
                         new
                         {
-                            Id = "1db9741a-8ead-4416-8207-d6ed26176eb9",
+                            Id = "ad16ed51-e493-49ad-a1ee-4c04707de040",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "4a49084e-acf1-47fa-8a59-7bb701979287",
+                            ConcurrencyStamp = "5ace0e88-02d4-4f2f-96d5-edb0feb13ec3",
                             Email = "doctor18@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "DOCTOR18@CLINIC.COM",
                             NormalizedUserName = "DOCTOR18@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAENTQNDISzAXWQotD7xGqZDCzbISVBM0pP9FWsdQ0mO74mSd3CVmMoKdm2gclLTyJtw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEHZyarj6koFPlcuxloJ2dfKPErD3dBNaduy7ZhQxJuKueA7jKMeQKvqqhtzixbvc2A==",
                             PhoneNumber = "01100000018",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "350c4c62-cfe9-4233-8623-0f7b5fb4ecb6",
+                            SecurityStamp = "14ae7485-7e84-4163-9d24-c9f3244081b0",
                             TwoFactorEnabled = false,
                             UserName = "doctor18@clinic.com"
                         },
                         new
                         {
-                            Id = "c7758f2b-c854-4002-b334-1700df4c9a96",
+                            Id = "d5dd7440-fd7c-4ea2-a6e0-fad0d4ff3556",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "33bc4a99-7543-4cc5-ba1a-1ea9e8494c95",
+                            ConcurrencyStamp = "388d430a-b862-46c4-9b17-65e306a8ec8e",
                             Email = "doctor19@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "DOCTOR19@CLINIC.COM",
                             NormalizedUserName = "DOCTOR19@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEIO6kzJ5tVu/yqfsDpCMBwyEudIIrcyj8xiH1HJKljGFQowCSHSZ3TiuCQKFW1xKAw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEFXgGryryHMhiq51HVDgOHh5nrvi1ZRHiVJerQ2Rk4DqFAWrbhfA1FvztBhU9bDJqg==",
                             PhoneNumber = "01100000019",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "f13fb049-1755-4bf7-bab6-aa6bcb3eaa2c",
+                            SecurityStamp = "1defc95d-6215-42d2-952e-b5d785419da2",
                             TwoFactorEnabled = false,
                             UserName = "doctor19@clinic.com"
                         },
                         new
                         {
-                            Id = "2db8c815-4497-4a2c-9567-eb555115d05b",
+                            Id = "37d40e73-452e-4d21-83cd-a233c182a675",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "8581b27f-9f84-4bc0-82b3-21cc451399c5",
+                            ConcurrencyStamp = "3ca28c9e-d877-466b-83f4-224cc2f8476e",
                             Email = "doctor20@clinic.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "DOCTOR20@CLINIC.COM",
                             NormalizedUserName = "DOCTOR20@CLINIC.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEIcReBY0oXBfWR32gmKb1X3DGFNTPPdJnp3Ah8k6AAB/hDKv/Iu00H3uGCNcBYMwEQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEOYMi5e9wx5mhBwlLYp6g1T8ojQhXpW1+nY5dXEMKbLNi2U9Au+UfJLZtGUMndKklw==",
                             PhoneNumber = "01100000020",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "e353fb85-1620-4659-b95b-1f91d2563fdf",
+                            SecurityStamp = "d4d81e51-9127-43be-a7a3-9dffa4f9ce95",
                             TwoFactorEnabled = false,
                             UserName = "doctor20@clinic.com"
                         });
@@ -1490,202 +1486,202 @@ namespace ClinicAPI.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "52cbe818-dd65-46ce-8764-830a3d9008f6",
+                            UserId = "155af4cd-9869-4ae2-bf58-5c743184adc9",
                             RoleId = "72235979-4cb2-4bb1-9de9-9e931f98610e"
                         },
                         new
                         {
-                            UserId = "0df249dc-078d-4f0a-9709-d3f628d5fce7",
+                            UserId = "83519268-6998-43f9-b36e-52a61fd2ebea",
                             RoleId = "72235979-4cb2-4bb1-9de9-9e931f98610e"
                         },
                         new
                         {
-                            UserId = "29e30fb1-8998-4b05-adeb-5a75884e2aca",
+                            UserId = "0dd15ea2-0b87-4a71-a344-822c4f81c31b",
                             RoleId = "72235979-4cb2-4bb1-9de9-9e931f98610e"
                         },
                         new
                         {
-                            UserId = "29cb3ec1-e138-439b-9128-922bf2b3c338",
+                            UserId = "a4779ae0-81c9-46b7-b989-709460127449",
                             RoleId = "72235979-4cb2-4bb1-9de9-9e931f98610e"
                         },
                         new
                         {
-                            UserId = "9f1d1b06-f65f-49e9-96e4-4c2b73b83983",
+                            UserId = "4e1b7bf2-f505-4c17-944b-4455e450adc2",
                             RoleId = "72235979-4cb2-4bb1-9de9-9e931f98610e"
                         },
                         new
                         {
-                            UserId = "a05a6664-68b9-48ff-a760-42b2f5b16e7f",
+                            UserId = "d13b4c2f-13ca-4f64-8ffc-9be8489b923e",
                             RoleId = "72235979-4cb2-4bb1-9de9-9e931f98610e"
                         },
                         new
                         {
-                            UserId = "f8962ac8-7736-429c-8370-b6a5706114c5",
+                            UserId = "1c163814-12e4-47d8-aa17-68bcbdbf897a",
                             RoleId = "72235979-4cb2-4bb1-9de9-9e931f98610e"
                         },
                         new
                         {
-                            UserId = "ae9e4a55-1221-440a-9e81-26436f64666a",
+                            UserId = "b728a214-1340-475f-b13a-c62e618669b2",
                             RoleId = "72235979-4cb2-4bb1-9de9-9e931f98610e"
                         },
                         new
                         {
-                            UserId = "82624f06-56f4-49c8-84e4-dc5bb33c5247",
+                            UserId = "a9d51468-2a82-41cc-9503-2662a256a4b4",
                             RoleId = "72235979-4cb2-4bb1-9de9-9e931f98610e"
                         },
                         new
                         {
-                            UserId = "507c3fc0-7ba1-45b6-8f4e-70daeee6a87b",
+                            UserId = "4896696a-191d-4bdf-a628-55ec955890c8",
                             RoleId = "72235979-4cb2-4bb1-9de9-9e931f98610e"
                         },
                         new
                         {
-                            UserId = "1c63783b-affc-40f1-9d4f-f4d4593ff09d",
+                            UserId = "c69e9027-ee3b-456c-876f-209a391adafe",
                             RoleId = "72235979-4cb2-4bb1-9de9-9e931f98610e"
                         },
                         new
                         {
-                            UserId = "26f898b8-0deb-4ba9-8058-354a737a4687",
+                            UserId = "bbc7e4b4-8cd2-4ec9-8fc0-4d171783972d",
                             RoleId = "72235979-4cb2-4bb1-9de9-9e931f98610e"
                         },
                         new
                         {
-                            UserId = "cbff071f-b407-4dd2-a5c5-e4381cf5a5b7",
+                            UserId = "d3d69fd0-f486-482d-a248-e4ef7ed938da",
                             RoleId = "72235979-4cb2-4bb1-9de9-9e931f98610e"
                         },
                         new
                         {
-                            UserId = "4319c960-bf8a-4a56-8591-ac477d434d0e",
+                            UserId = "27bc3900-c570-42a9-968a-388cc321ce04",
                             RoleId = "72235979-4cb2-4bb1-9de9-9e931f98610e"
                         },
                         new
                         {
-                            UserId = "ca9d8238-f49e-46e1-a9d7-9f5dc745e22c",
+                            UserId = "50583878-1af1-4c74-bc91-47bb6eb09889",
                             RoleId = "72235979-4cb2-4bb1-9de9-9e931f98610e"
                         },
                         new
                         {
-                            UserId = "0b1b1a02-ff25-46e8-add7-b55bc94596db",
+                            UserId = "be8a8bb7-c229-467c-988b-5934ceaa1432",
                             RoleId = "72235979-4cb2-4bb1-9de9-9e931f98610e"
                         },
                         new
                         {
-                            UserId = "31a5d5ca-755b-4295-a6b5-1c6e90a4f051",
+                            UserId = "1e04d179-7281-4106-8744-88dc51d83d78",
                             RoleId = "72235979-4cb2-4bb1-9de9-9e931f98610e"
                         },
                         new
                         {
-                            UserId = "e8d1902f-57d2-4718-85c7-1cf5f0a1ca18",
+                            UserId = "471ff9a6-382a-42d5-ae41-5350c22d3056",
                             RoleId = "72235979-4cb2-4bb1-9de9-9e931f98610e"
                         },
                         new
                         {
-                            UserId = "f6c65f86-cf25-455b-b8e9-cf7ce3da6616",
+                            UserId = "9ea01535-9542-444a-872f-08d09cb4b654",
                             RoleId = "72235979-4cb2-4bb1-9de9-9e931f98610e"
                         },
                         new
                         {
-                            UserId = "66f7c3ff-cf5d-4022-9d03-4bcefc1e0a25",
+                            UserId = "3c429440-8760-40f6-9aa6-cfed9f0c197a",
                             RoleId = "72235979-4cb2-4bb1-9de9-9e931f98610e"
                         },
                         new
                         {
-                            UserId = "ee9464c4-72dd-487e-abae-f28eb1f283d6",
+                            UserId = "54313667-8d2c-444e-8dc3-291a46c27d0c",
                             RoleId = "2f1a1ad3-aa6b-4e9f-b6dc-9294e071a797"
                         },
                         new
                         {
-                            UserId = "d329a52a-f062-483b-8ee0-5ee8bddec3cd",
+                            UserId = "4bcbf4c1-97c3-4672-9613-73adec3ac42e",
                             RoleId = "2f1a1ad3-aa6b-4e9f-b6dc-9294e071a797"
                         },
                         new
                         {
-                            UserId = "a3d69e15-a1a0-40b7-b29d-4c509ef3abb2",
+                            UserId = "3b98d85c-0738-4834-91d6-ff8243b6bb78",
                             RoleId = "2f1a1ad3-aa6b-4e9f-b6dc-9294e071a797"
                         },
                         new
                         {
-                            UserId = "06ef133d-a03d-4045-9dff-03ba2353c36b",
+                            UserId = "388a7b3c-6bf5-4bed-a8e2-c94d4748ee73",
                             RoleId = "2f1a1ad3-aa6b-4e9f-b6dc-9294e071a797"
                         },
                         new
                         {
-                            UserId = "640ba30c-0831-4e9d-b677-fc4dbd052882",
+                            UserId = "9e395a1b-9a82-46a2-8b36-7e11ea2afc8f",
                             RoleId = "2f1a1ad3-aa6b-4e9f-b6dc-9294e071a797"
                         },
                         new
                         {
-                            UserId = "93b598d1-17b3-427f-9488-a1e9e998aa6c",
+                            UserId = "332f34b3-de2d-4319-882a-d5b5e6257f31",
                             RoleId = "2f1a1ad3-aa6b-4e9f-b6dc-9294e071a797"
                         },
                         new
                         {
-                            UserId = "88f16ccb-22ec-44f0-9f07-092241c4643c",
+                            UserId = "48b56279-bb35-4703-92a4-4ae6788693e0",
                             RoleId = "2f1a1ad3-aa6b-4e9f-b6dc-9294e071a797"
                         },
                         new
                         {
-                            UserId = "670ab904-39e1-4d71-b77d-9058c4fb3826",
+                            UserId = "cf6e8fc8-6d58-456e-86ca-c61a518f9636",
                             RoleId = "2f1a1ad3-aa6b-4e9f-b6dc-9294e071a797"
                         },
                         new
                         {
-                            UserId = "1e6e6d31-1208-4254-84a0-666ef240af48",
+                            UserId = "08fa64d7-4992-4b42-bc61-543bae5f14fe",
                             RoleId = "2f1a1ad3-aa6b-4e9f-b6dc-9294e071a797"
                         },
                         new
                         {
-                            UserId = "1d74cdaa-fe65-4358-88c6-cd1d2eeb86b4",
+                            UserId = "239278b6-d460-46d5-a67b-65b2ea8bff56",
                             RoleId = "2f1a1ad3-aa6b-4e9f-b6dc-9294e071a797"
                         },
                         new
                         {
-                            UserId = "39f173ee-43e0-4b2d-a5bd-973e513472cc",
+                            UserId = "f8630862-4ec6-4b00-a1ad-10b319de03c1",
                             RoleId = "2f1a1ad3-aa6b-4e9f-b6dc-9294e071a797"
                         },
                         new
                         {
-                            UserId = "38d495e2-af91-4b97-89e1-60827bb63a24",
+                            UserId = "208a800c-b8bc-4f7c-aa27-b1f5d1f75ce0",
                             RoleId = "2f1a1ad3-aa6b-4e9f-b6dc-9294e071a797"
                         },
                         new
                         {
-                            UserId = "73e422a2-ff2d-40da-ae75-82c96d3d0778",
+                            UserId = "9f27b9fb-1ba1-45ee-a85d-c3b190b2fc44",
                             RoleId = "2f1a1ad3-aa6b-4e9f-b6dc-9294e071a797"
                         },
                         new
                         {
-                            UserId = "1e7230ac-2344-47e4-b698-ef958bc93868",
+                            UserId = "7ac5d4de-d0fd-4958-bc83-dd478b22e4f5",
                             RoleId = "2f1a1ad3-aa6b-4e9f-b6dc-9294e071a797"
                         },
                         new
                         {
-                            UserId = "1660ddf2-fc20-40ae-a0e0-a9b3c6ef1489",
+                            UserId = "9c825ad4-18e1-4368-8dbc-329f78534d91",
                             RoleId = "2f1a1ad3-aa6b-4e9f-b6dc-9294e071a797"
                         },
                         new
                         {
-                            UserId = "b2b74884-dc36-40af-a889-de4b0d44030a",
+                            UserId = "e1ce6150-1488-404b-9e32-636fbee7f133",
                             RoleId = "2f1a1ad3-aa6b-4e9f-b6dc-9294e071a797"
                         },
                         new
                         {
-                            UserId = "b7041f80-6512-4fa9-b99e-7fa037fe1383",
+                            UserId = "b7c5a217-ca8f-430e-82bc-6b5228e4ffd9",
                             RoleId = "2f1a1ad3-aa6b-4e9f-b6dc-9294e071a797"
                         },
                         new
                         {
-                            UserId = "1db9741a-8ead-4416-8207-d6ed26176eb9",
+                            UserId = "ad16ed51-e493-49ad-a1ee-4c04707de040",
                             RoleId = "2f1a1ad3-aa6b-4e9f-b6dc-9294e071a797"
                         },
                         new
                         {
-                            UserId = "c7758f2b-c854-4002-b334-1700df4c9a96",
+                            UserId = "d5dd7440-fd7c-4ea2-a6e0-fad0d4ff3556",
                             RoleId = "2f1a1ad3-aa6b-4e9f-b6dc-9294e071a797"
                         },
                         new
                         {
-                            UserId = "2db8c815-4497-4a2c-9567-eb555115d05b",
+                            UserId = "37d40e73-452e-4d21-83cd-a233c182a675",
                             RoleId = "2f1a1ad3-aa6b-4e9f-b6dc-9294e071a797"
                         });
                 });
@@ -1740,12 +1736,13 @@ namespace ClinicAPI.Migrations
             modelBuilder.Entity("ClinicAPI.Models.Domain.FileImage", b =>
                 {
                     b.HasOne("ClinicAPI.Models.Domain.Doctor", "Doctor")
-                        .WithOne("FileImage")
-                        .HasForeignKey("ClinicAPI.Models.Domain.FileImage", "DoctorId");
+                        .WithMany("FileImages")
+                        .HasForeignKey("DoctorId");
 
                     b.HasOne("ClinicAPI.Models.Domain.Prescription", "Prescription")
-                        .WithOne("FileImage")
-                        .HasForeignKey("ClinicAPI.Models.Domain.FileImage", "PrescriptionId");
+                        .WithMany("FileImage")
+                        .HasForeignKey("PrescriptionId")
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.Navigation("Doctor");
 
@@ -1824,14 +1821,12 @@ namespace ClinicAPI.Migrations
                 {
                     b.Navigation("Appointments");
 
-                    b.Navigation("FileImage")
-                        .IsRequired();
+                    b.Navigation("FileImages");
                 });
 
             modelBuilder.Entity("ClinicAPI.Models.Domain.Prescription", b =>
                 {
-                    b.Navigation("FileImage")
-                        .IsRequired();
+                    b.Navigation("FileImage");
                 });
 
             modelBuilder.Entity("ClinicAPI.Models.Domain.UserApplication", b =>

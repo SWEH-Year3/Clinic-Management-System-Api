@@ -524,7 +524,7 @@
         }
       }
     },
-    "/api/ImageFile/{id}": {
+    "/api/ImageFile/{id}/{pre_id}": {
       "post": {
         "tags": [
           "ImageFile"
@@ -532,6 +532,15 @@
         "parameters": [
           {
             "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "pre_id",
             "in": "path",
             "required": true,
             "schema": {

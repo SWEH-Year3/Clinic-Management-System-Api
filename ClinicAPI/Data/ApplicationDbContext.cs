@@ -11,13 +11,16 @@ namespace ClinicAPI.Data
             : base(options)
         {
         }
+
         public DbSet<Doctor> Doctors { get; set; }
         public DbSet<Appointment> Appointments { get; set; }
         public DbSet<Prescription> Prescriptions { get; set; }
         public DbSet<FileImage> FileImages { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
+
             var doctorRoleId = "2f1a1ad3-aa6b-4e9f-b6dc-9294e071a797";
             var patientRoleId = "72235979-4cb2-4bb1-9de9-9e931f98610e";
             var adminRoleId = "675b578c-8739-4b1b-a706-816fb14910bd";
@@ -29,7 +32,6 @@ namespace ClinicAPI.Data
                 new IdentityRole {Id=patientRoleId, Name = "Patient", NormalizedName = "PATIENT" }
             };
 
-            //Data Seeding
             var passwordHasher = new PasswordHasher<UserApplication>();
             var users = new List<UserApplication>();
             var doctors = new List<Doctor>();
@@ -37,7 +39,6 @@ namespace ClinicAPI.Data
             var prescriptions = new List<Prescription>();
             var userRoles = new List<IdentityUserRole<string>>();
 
-            // Seed 20 Patients
             for (int i = 1; i <= 20; i++)
             {
                 var userId = Guid.NewGuid().ToString();
@@ -58,7 +59,6 @@ namespace ClinicAPI.Data
                 userRoles.Add(new IdentityUserRole<string> { UserId = userId, RoleId = patientRoleId });
             }
 
-            // Seed 20 Doctors
             for (int i = 1; i <= 20; i++)
             {
                 var doctorId = Guid.NewGuid().ToString();
@@ -87,7 +87,6 @@ namespace ClinicAPI.Data
                 });
             }
 
-            // Seed 20 Appointments and Prescriptions
             var random = new Random();
             for (int i = 0; i < 20; i++)
             {
@@ -120,33 +119,48 @@ namespace ClinicAPI.Data
             builder.Entity<Doctor>().HasData(doctors);
             builder.Entity<Appointment>().HasData(appointments);
             builder.Entity<Prescription>().HasData(prescriptions);
-
-
             builder.Entity<IdentityRole>().HasData(roles);
+
+            // Relationships
             builder.Entity<Doctor>()
                 .HasOne(u => u.userApplication)
                 .WithOne()
                 .HasForeignKey<Doctor>(u => u.UserId);
+
             builder.Entity<Appointment>()
                 .HasOne(u => u.Doctor)
                 .WithMany(u => u.Appointments)
                 .HasForeignKey(u => u.DoctorId);
+
             builder.Entity<Appointment>()
                 .HasOne(u => u.Patient)
                 .WithMany(u => u.Appointments)
                 .HasForeignKey(u => u.PatientId);
+
             builder.Entity<Prescription>()
                 .HasOne(u => u.Appointment)
                 .WithOne(u => u.Prescription)
                 .HasForeignKey<Prescription>(u => u.AppointmentId);
-            builder.Entity<FileImage>().
-                HasOne(u => u.Doctor)
-                .WithOne(u => u.FileImage)
-                .HasForeignKey<FileImage>(u => u.DoctorId).IsRequired(false);
-            builder.Entity<FileImage>().
-                HasOne(u => u.Prescription)
-                .WithOne(u => u.FileImage)
-                .HasForeignKey<FileImage>(u => u.PrescriptionId).IsRequired(false);
+
+            builder.Entity<FileImage>()
+                .HasOne(f => f.Doctor)
+                .WithMany(d => d.FileImages)
+                .HasForeignKey(f => f.DoctorId)
+                .IsRequired(false);
+
+            builder.Entity<FileImage>()
+                .HasOne(f => f.Prescription)
+                .WithMany(f=> f.FileImage) 
+                .HasForeignKey(f => f.PrescriptionId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            builder.Entity<FileImage>()
+                .HasIndex(f => f.DoctorId)
+                .IsUnique(false);
+
+            builder.Entity<FileImage>()
+                .HasIndex(f => f.PrescriptionId)
+                .IsUnique(false); 
         }
     }
 }

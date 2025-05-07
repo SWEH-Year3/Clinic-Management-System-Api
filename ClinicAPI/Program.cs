@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.IdentityModel.Tokens;
 
 namespace ClinicAPI
@@ -110,8 +111,23 @@ namespace ClinicAPI
             builder.Services.AddScoped<IDashboard_ReportRepository, SqlDashboard_ReportRepository>();
             builder.Services.AddScoped<IImageRepository, LocalImagesRepository>();
             builder.Services.AddScoped<IEmailService, EmailService>();
+            builder.Services.AddControllers()
+                .AddJsonOptions(options =>
+                {
+                    options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
+                    options.JsonSerializerOptions.WriteIndented = true;
+                });
+    
 
             var app = builder.Build();
+            var imagesPath = Path.Combine(Directory.GetCurrentDirectory(), "Images");
+            var filesPath = Path.Combine(Directory.GetCurrentDirectory(), "Files");
+
+            Directory.CreateDirectory(imagesPath); 
+            Directory.CreateDirectory(filesPath);
+
+            
+
             app.UseCors("AllowAllOrigins");
             if (app.Environment.IsDevelopment())
             {
@@ -124,6 +140,17 @@ namespace ClinicAPI
             app.UseAuthentication();
 
             app.UseAuthorization();
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(imagesPath),
+                RequestPath = "/Images"
+            });
+
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(filesPath),
+                RequestPath = "/Files"
+            });
 
             app.MapControllers();
 
