@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ClinicAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/")]
     [ApiController]
     public class Dashboard_ReportController : ControllerBase
     {
@@ -16,8 +16,9 @@ namespace ClinicAPI.Controllers
         {
             this.dashboard_ReportRepository = dashboard_ReportRepository;
         }
-        [HttpGet("{id:guid}")]
-        [RoleAuthorize("Doctor")]
+        [HttpGet("Dashboard/{id:guid}")]
+        
+        [RoleAuthorize("Admin")]
         public async Task<IActionResult> GetDoctorDashboard([FromRoute] Guid id)
         {
             var Doctor = await dashboard_ReportRepository.GetDoctorNotGrouped(id);
@@ -30,19 +31,19 @@ namespace ClinicAPI.Controllers
             {
                 Id= Doctor.Id,
                 Name=Doctor.Name,
-                NumberOfAppointment=Doctor.NumberOfAppointment,
-                Specialty=Doctor.Specialty,
+                MonthlyAppointments = Doctor.MonthlyAppointments,
+                Specialty =Doctor.Specialty,
             };
 
 
                 return Ok(response);
             
         }
-        [HttpGet("{id:guid}/Report")]
-        [RoleAuthorize("Doctor")]
-        public async Task<IActionResult> Report([FromRoute] Guid id)
+        [HttpGet("Report")]
+        [RoleAuthorize("Admin")]
+        public async Task<IActionResult> Report()
         {
-            var Doctor = await dashboard_ReportRepository.GetDoctorGrouped(id);
+            var Doctor = await dashboard_ReportRepository.GetDoctorGrouped();
             if (Doctor == null)
             {
 

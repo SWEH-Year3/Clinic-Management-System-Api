@@ -12,6 +12,7 @@
         public string State { get; set; }
         public string Time { get; set; }
 
+        public Guid? PrecriptionID { set; get; }
 
 
     }

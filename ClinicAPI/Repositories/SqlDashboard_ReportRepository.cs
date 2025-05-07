@@ -13,7 +13,8 @@ namespace ClinicAPI.Repositories
         {
             this.dbContext = dbContext;
         }
-        public async Task<object?> GetDoctorGrouped(Guid id)
+
+        public async Task<Dashboard_ReportResponseDto?> GetDoctorNotGrouped(Guid id)
         {
             var doctor = await dbContext.Doctors
                 .Include(d => d.userApplication)
@@ -25,43 +26,90 @@ namespace ClinicAPI.Repositories
 
             var grouped = doctor.Appointments
                 .GroupBy(a => DateTime.Parse(a.Date).ToString("yyyy-MM"))
-                .Select(g => new
+                .Select(g => new MonthlyAppointmentsDto
                 {
                     Month = g.Key,
-                    Appointments = g.Select(a => new
+                    Appointments = g.Select(a => new AggAppointmentDto
+                    {
+                        Date = a.Date,
+                        Time = a.Time,
+                        State = a.State
+                    }).ToList(),
+                    AppointmentCount = g.Select(a => new
                     {
                         a.Date,
                         a.Time,
-                        a.State,
-                        PatientName = a.Patient?.UserName
-                    }).ToList()
+                        a.State
+                    }).ToList().Count()
                 }).ToList();
 
-            return new
+            Dashboard_ReportResponseDto dashboard_ReportResponseDto = new Dashboard_ReportResponseDto
             {
-                DoctorId = doctor.Id,
+                Id = doctor.Id,
                 Name = doctor.userApplication.UserName,
                 Specialty = doctor.Specialty,
                 MonthlyAppointments = grouped
             };
+            return dashboard_ReportResponseDto;
         }
 
-
-
-        public async Task<Dashboard_ReportResponseDto?> GetDoctorNotGrouped(Guid id)
+        public async Task<IEnumerable<object?>> GetDoctorGrouped()
         {
-            var doctor = await dbContext.Doctors.Where(u => u.Id == id)
-                .Include(u => u.userApplication)
-                .Include(u => u.Appointments).Select(u => new Dashboard_ReportResponseDto
-                {
-                  Id=  u.Id,
-                   Name= u.userApplication.UserName,
-                    Specialty = u.Specialty,
-                    NumberOfAppointment = u.Appointments.Count()
-                })
-                .FirstOrDefaultAsync();
-            return doctor;
+            var doctors = await dbContext.Doctors
+                .Include(d => d.userApplication)
+                .Include(d => d.Appointments)
+                    .ThenInclude(a => a.Patient)
+                .ToListAsync();
 
+            var result = doctors.Select(doctor => new
+            {
+                DoctorId = doctor.Id,
+                Name = doctor.userApplication.UserName,
+                Specialty = doctor.Specialty,
+                MonthlyAppointments = doctor.Appointments
+                    .GroupBy(a => DateTime.Parse(a.Date).ToString("yyyy-MM"))
+                    .Select(g => new
+                    {
+                        Month = g.Key,
+                        Appointments = g.Select(a => new
+                        {
+                            a.Date,
+                            a.Time,
+                            a.State,
+                            PatientName = a.Patient?.UserName
+                        }).ToList(),
+                        AppointmentCount = g.Select(a => new
+                        {
+                            a.Date,
+                            a.Time,
+                            a.State,
+                            PatientName = a.Patient?.UserName
+                        }).ToList().Count()
+
+                    })
+                    .ToList()
+            });
+
+            return result;
         }
+
+
+
+
+        //public async Task<Dashboard_ReportResponseDto?> GetDoctorNotGrouped(Guid id)
+        //{
+        //    var doctor = await dbContext.Doctors.Where(u => u.Id == id)
+        //        .Include(u => u.userApplication)
+        //        .Include(u => u.Appointments).Select(u => new Dashboard_ReportResponseDto
+        //        {
+        //          Id=  u.Id,
+        //           Name= u.userApplication.UserName,
+        //            Specialty = u.Specialty,
+        //            NumberOfAppointment = u.Appointments.Count()
+        //        })
+        //        .FirstOrDefaultAsync();
+        //    return doctor;
+
+        //}
     }
 }

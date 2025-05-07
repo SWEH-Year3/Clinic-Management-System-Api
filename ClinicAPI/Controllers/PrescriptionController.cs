@@ -54,7 +54,6 @@ namespace ClinicAPI.Controllers
 
         }
         [HttpGet("{id:guid}")]
-        [RoleAuthorize("Doctor")]
 
         public async Task<IActionResult> GetPrescription([FromRoute]Guid id)
         {

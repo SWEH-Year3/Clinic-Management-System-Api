@@ -5,7 +5,7 @@
     "version": "v1"
   },
   "paths": {
-    "/api/Admin": {
+    "/api/Doctor": {
       "post": {
         "tags": [
           "Admin"
@@ -46,7 +46,7 @@
         }
       }
     },
-    "/api/Admin/{id}": {
+    "/api/Doctor/{id}": {
       "get": {
         "tags": [
           "Admin"
@@ -393,6 +393,29 @@
         }
       }
     },
+    "/api/Appointment/Booking/{id}": {
+      "get": {
+        "tags": [
+          "Appointment"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Appointment/{id}/patient": {
       "get": {
         "tags": [
@@ -478,7 +501,7 @@
         }
       }
     },
-    "/api/Dashboard_Report/{id}": {
+    "/api/Dashboard/{id}": {
       "get": {
         "tags": [
           "Dashboard_Report"
@@ -501,71 +524,11 @@
         }
       }
     },
-    "/api/Dashboard_Report/{id}/Report": {
+    "/api/Report": {
       "get": {
         "tags": [
           "Dashboard_Report"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "format": "uuid"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/ImageFile/{id}": {
-      "post": {
-        "tags": [
-          "ImageFile"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "format": "uuid"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "multipart/form-data": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "File": {
-                    "type": "string",
-                    "format": "binary"
-                  },
-                  "FileName": {
-                    "type": "string"
-                  }
-                }
-              },
-              "encoding": {
-                "File": {
-                  "style": "form"
-                },
-                "FileName": {
-                  "style": "form"
-                }
-              }
-            }
-          }
-        },
         "responses": {
           "200": {
             "description": "OK"

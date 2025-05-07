@@ -1,84 +1,5 @@
 [
   {
-    "ContainingType": "ClinicAPI.Controllers.AdminController",
-    "Method": "CreateDoctor",
-    "RelativePath": "api/Admin",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "addDoctorRequestDto",
-        "Type": "ClinicAPI.Models.DTO.AddDoctorRequestDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ClinicAPI.Controllers.AdminController",
-    "Method": "GetAll",
-    "RelativePath": "api/Admin",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ClinicAPI.Controllers.AdminController",
-    "Method": "GetDoctor",
-    "RelativePath": "api/Admin/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ClinicAPI.Controllers.AdminController",
-    "Method": "EditDoctor",
-    "RelativePath": "api/Admin/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": true
-      },
-      {
-        "Name": "editDoctor",
-        "Type": "ClinicAPI.Models.DTO.EditDoctorDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ClinicAPI.Controllers.AdminController",
-    "Method": "Delete",
-    "RelativePath": "api/Admin/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "ClinicAPI.Controllers.AppointmentController",
     "Method": "AddNewAppointment",
     "RelativePath": "api/Appointment",
@@ -222,6 +143,22 @@
   },
   {
     "ContainingType": "ClinicAPI.Controllers.AppointmentController",
+    "Method": "GetBookingAppointment",
+    "RelativePath": "api/Appointment/Booking/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClinicAPI.Controllers.AppointmentController",
     "Method": "RescheduleAppointent",
     "RelativePath": "api/Appointment/reschedule",
     "HttpMethod": "PUT",
@@ -271,7 +208,7 @@
   {
     "ContainingType": "ClinicAPI.Controllers.Dashboard_ReportController",
     "Method": "GetDoctorDashboard",
-    "RelativePath": "api/Dashboard_Report/{id}",
+    "RelativePath": "api/Dashboard/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -285,43 +222,80 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ClinicAPI.Controllers.Dashboard_ReportController",
-    "Method": "Report",
-    "RelativePath": "api/Dashboard_Report/{id}/Report",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ClinicAPI.Controllers.ImageFileController",
-    "Method": "CreateFile",
-    "RelativePath": "api/ImageFile/{id}",
+    "ContainingType": "ClinicAPI.Controllers.AdminController",
+    "Method": "CreateDoctor",
+    "RelativePath": "api/Doctor",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
+        "Name": "addDoctorRequestDto",
+        "Type": "ClinicAPI.Models.DTO.AddDoctorRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClinicAPI.Controllers.AdminController",
+    "Method": "GetAll",
+    "RelativePath": "api/Doctor",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClinicAPI.Controllers.AdminController",
+    "Method": "GetDoctor",
+    "RelativePath": "api/Doctor/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClinicAPI.Controllers.AdminController",
+    "Method": "EditDoctor",
+    "RelativePath": "api/Doctor/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
         "Name": "id",
         "Type": "System.Guid",
         "IsRequired": true
       },
       {
-        "Name": "File",
-        "Type": "Microsoft.AspNetCore.Http.IFormFile",
-        "IsRequired": false
-      },
+        "Name": "editDoctor",
+        "Type": "ClinicAPI.Models.DTO.EditDoctorDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClinicAPI.Controllers.AdminController",
+    "Method": "Delete",
+    "RelativePath": "api/Doctor/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
       {
-        "Name": "FileName",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -377,6 +351,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClinicAPI.Controllers.Dashboard_ReportController",
+    "Method": "Report",
+    "RelativePath": "api/Report",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   }
 ]

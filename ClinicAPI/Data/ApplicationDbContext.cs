@@ -37,6 +37,27 @@ namespace ClinicAPI.Data
             var prescriptions = new List<Prescription>();
             var userRoles = new List<IdentityUserRole<string>>();
 
+            // Seed 5 Admin
+            for (int i = 1; i <= 5; i++)
+            {
+                var userId = Guid.NewGuid().ToString();
+                var user = new UserApplication
+                {
+                    Id = userId,
+                    UserName = $"admin{i}@clinic.com",
+                    NormalizedUserName = $"ADMIN{i}@CLINIC.COM",
+                    Email = $"admin{i}@clinic.com",
+                    NormalizedEmail = $"ADMIN{i}@CLINIC.COM",
+                    PhoneNumber = $"010000000{i:D2}",
+                    EmailConfirmed = true,
+                    PhoneNumberConfirmed = true,
+                    SecurityStamp = Guid.NewGuid().ToString()
+                };
+                user.PasswordHash = passwordHasher.HashPassword(user, "admin@123");
+                users.Add(user);
+                userRoles.Add(new IdentityUserRole<string> { UserId = userId, RoleId = adminRoleId });
+            }
+                
             // Seed 20 Patients
             for (int i = 1; i <= 20; i++)
             {
@@ -88,6 +109,7 @@ namespace ClinicAPI.Data
             }
 
             // Seed 20 Appointments and Prescriptions
+            // ongoing state
             var random = new Random();
             for (int i = 0; i < 20; i++)
             {
@@ -102,7 +124,7 @@ namespace ClinicAPI.Data
                     PatientId = patient.Id,
                     Time = $"{9 + i % 12}:00 AM",
                     Date = $"2025-05-{(i % 30) + 1:D2}",
-                    State = "Scheduled"
+                    State = "ongoing"
                 });
 
                 prescriptions.Add(new Prescription
@@ -114,6 +136,89 @@ namespace ClinicAPI.Data
                 });
             }
 
+            // open state
+            var random1 = new Random();
+            for (int i = 0; i < 20; i++)
+            {
+                var doctor = doctors[i % 20];
+
+                var appointmentId = Guid.NewGuid();
+                appointments.Add(new Appointment
+                {
+                    Id = appointmentId,
+                    DoctorId = doctor.Id,
+                    PatientId = null,
+                    Time = $"{9 + i % 12}:00 AM",
+                    Date = $"2025-05-{(i % 30) + 1:D2}",
+                    State = "opened"
+                });
+
+                prescriptions.Add(new Prescription
+                {
+                    Id = Guid.NewGuid(),
+                    AppointmentId = appointmentId,
+                    Description = $"Prescription for appointment {i + 1}",
+                    Modification_date = DateTime.UtcNow.ToString("yyyy-MM-dd")
+                });
+            }
+
+            // pending state
+            var random2 = new Random();
+            for (int i = 0; i < 20; i++)
+            {
+                var doctor = doctors[i % 20];
+                var patient = users[i % 20];
+                if (patient.UserName.Contains("admin"))
+                {
+                    patient = users[i % 20];
+                }
+                
+                var appointmentId = Guid.NewGuid();
+                appointments.Add(new Appointment
+                {
+                    Id = appointmentId,
+                    DoctorId = doctor.Id,
+                    PatientId = patient.Id,
+                    Time = $"{9 + i % 12}:00 AM",
+                    Date = $"2025-05-{(i % 30) + 1:D2}",
+                    State = "pending"
+                });
+
+                prescriptions.Add(new Prescription
+                {
+                    Id = Guid.NewGuid(),
+                    AppointmentId = appointmentId,
+                    Description = $"Prescription for appointment {i + 1}",
+                    Modification_date = DateTime.UtcNow.ToString("yyyy-MM-dd")
+                });
+            }
+
+            // closed 
+            var random3 = new Random();
+            for (int i = 0; i < 20; i++)
+            {
+                var doctor = doctors[i % 20];
+                var patient = users[i % 20];
+
+                var appointmentId = Guid.NewGuid();
+                appointments.Add(new Appointment
+                {
+                    Id = appointmentId,
+                    DoctorId = doctor.Id,
+                    PatientId = patient.Id,
+                    Time = $"{9 + i % 12}:00 AM",
+                    Date = $"2025-05-{(i % 30) + 1:D2}",
+                    State = "closed"
+                });
+
+                prescriptions.Add(new Prescription
+                {
+                    Id = Guid.NewGuid(),
+                    AppointmentId = appointmentId,
+                    Description = $"Prescription for appointment {i + 1}",
+                    Modification_date = DateTime.UtcNow.ToString("yyyy-MM-dd")
+                });
+            }
             // Apply seeding
             builder.Entity<UserApplication>().HasData(users);
             builder.Entity<IdentityUserRole<string>>().HasData(userRoles);

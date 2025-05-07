@@ -21,7 +21,7 @@ namespace ClinicAPI.Repositories
 
         public async Task<Prescription?> GetAsync(Guid id)
         {
-            var existing= await dbContext.Prescriptions.FirstOrDefaultAsync(x => x.Id == id);
+            var existing= await dbContext.Prescriptions.Include(a=> a.Appointment).FirstOrDefaultAsync(x => x.Id == id || x.Appointment.Id == id);
             if (existing != null) { 
                 return existing;
             }

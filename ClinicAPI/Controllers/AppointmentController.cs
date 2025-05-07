@@ -171,10 +171,45 @@ namespace ClinicAPI.Controllers
                     PatientId = appointment.PatientId ?? null,
                     State = appointment.State,
                     PatientName = appointment.Patient?.UserName ?? "not found",
-                    DoctorName = appointment.Doctor?.userApplication?.UserName ?? "not found"
+                    DoctorName = appointment.Doctor?.userApplication?.UserName ?? "not found",
+                    PrecriptionID = appointment.Prescription.Id
                 };
 
                 response.Add(dto);
+            }
+
+            return Ok(response);
+
+
+        }
+
+        [HttpGet("Booking/{id:guid}")]
+        public async Task<IActionResult> GetBookingAppointment([FromRoute] Guid id)
+        {
+            var appointments = await appointmentRepository.GetAppointmentDoctorBookingAsync(id);
+
+            if (appointments == null) { return NotFound(); }
+            var response = new List<GetAppointmentResponseDto>();
+
+            foreach (var appointment in appointments)
+            {
+                var dto = new GetAppointmentResponseDto
+                {
+                    Date = appointment.Date,
+                    Time = appointment.Time,
+                    Id = appointment.Id,
+                    DoctorId = appointment.DoctorId.ToString(),
+                    State = appointment.State,
+                    DoctorName = appointment.Doctor?.userApplication?.UserName ?? "not found",
+                    PrecriptionID = appointment?.Prescription?.Id ?? null,
+                    PatientId = appointment?.PatientId,
+                    PatientName = appointment?.Patient?.UserName ?? "not found"
+                };
+                if(dto != null)
+                {
+
+                    response.Add(dto);
+                }
             }
 
             return Ok(response);
@@ -201,7 +236,8 @@ namespace ClinicAPI.Controllers
                     PatientId = appointment.PatientId ?? null,
                     State = appointment.State,
                     PatientName = appointment.Patient?.UserName ?? "not found",
-                    DoctorName = appointment.Doctor?.userApplication?.UserName ?? "not found"
+                    DoctorName = appointment.Doctor?.userApplication?.UserName ?? "not found",
+                    PrecriptionID = appointment.Prescription.Id
                 };
 
                 response.Add(dto);

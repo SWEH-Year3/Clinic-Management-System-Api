@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Routing;
 
 namespace ClinicAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/Doctor")]
     [ApiController]
     [RoleAuthorize("Admin")]
     public class AdminController : ControllerBase
@@ -75,7 +75,6 @@ namespace ClinicAPI.Controllers
                     var doc = new GetDoctorsDto
                     {
                         UserId = doctor.UserId,
-                        Password = doctor.userApplication.PasswordHash,
                         Email = doctor.userApplication.Email,
                         phone = doctor.userApplication.PhoneNumber,
                         Role = role.FirstOrDefault(),

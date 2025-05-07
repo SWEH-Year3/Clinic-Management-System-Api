@@ -9,8 +9,9 @@ using Microsoft.OpenApi.Validations;
 
 namespace ClinicAPI.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
+    //TODO: To be Removed
+    //[Route("api/[controller]")]
+    //[ApiController]
     public class ImageFileController : ControllerBase
     {
         private readonly IImageRepository imageRepository;
@@ -19,8 +20,8 @@ namespace ClinicAPI.Controllers
         {
             this.imageRepository = imageRepository;
         }
-        [HttpPost("{id:guid}")]
-        [RoleAuthorize("Doctor")]
+        //[HttpPost("{id:guid}")]
+        //[RoleAuthorize("Doctor")]
         public async Task<IActionResult> CreateFile([FromRoute] Guid id, [FromForm] AddImageRequestDto requestDto)
         {
             ValidationFile(requestDto);
