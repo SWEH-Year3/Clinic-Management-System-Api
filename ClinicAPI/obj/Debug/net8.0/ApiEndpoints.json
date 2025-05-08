@@ -383,5 +383,37 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClinicAPI.Controllers.ProfileController",
+    "Method": "GetProfilePatient",
+    "RelativePath": "api/Profile/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClinicAPI.Controllers.ProfileController",
+    "Method": "GetProfileDoctor",
+    "RelativePath": "api/Profile/doctor/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

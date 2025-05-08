@@ -10,6 +10,7 @@ namespace ClinicAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    
     public class AppointmentController : ControllerBase
     {
         private readonly IAppointmentRepository appointmentRepository;

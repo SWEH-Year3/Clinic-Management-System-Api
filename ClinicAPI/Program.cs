@@ -111,6 +111,7 @@ namespace ClinicAPI
             builder.Services.AddScoped<IDashboard_ReportRepository, SqlDashboard_ReportRepository>();
             builder.Services.AddScoped<IImageRepository, LocalImagesRepository>();
             builder.Services.AddScoped<IEmailService, EmailService>();
+            builder.Services.AddScoped<IProfileRepository, SqlProfileRepository>();
             builder.Services.AddControllers()
                 .AddJsonOptions(options =>
                 {
