@@ -112,6 +112,7 @@ namespace ClinicAPI
             builder.Services.AddScoped<IImageRepository, LocalImagesRepository>();
             builder.Services.AddScoped<IEmailService, EmailService>();
             builder.Services.AddScoped<IProfileRepository, SqlProfileRepository>();
+            builder.Services.AddScoped<PdfService>();
             builder.Services.AddControllers()
                 .AddJsonOptions(options =>
                 {

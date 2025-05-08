@@ -3,7 +3,6 @@ using ClinicAPI.Models.Domain;
 using ClinicAPI.Models.DTO;
 using ClinicAPI.Repositories;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ClinicAPI.Controllers
@@ -13,10 +12,14 @@ namespace ClinicAPI.Controllers
     public class PrescriptionController : ControllerBase
     {
         private readonly IPrescriptionRespository prescriptionRespository;
+        private readonly PdfService pdfService;
+        private readonly IHttpContextAccessor httpContextAccessor;
 
-        public PrescriptionController(IPrescriptionRespository prescriptionRespository)
+        public PrescriptionController(IPrescriptionRespository prescriptionRespository, PdfService pdfService,IHttpContextAccessor httpContextAccessor)
         {
             this.prescriptionRespository = prescriptionRespository;
+            this.pdfService = pdfService;
+            this.httpContextAccessor = httpContextAccessor;
         }
 
         [HttpPost]
@@ -56,22 +59,44 @@ namespace ClinicAPI.Controllers
         [HttpGet("{id:guid}")]
         [RoleAuthorize("Doctor")]
 
-        public async Task<IActionResult> GetPrescription([FromRoute]Guid id)
+        [HttpGet("{id:guid}/pdf")]
+        public async Task<IActionResult> GetPrescriptionPdf([FromRoute] Guid id)
         {
-            var prescriptionDomainModel=await prescriptionRespository.GetAsync(id);
-            if (prescriptionDomainModel != null) {
+            var prescription = await prescriptionRespository.GetAsync(id);
 
-                var response = new GetPrescriptionResponseDto()
-                {
-                    Id = prescriptionDomainModel.Id,
-                    Description = prescriptionDomainModel.Description,
-                    Modifiaction_data = prescriptionDomainModel.Modification_date,
-                    AppointmentId = prescriptionDomainModel.AppointmentId
-                };
-                return Ok(response);
-            }
-            return NotFound();
+            if (prescription == null)
+                return NotFound();
 
+
+            var pdfBytes = pdfService.GeneratePrescriptionPdf(prescription.Description);
+
+            var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "Files");
+            if (!Directory.Exists(folderPath))
+                Directory.CreateDirectory(folderPath);
+
+            var fileName = $"Prescription_{id}.pdf";
+            var filePath = Path.Combine(folderPath, fileName);
+
+            await System.IO.File.WriteAllBytesAsync(filePath, pdfBytes);
+
+            var response = new
+            {
+                prescription.Id,
+                FilePath = $"{httpContextAccessor.HttpContext.Request.Scheme}://" +
+                      $"{httpContextAccessor.HttpContext.Request.Host}" +
+                      $"{httpContextAccessor.HttpContext.Request.PathBase}"+$"/Files/{fileName}", 
+                Message = "PDF saved successfully."
+            };
+
+            return Ok(response);
         }
+
+        //var response = new GetPrescriptionResponseDto()
+        //{
+        //    Id = prescriptionDomainModel.Id,
+        //    Description = prescriptionDomainModel.Description,
+        //    Modifiaction_data = prescriptionDomainModel.Modification_date,
+        //    AppointmentId = prescriptionDomainModel.AppointmentId
+        //};
     }
 }

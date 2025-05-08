@@ -370,8 +370,24 @@
   },
   {
     "ContainingType": "ClinicAPI.Controllers.PrescriptionController",
-    "Method": "GetPrescription",
+    "Method": "GetPrescriptionPdf",
     "RelativePath": "api/Prescription/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClinicAPI.Controllers.PrescriptionController",
+    "Method": "GetPrescriptionPdf",
+    "RelativePath": "api/Prescription/{id}/pdf",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

@@ -62,7 +62,7 @@ namespace ClinicAPI.Controllers
             return BadRequest("something wrong");
         }
         [HttpGet]
-        [RoleAuthorize("Admin","Patient")]
+        [RoleAuthorize("Admin", "Patient")]
         public async Task<IActionResult> GetAll()
         {
             var doctors = await doctorRepository.GetDoctorsAsync();
@@ -75,7 +75,7 @@ namespace ClinicAPI.Controllers
                     var doc = new GetDoctorsDto
                     {
                         UserId = doctor.UserId,
-                        Password = doctor.userApplication.PasswordHash,
+
                         Email = doctor.userApplication.Email,
                         phone = doctor.userApplication.PhoneNumber,
                         Role = role.FirstOrDefault(),
