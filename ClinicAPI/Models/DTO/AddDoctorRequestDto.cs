@@ -10,7 +10,7 @@ namespace ClinicAPI.Models.DTO
         public string Phone { get; set; }
         [Required]
         public string Specialty { get; set; }
-        [Required]
+        
         public long? Price { get; set; }
     }
 }

@@ -773,7 +773,6 @@
         "required": [
           "name",
           "phone",
-          "price",
           "specialty"
         ],
         "type": "object",
@@ -792,7 +791,8 @@
           },
           "price": {
             "type": "integer",
-            "format": "int64"
+            "format": "int64",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -914,33 +914,23 @@
         "additionalProperties": false
       },
       "RegisterRequestDto": {
-        "required": [
-          "email",
-          "name",
-          "password",
-          "phone"
-        ],
         "type": "object",
         "properties": {
           "password": {
-            "minLength": 1,
             "type": "string",
-            "format": "password"
+            "nullable": true
           },
           "name": {
-            "minLength": 1,
             "type": "string",
-            "format": "string"
+            "nullable": true
           },
           "email": {
-            "minLength": 1,
             "type": "string",
-            "format": "email"
+            "nullable": true
           },
           "phone": {
-            "minLength": 1,
             "type": "string",
-            "format": "tel"
+            "nullable": true
           }
         },
         "additionalProperties": false

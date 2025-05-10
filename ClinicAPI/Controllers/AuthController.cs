@@ -32,19 +32,24 @@ namespace ClinicAPI.Controllers
                 PhoneNumber = registerRequestDto.Phone
             };
             var identity = await userManager.CreateAsync(user, registerRequestDto.Password);
-            if (identity.Succeeded)
+            if (!identity.Succeeded)
             {
-                identity = await userManager.AddToRoleAsync(user, "Patient");
-
-                //identity = await userManager.AddToRoleAsync(user, "Admin");
-                if (identity.Succeeded)
-                {
-                    await email.SendEmailAsync(user.Email, "Register", "Successful Register");
-                    return Ok("Successful Register");
-
-                }
+                var errors = string.Join(", ", identity.Errors.Select(e => e.Description));
+                return BadRequest(errors); // <-- this shows what's wrong
             }
-            return BadRequest("something wrong");
+
+            identity = await userManager.AddToRoleAsync(user, "Patient");
+            //identity = await userManager.AddToRoleAsync(user, "Admin");
+
+
+            if (!identity.Succeeded)
+            {
+                var errors = string.Join(", ", identity.Errors.Select(e => e.Description));
+                return BadRequest(errors);
+            }
+
+            await email.SendEmailAsync(user.Email, "Register", "Successful Register");
+            return Ok("Successful Register");
 
         }
         [HttpPost]
