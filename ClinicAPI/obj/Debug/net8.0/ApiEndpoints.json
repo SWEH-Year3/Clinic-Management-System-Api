@@ -48,6 +48,22 @@
   },
   {
     "ContainingType": "ClinicAPI.Controllers.AppointmentController",
+    "Method": "deleteAppointment",
+    "RelativePath": "api/Appointment/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClinicAPI.Controllers.AppointmentController",
     "Method": "ApprovedAppointment",
     "RelativePath": "api/Appointment/{id}/Admin",
     "HttpMethod": "PUT",
@@ -71,6 +87,27 @@
     "ContainingType": "ClinicAPI.Controllers.AppointmentController",
     "Method": "BookAppointment",
     "RelativePath": "api/Appointment/{id}/book",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "book",
+        "Type": "ClinicAPI.Models.DTO.BookAppointmentRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClinicAPI.Controllers.AppointmentController",
+    "Method": "CancelAppointment",
+    "RelativePath": "api/Appointment/{id}/book/cancel",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -153,6 +190,22 @@
         "Name": "id",
         "Type": "System.Guid",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClinicAPI.Controllers.AppointmentController",
+    "Method": "GetAppointmentsByDocName",
+    "RelativePath": "api/Appointment/doctor/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -301,6 +354,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ClinicAPI.Controllers.AdminController",
+    "Method": "GetAllByName",
+    "RelativePath": "api/Doctor/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ClinicAPI.Controllers.PrescriptionController",
     "Method": "CreatePrescription",
     "RelativePath": "api/Prescription",
@@ -348,6 +417,96 @@
       {
         "Name": "id",
         "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClinicAPI.Controllers.PrescriptionController",
+    "Method": "GetPrescriptionPdf",
+    "RelativePath": "api/Prescription/{id}/pdf",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClinicAPI.Controllers.ProfileController",
+    "Method": "GetProfilePatient",
+    "RelativePath": "api/Profile/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClinicAPI.Controllers.ProfileController",
+    "Method": "setProfilePatient",
+    "RelativePath": "api/Profile/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "data",
+        "Type": "ClinicAPI.Models.DTO.GetProfileResponseDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClinicAPI.Controllers.ProfileController",
+    "Method": "GetProfileDoctor",
+    "RelativePath": "api/Profile/doctor/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClinicAPI.Controllers.ProfileController",
+    "Method": "setProfileDoctor",
+    "RelativePath": "api/Profile/doctor/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "data",
+        "Type": "ClinicAPI.Models.DTO.DoctorProfileDto",
         "IsRequired": true
       }
     ],

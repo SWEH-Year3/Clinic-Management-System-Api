@@ -10,6 +10,6 @@ namespace ClinicAPI.Models.DTO
         public Guid Id { get; set; }
         public string Description { get; set; }
        
-        public string Modifiaction_data { get; set; }
+        public string Modification_date { get; set; }
     }
 }

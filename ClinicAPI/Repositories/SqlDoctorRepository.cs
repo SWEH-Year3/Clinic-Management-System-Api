@@ -62,5 +62,9 @@ namespace ClinicAPI.Repositories
         {
             return await dbContext.Doctors.Include(d => d.userApplication).ToListAsync();
         }
+        public async Task<List<Doctor>> GetDoctorsByNameAsync(string Name)
+        {
+            return await dbContext.Doctors.Include(d => d.userApplication).Where(u => u.userApplication.UserName.Contains(Name)).ToListAsync();
+        }
     }
 }

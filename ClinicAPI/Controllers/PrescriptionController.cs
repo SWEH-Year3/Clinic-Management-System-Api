@@ -13,10 +13,15 @@ namespace ClinicAPI.Controllers
     public class PrescriptionController : ControllerBase
     {
         private readonly IPrescriptionRespository prescriptionRespository;
+        private readonly PdfService pdfService;
 
-        public PrescriptionController(IPrescriptionRespository prescriptionRespository)
+        private readonly IHttpContextAccessor httpContextAccessor;
+
+        public PrescriptionController(IPrescriptionRespository prescriptionRespository, PdfService pdfService, IHttpContextAccessor httpContextAccessor)
         {
             this.prescriptionRespository = prescriptionRespository;
+            this.pdfService = pdfService;
+            this.httpContextAccessor = httpContextAccessor;
         }
 
         [HttpPost]
@@ -27,7 +32,7 @@ namespace ClinicAPI.Controllers
             {
                 AppointmentId = addPrescription.AppointmentId,
                 Description = addPrescription.Description,
-                Modification_date = addPrescription.Modifictaion_data
+                Modification_date = addPrescription.Modification_date
 
             };
             await prescriptionRespository.CreateAsync(PrescriptionDomainModel);
@@ -42,7 +47,7 @@ namespace ClinicAPI.Controllers
             {
                 AppointmentId = EditPrescription.AppointmentId,
                 Description = EditPrescription.Description,
-                Modification_date = EditPrescription.Modifiaction_data
+                Modification_date = EditPrescription.Modification_date
 
             };
             PrescriptionDomainModel = await prescriptionRespository.UpdateAsync(id, PrescriptionDomainModel);
@@ -64,13 +69,45 @@ namespace ClinicAPI.Controllers
                 {
                     Id = prescriptionDomainModel.Id,
                     Description = prescriptionDomainModel.Description,
-                    Modifiaction_data = prescriptionDomainModel.Modification_date,
+                    Modification_date = prescriptionDomainModel.Modification_date,
                     AppointmentId = prescriptionDomainModel.AppointmentId
                 };
                 return Ok(response);
             }
             return NotFound();
 
+        }
+
+        [HttpGet("{id:guid}/pdf")]
+        public async Task<IActionResult> GetPrescriptionPdf([FromRoute] Guid id)
+        {
+            var prescription = await prescriptionRespository.GetAsync(id);
+
+            if (prescription == null)
+                return NotFound();
+
+
+            var pdfBytes = pdfService.GeneratePrescriptionPdf(prescription.Description??"Empty Prescription");
+
+            var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "Files");
+            if (!Directory.Exists(folderPath))
+                Directory.CreateDirectory(folderPath);
+
+            var fileName = $"Prescription_{id}.pdf";
+            var filePath = Path.Combine(folderPath, fileName);
+
+            await System.IO.File.WriteAllBytesAsync(filePath, pdfBytes);
+
+            var response = new
+            {
+                prescription.Id,
+                FilePath = $"{httpContextAccessor.HttpContext.Request.Scheme}://" +
+                      $"{httpContextAccessor.HttpContext.Request.Host}" +
+                      $"{httpContextAccessor.HttpContext.Request.PathBase}" + $"/Files/{fileName}",
+                Message = "PDF saved successfully."
+            };
+
+            return Ok(response);
         }
     }
 }

@@ -11,5 +11,10 @@ namespace ClinicAPI.Repositories
         Task<List<Appointment?>> GetAppointmentPatientAsync(Guid id);
 
         Task<List<Appointment?>> GetAppointmentDoctorBookingAsync(Guid id);
+
+        Task<Appointment> DeleteAppointmentAsync(Guid id);
+        Task<Appointment?> CancelBookAsync(Guid id, Appointment appointment);
+
+        Task<List<Appointment>> GetAllByNameAsync(string Name);
     }
 }

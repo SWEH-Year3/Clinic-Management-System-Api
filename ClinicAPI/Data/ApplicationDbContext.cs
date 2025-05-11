@@ -44,7 +44,7 @@ namespace ClinicAPI.Data
                 var user = new UserApplication
                 {
                     Id = userId,
-                    UserName = $"admin{i}@clinic.com",
+                    UserName = $"admin{i}",
                     NormalizedUserName = $"ADMIN{i}@CLINIC.COM",
                     Email = $"admin{i}@clinic.com",
                     NormalizedEmail = $"ADMIN{i}@CLINIC.COM",
@@ -65,7 +65,7 @@ namespace ClinicAPI.Data
                 var user = new UserApplication
                 {
                     Id = userId,
-                    UserName = $"patient{i}@clinic.com",
+                    UserName = $"patient{i}",
                     NormalizedUserName = $"PATIENT{i}@CLINIC.COM",
                     Email = $"patient{i}@clinic.com",
                     NormalizedEmail = $"PATIENT{i}@CLINIC.COM",
@@ -86,7 +86,7 @@ namespace ClinicAPI.Data
                 var doctorUser = new UserApplication
                 {
                     Id = doctorId,
-                    UserName = $"doctor{i}@clinic.com",
+                    UserName = $"doctor{i}",
                     NormalizedUserName = $"DOCTOR{i}@CLINIC.COM",
                     Email = $"doctor{i}@clinic.com",
                     NormalizedEmail = $"DOCTOR{i}@CLINIC.COM",
@@ -110,6 +110,7 @@ namespace ClinicAPI.Data
 
             // Seed 20 Appointments and Prescriptions
             // ongoing state
+
             var random = new Random();
             for (int i = 0; i < 20; i++)
             {
@@ -117,16 +118,20 @@ namespace ClinicAPI.Data
                 var patient = users[i % 20];
 
                 var appointmentId = Guid.NewGuid();
+                //var monthNumber = (i % 12) == 0
+                //                   ? random.Next(1, 13)      // random month 1–12
+                //                   : (i % 12);
+                var monthNumber = random.Next(1, 13);
                 appointments.Add(new Appointment
                 {
                     Id = appointmentId,
                     DoctorId = doctor.Id,
                     PatientId = patient.Id,
                     Time = $"{9 + i % 12}:00 AM",
-                    Date = $"2025-05-{(i % 30) + 1:D2}",
+                    Date = $"2025-{monthNumber:D2}-{(i % 30) + 1:D2}",
                     State = "ongoing"
                 });
-
+                
                 prescriptions.Add(new Prescription
                 {
                     Id = Guid.NewGuid(),
@@ -143,14 +148,19 @@ namespace ClinicAPI.Data
                 var doctor = doctors[i % 20];
 
                 var appointmentId = Guid.NewGuid();
+                //var monthNumber = (i % 12) == 0
+                //                   ? random.Next(1, 13)      // random month 1–12
+                //                   : (i % 12);
+
+                var monthNumber = random.Next(1, 13);
                 appointments.Add(new Appointment
                 {
                     Id = appointmentId,
                     DoctorId = doctor.Id,
                     PatientId = null,
                     Time = $"{9 + i % 12}:00 AM",
-                    Date = $"2025-05-{(i % 30) + 1:D2}",
-                    State = "opened"
+                    Date = $"2025-{monthNumber:D2}-{(i % 30) + 1:D2}",
+                    State = "open"
                 });
 
                 prescriptions.Add(new Prescription
@@ -174,13 +184,18 @@ namespace ClinicAPI.Data
                 }
                 
                 var appointmentId = Guid.NewGuid();
+                //var monthNumber = (i % 12) == 0
+                //                   ? random.Next(1, 13)      // random month 1–12
+                //                   : (i % 12);
+
+                var monthNumber = random.Next(1, 13);
                 appointments.Add(new Appointment
                 {
                     Id = appointmentId,
                     DoctorId = doctor.Id,
                     PatientId = patient.Id,
                     Time = $"{9 + i % 12}:00 AM",
-                    Date = $"2025-05-{(i % 30) + 1:D2}",
+                    Date = $"2025-{monthNumber:D2}-{(i % 30) + 1:D2}",
                     State = "pending"
                 });
 
@@ -201,13 +216,18 @@ namespace ClinicAPI.Data
                 var patient = users[i % 20];
 
                 var appointmentId = Guid.NewGuid();
+                //var monthNumber = (i % 12) == 0
+                //                   ? random.Next(1, 13)      // random month 1–12
+                //                   : (i % 12);
+
+                var monthNumber = random.Next(1, 13);
                 appointments.Add(new Appointment
                 {
                     Id = appointmentId,
                     DoctorId = doctor.Id,
                     PatientId = patient.Id,
                     Time = $"{9 + i % 12}:00 AM",
-                    Date = $"2025-05-{(i % 30) + 1:D2}",
+                    Date = $"2025-{monthNumber:D2}-{(i % 30) + 1:D2}",
                     State = "closed"
                 });
 

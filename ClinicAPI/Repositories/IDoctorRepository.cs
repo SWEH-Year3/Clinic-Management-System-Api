@@ -9,5 +9,6 @@ namespace ClinicAPI.Repositories
         Task<Doctor?> GetDoctorAsync(Guid id);
         Task<Doctor?> EditDoctorAsync(Guid id, Doctor doctor);
         Task<Doctor?> DeleteAsync(Guid id);
+        Task<List<Doctor>> GetDoctorsByNameAsync(string Name);
     }
 }

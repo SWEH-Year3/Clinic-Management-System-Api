@@ -473,3 +473,14 @@ D:\Personal Data\college\Third_Year\Second_Term\Projects\IA\sourceCode\Clinic-Ma
 D:\Personal Data\college\Third_Year\Second_Term\Projects\IA\sourceCode\Clinic-Management-System-Api\ClinicAPI\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
 D:\Personal Data\college\Third_Year\Second_Term\Projects\IA\sourceCode\Clinic-Management-System-Api\ClinicAPI\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
 D:\Personal Data\college\Third_Year\Second_Term\Projects\IA\sourceCode\Clinic-Management-System-Api\ClinicAPI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\Personal Data\college\Third_Year\Second_Term\Projects\IA\sourceCode\Clinic-Management-System-Api\ClinicAPI\bin\Debug\net8.0\PdfSharpCore.dll
+D:\Personal Data\college\Third_Year\Second_Term\Projects\IA\sourceCode\Clinic-Management-System-Api\ClinicAPI\bin\Debug\net8.0\ICSharpCode.SharpZipLib.dll
+D:\Personal Data\college\Third_Year\Second_Term\Projects\IA\sourceCode\Clinic-Management-System-Api\ClinicAPI\bin\Debug\net8.0\SixLabors.Fonts.dll
+D:\Personal Data\college\Third_Year\Second_Term\Projects\IA\sourceCode\Clinic-Management-System-Api\ClinicAPI\bin\Debug\net8.0\SixLabors.ImageSharp.dll
+D:\Personal Data\college\Third_Year\Second_Term\Projects\IA\sourceCode\Clinic-Management-System-Api\ClinicAPI\bin\Debug\net8.0\de\PdfSharpCore.resources.dll
+D:\Personal Data\college\Third_Year\Second_Term\Projects\IA\sourceCode\Clinic-Management-System-Api\ClinicAPI\bin\Debug\net8.0\HtmlRenderer.dll
+D:\Personal Data\college\Third_Year\Second_Term\Projects\IA\sourceCode\Clinic-Management-System-Api\ClinicAPI\bin\Debug\net8.0\HtmlRenderer.PdfSharp.dll
+D:\Personal Data\college\Third_Year\Second_Term\Projects\IA\sourceCode\Clinic-Management-System-Api\ClinicAPI\bin\Debug\net8.0\PdfSharp.Charting.dll
+D:\Personal Data\college\Third_Year\Second_Term\Projects\IA\sourceCode\Clinic-Management-System-Api\ClinicAPI\bin\Debug\net8.0\PdfSharp.dll
+D:\Personal Data\college\Third_Year\Second_Term\Projects\IA\sourceCode\Clinic-Management-System-Api\ClinicAPI\bin\Debug\net8.0\de\PdfSharp.Charting.resources.dll
+D:\Personal Data\college\Third_Year\Second_Term\Projects\IA\sourceCode\Clinic-Management-System-Api\ClinicAPI\bin\Debug\net8.0\de\PdfSharp.resources.dll

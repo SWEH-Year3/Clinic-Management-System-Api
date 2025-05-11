@@ -30,16 +30,17 @@ namespace ClinicAPI.Repositories
 
         public async Task<Prescription?> UpdateAsync(Guid id, Prescription prescription)
         {
-            var existing = await dbContext.Prescriptions.FirstOrDefaultAsync(x => x.Id == id);
+            var existing = await dbContext.Prescriptions.FirstOrDefaultAsync(x => x.Id == id || x.Appointment.Id == id);
             if (existing == null)
             {
                 return null;
             }
             existing.AppointmentId = prescription.AppointmentId;
-            existing.Modification_date=prescription.Modification_date;
+            existing.Modification_date = prescription.Modification_date;
             existing.Description=prescription.Description;
             await dbContext.SaveChangesAsync();
             return prescription;
         }
     }
 }
+

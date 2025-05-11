@@ -7,12 +7,12 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
+using System.Collections.Generic;
 
 namespace ClinicAPI.Controllers
 {
     [Route("api/Doctor")]
     [ApiController]
-    [RoleAuthorize("Admin")]
     public class AdminController : ControllerBase
     {
         private readonly UserManager<UserApplication> userManager;
@@ -29,7 +29,7 @@ namespace ClinicAPI.Controllers
         {
             var userIdentity = new UserApplication
             {
-                Email = addDoctorRequestDto.Name,
+                Email = addDoctorRequestDto.Name + "@clinic.com",
                 UserName = addDoctorRequestDto.Name,
                 PhoneNumber = addDoctorRequestDto.Phone,
             };
@@ -62,7 +62,6 @@ namespace ClinicAPI.Controllers
             return BadRequest("something wrong");
         }
         [HttpGet]
-        [RoleAuthorize("Admin","Patient")]
         public async Task<IActionResult> GetAll()
         {
             var doctors = await doctorRepository.GetDoctorsAsync();
@@ -74,6 +73,7 @@ namespace ClinicAPI.Controllers
                     var role = await userManager.GetRolesAsync(doctor.userApplication);
                     var doc = new GetDoctorsDto
                     {
+                        Name= doctor.userApplication.UserName,
                         UserId = doctor.UserId,
                         Email = doctor.userApplication.Email,
                         phone = doctor.userApplication.PhoneNumber,
@@ -91,9 +91,42 @@ namespace ClinicAPI.Controllers
             }
             return BadRequest("Not Found");
         }
+
+
+        [HttpGet("search")]
+        public async Task<IActionResult> GetAllByName([FromQuery(Name ="Name")] string Name)
+        {
+            var doctors = await doctorRepository.GetDoctorsByNameAsync(Name);
+            var doctorDtos = new List<GetDoctorsDto>();
+            if (doctors != null)
+            {
+                foreach (var doctor in doctors)
+                {
+                    var role = await userManager.GetRolesAsync(doctor.userApplication);
+                    var doc = new GetDoctorsDto
+                    {
+                        Name = doctor.userApplication.UserName,
+                        UserId = doctor.UserId,
+                        Email = doctor.userApplication.Email,
+                        phone = doctor.userApplication.PhoneNumber,
+                        Role = role.FirstOrDefault(),
+                        DoctorId = doctor.Id.ToString(),
+                        Specialty = doctor.Specialty,
+                        Price = doctor.Price
+
+
+                    };
+                    doctorDtos.Add(doc);
+                }
+                return Ok(doctorDtos);
+
+            }
+            return BadRequest("Not Found");
+        }
+
+
         [HttpGet]
         [Route("{id:guid}")]
-        [RoleAuthorize("Admin", "Patient")]
 
         public async Task<IActionResult> GetDoctor([FromRoute] Guid id)
         {

@@ -1,5 +1,7 @@
 ﻿using ClinicAPI.Data;
 using ClinicAPI.Models.Domain;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace ClinicAPI.Repositories
@@ -24,15 +26,20 @@ namespace ClinicAPI.Repositories
             return await dbContext.Appointments
                 .Include(u => u.Doctor).ThenInclude(d => d.userApplication)
                 .Include(u => u.Patient)
-                .Where(a => a.Patient != null).Where(u=>u.State=="pending").ToListAsync();
+                .Where(a => a.Patient != null).Where(u=>u.State=="pending" || u.State =="ongoing").ToListAsync();
         }
-
+        public async Task<List<Appointment>> GetAllByNameAsync(string Name)
+        {
+            return await dbContext.Appointments
+                .Include(u => u.Doctor).ThenInclude(d => d.userApplication)
+                .Include(u => u.Patient).Where(u => u.Doctor.userApplication.UserName.Contains(Name)).ToListAsync();
+        }
         public async Task<List<Appointment?>> GetAppointmentDoctorAsync(Guid id)
         {
             return await dbContext.Appointments
                 .Include(u => u.Doctor).ThenInclude(d => d.userApplication)
                 .Include(u => u.Patient)
-                .Where(a => a.Patient != null).Where(u => u.DoctorId ==id)
+                .Where(u => u.DoctorId ==id)
                 .Where(u =>  u.State == "closed" || u.State=="ongoing" ).ToListAsync();
         }
         public async Task<List<Appointment?>> GetAppointmentDoctorBookingAsync(Guid id)
@@ -49,7 +56,38 @@ namespace ClinicAPI.Repositories
                 .Where(a => a.Patient != null).Where(u => u.PatientId==id.ToString())
                 .ToListAsync();
         }
+        public async Task<Appointment> DeleteAppointmentAsync(Guid id)
+        {
+            //return await dbContext.Appointments
+            //    .Include(u => u.Doctor).ThenInclude(d => d.userApplication)
+            //    .Include(u => u.Patient)
+            //    .Where(a => a.Patient != null).Where(u => u.PatientId == id.ToString())
+            //    .ToListAsync();
+            var appo = dbContext.Appointments.FirstOrDefault(a => a.Id == id);
+            if(appo != null)
+            {
+                dbContext.Appointments.Remove(appo);
+                dbContext.SaveChanges();
+            }
 
+            return appo;
+
+        }
+        public async Task<Appointment?> CancelBookAsync(Guid id, Appointment appointment)
+        {
+            var existingAppointment = await dbContext.Appointments
+                .Include(u => u.Doctor)
+                .Include(u => u.Patient)
+                .FirstOrDefaultAsync(u => u.Id == id);
+
+            if(appointment.PatientId == existingAppointment.PatientId)
+            {
+                existingAppointment.State = appointment.State;
+                dbContext.Appointments.Update(existingAppointment);
+                dbContext.SaveChanges();
+            }
+            return existingAppointment;
+        }
         public async Task<Appointment?> UpdateAsync(Guid id, Appointment appointment)
         {
             var existingAppointment = await dbContext.Appointments

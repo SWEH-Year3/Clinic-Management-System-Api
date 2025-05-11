@@ -1,4 +1,5 @@
-﻿using ClinicAPI.Models.Domain;
+﻿using ClinicAPI.Data;
+using ClinicAPI.Models.Domain;
 using ClinicAPI.Models.DTO;
 using ClinicAPI.Repositories;
 using Microsoft.AspNetCore.Http;
@@ -14,12 +15,14 @@ namespace ClinicAPI.Controllers
         private readonly UserManager<UserApplication> userManager;
         private readonly ITokenRepository tokenRepository;
         private readonly IEmailService email;
+        private readonly ApplicationDbContext _context;
 
-        public AuthController(UserManager<UserApplication> userManager, ITokenRepository tokenRepository, IEmailService email)
+        public AuthController(UserManager<UserApplication> userManager, ITokenRepository tokenRepository, IEmailService email,ApplicationDbContext dbContext)
         {
             this.userManager = userManager;
             this.tokenRepository = tokenRepository;
             this.email = email;
+            this._context = dbContext;
         }
         [HttpPost]
         [Route("Register")]
@@ -61,13 +64,20 @@ namespace ClinicAPI.Controllers
 
                     var userRole = roles.FirstOrDefault() ?? "NoRoleAssigned";
 
-                    var token = tokenRepository.CreateToken(user, roles.ToList()
-                                                                  );
+                    var token = tokenRepository.CreateToken(user, roles.ToList());
+                    
+                    var docId = Guid.Empty;
+
+                    if (userRole == "Doctor")
+                    {
+                        docId = this._context.Doctors.FirstOrDefault(d => d.UserId == user.Id).Id;
+                        
+                    }
 
                     Console.WriteLine(userRole);
                     var response = new LoginResponseDto
                     {
-                        Id = user.Id,
+                        Id = (docId == Guid.Empty || docId == null) ? user.Id: docId.ToString(),
                         Name = user.UserName,
                         Token = token,
                         Email = user.Email,

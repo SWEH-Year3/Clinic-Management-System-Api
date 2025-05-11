@@ -35,12 +35,7 @@ namespace ClinicAPI.Repositories
                         Time = a.Time,
                         State = a.State
                     }).ToList(),
-                    AppointmentCount = g.Select(a => new
-                    {
-                        a.Date,
-                        a.Time,
-                        a.State
-                    }).ToList().Count()
+                    AppointmentCount = g.Where(a => a.State == "ongoing" || a.State == "closed").ToList().Count()
                 }).ToList();
 
             Dashboard_ReportResponseDto dashboard_ReportResponseDto = new Dashboard_ReportResponseDto
@@ -78,13 +73,7 @@ namespace ClinicAPI.Repositories
                             a.State,
                             PatientName = a.Patient?.UserName
                         }).ToList(),
-                        AppointmentCount = g.Select(a => new
-                        {
-                            a.Date,
-                            a.Time,
-                            a.State,
-                            PatientName = a.Patient?.UserName
-                        }).ToList().Count()
+                        AppointmentCount = g.Where(a => a.State == "ongoing" || a.State == "closed").ToList().Count()
 
                     })
                     .ToList()

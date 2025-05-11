@@ -70,6 +70,23 @@ namespace ClinicAPI.Controllers
             }
             return NotFound();
         }
+        [HttpPut("{id:guid}/book/cancel")]
+        [RoleAuthorize("Patient")]
+        public async Task<IActionResult> CancelAppointment([FromRoute] Guid id, [FromBody] BookAppointmentRequestDto book)
+        {
+            var existing = new Appointment
+            {
+                PatientId = book.PatientId.ToString(),
+                State = "open"
+            };
+            existing = await appointmentRepository.CancelBookAsync(id, existing);
+
+            if (existing != null && existing.State == "open")
+            {
+                return Ok();
+            }
+            return NotFound();
+        }
         [HttpPut("reschedule")]
         [RoleAuthorize("Patient")]
         public async Task<IActionResult> RescheduleAppointent([FromBody] ReschedulaAppointentRequestDto reschedula)
@@ -89,6 +106,7 @@ namespace ClinicAPI.Controllers
             {
                 PatientId = reschedula.PatientId.ToString(),
                 DoctorId = reschedula.DoctorId,
+                State = "pending"
 
             };
             updateNewAppointment = await appointmentRepository.UpdateAsync(reschedula.NewAppointmentId, updateNewAppointment);
@@ -105,23 +123,27 @@ namespace ClinicAPI.Controllers
         {
             var update = new Appointment
             {
-                State = treat.State
+                State = treat.State,
+                PatientId = treat.PatientId
             };
             update = await appointmentRepository.UpdateAsync(id, update);
             if (update == null) { return NotFound(); }
             return Ok();
         }
         [HttpPut("{id:guid}/Admin")]
-        [RoleAuthorize("Admin")]
         public async Task<IActionResult> ApprovedAppointment([FromRoute] Guid id, TreatAppointmentRequestDto treat)
         {
             var update = new Appointment
             {
-                State = treat.State
+                State = treat.State,
+                PatientId = treat.PatientId
             };
             update = await appointmentRepository.UpdateAsync(id, update);
-            if (update == null) { return NotFound(); }
-            await email.SendEmailAsync(update.Patient.Email, "AdminApproved", "you are accepted");
+            if (update == null ) { return NotFound(); }
+            if(update.Patient != null && update.Patient.Email != null)
+            {
+                await email.SendEmailAsync(update.Patient.Email, "AdminApproved", "you are accepted");
+            }
             return Ok();
         }
         [HttpGet]
@@ -143,7 +165,10 @@ namespace ClinicAPI.Controllers
                     PatientId = appointment.PatientId ?? null,
                     State = appointment.State,
                     PatientName = appointment.Patient?.UserName ?? "not found",
-                    DoctorName = appointment.Doctor?.userApplication?.UserName ?? "not found"
+                    DoctorName = appointment.Doctor?.userApplication?.UserName ?? "not found",
+                    Phone = appointment?.Patient?.PhoneNumber,
+                    PrecriptionID = appointment?.Prescription?.Id,
+                    Specialty = appointment.Doctor.Specialty
                 };
 
                 response.Add(dto);
@@ -151,6 +176,37 @@ namespace ClinicAPI.Controllers
 
             return Ok(response);
         }
+
+        [HttpGet("doctor/search")]
+        public async Task<IActionResult> GetAppointmentsByDocName([FromQuery(Name = "Name")] string Name)
+        {
+            var appointments = await appointmentRepository.GetAllByNameAsync(Name);
+
+            var response = new List<GetAppointmentResponseDto>();
+
+            foreach (var appointment in appointments)
+            {
+                var dto = new GetAppointmentResponseDto
+                {
+                    Date = appointment.Date,
+                    Time = appointment.Time,
+                    Id = appointment.Id,
+                    DoctorId = appointment.DoctorId.ToString(),
+                    PatientId = appointment.PatientId ?? null,
+                    State = appointment.State,
+                    PatientName = appointment.Patient?.UserName ?? "not found",
+                    DoctorName = appointment.Doctor?.userApplication?.UserName ?? "not found",
+                    Phone = appointment?.Patient?.PhoneNumber,
+                    PrecriptionID = appointment?.Prescription?.Id,
+                    Specialty = appointment.Doctor.Specialty
+                };
+
+                response.Add(dto);
+            }
+
+            return Ok(response);
+        }
+
         [HttpGet("{id:guid}/doctor")]
         [RoleAuthorize("Doctor")]
         public async Task<IActionResult> GetDoctorAppointment([FromRoute] Guid id)
@@ -172,9 +228,10 @@ namespace ClinicAPI.Controllers
                     State = appointment.State,
                     PatientName = appointment.Patient?.UserName ?? "not found",
                     DoctorName = appointment.Doctor?.userApplication?.UserName ?? "not found",
-                    PrecriptionID = appointment.Prescription.Id
+                    PrecriptionID = appointment?.Prescription?.Id,
+                    Phone = appointment.Patient.PhoneNumber,
+                    Specialty = appointment.Doctor.Specialty
                 };
-
                 response.Add(dto);
             }
 
@@ -203,9 +260,11 @@ namespace ClinicAPI.Controllers
                     DoctorName = appointment.Doctor?.userApplication?.UserName ?? "not found",
                     PrecriptionID = appointment?.Prescription?.Id ?? null,
                     PatientId = appointment?.PatientId,
-                    PatientName = appointment?.Patient?.UserName ?? "not found"
+                    PatientName = appointment?.Patient?.UserName ?? "not found",
+                    Phone = appointment?.Patient?.PhoneNumber,
+                    Specialty = appointment?.Doctor?.Specialty
                 };
-                if(dto != null)
+                if (dto != null)
                 {
 
                     response.Add(dto);
@@ -229,15 +288,17 @@ namespace ClinicAPI.Controllers
             {
                 var dto = new GetAppointmentResponseDto
                 {
-                    Date = appointment.Date,
-                    Time = appointment.Time,
+                    Date = appointment?.Date,
+                    Time = appointment?.Time,
                     Id = appointment.Id,
                     DoctorId = appointment.DoctorId.ToString(),
                     PatientId = appointment.PatientId ?? null,
+                    Specialty = appointment.Doctor.Specialty,
                     State = appointment.State,
                     PatientName = appointment.Patient?.UserName ?? "not found",
                     DoctorName = appointment.Doctor?.userApplication?.UserName ?? "not found",
-                    PrecriptionID = appointment.Prescription.Id
+                    PrecriptionID = appointment?.Prescription?.Id,
+                    Phone = appointment.Patient.PhoneNumber
                 };
 
                 response.Add(dto);
@@ -246,6 +307,18 @@ namespace ClinicAPI.Controllers
             return Ok(response);
 
 
+        }
+
+        [HttpDelete("{id:guid}")]
+        [RoleAuthorize("Admin")]
+        public async Task<IActionResult> deleteAppointment([FromRoute] Guid id)
+        {
+            var appo = await appointmentRepository.DeleteAppointmentAsync(id);
+            if(appo == null)
+            {
+                return BadRequest();
+            }
+            return Ok();
         }
     }
 }

@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.IdentityModel.Tokens;
 
 namespace ClinicAPI
@@ -33,7 +34,8 @@ namespace ClinicAPI
             });
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
+            builder.Services.AddSwaggerGen(); 
+            builder.Services.AddScoped<PdfService>();
             builder.Services.AddSwaggerDocumentation();
             builder.Services.AddAutoMapper(typeof(Mapper));
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -110,6 +112,7 @@ namespace ClinicAPI
             builder.Services.AddScoped<IDashboard_ReportRepository, SqlDashboard_ReportRepository>();
             builder.Services.AddScoped<IImageRepository, LocalImagesRepository>();
             builder.Services.AddScoped<IEmailService, EmailService>();
+            builder.Services.AddScoped<IProfileRepository, SqlProfileRepository>();
 
             var app = builder.Build();
             app.UseCors("AllowAllOrigins");
@@ -119,6 +122,18 @@ namespace ClinicAPI
                 app.UseSwaggerUI();
             }
 
+
+
+            var filesPath = Path.Combine(Directory.GetCurrentDirectory(), "Files");
+            app.UseStaticFiles(new StaticFileOptions
+
+            {
+
+                FileProvider = new PhysicalFileProvider(filesPath),
+
+                RequestPath = "/Files"
+
+            });
             app.UseHttpsRedirection();
 
             app.UseAuthentication();
