@@ -5,7 +5,7 @@
     "version": "v1"
   },
   "paths": {
-    "/api/Admin": {
+    "/api/Admin/CreateDoctor": {
       "post": {
         "tags": [
           "Admin"
@@ -34,7 +34,9 @@
             "description": "OK"
           }
         }
-      },
+      }
+    },
+    "/api/Admin/GetAll": {
       "get": {
         "tags": [
           "Admin"
@@ -46,7 +48,7 @@
         }
       }
     },
-    "/api/Admin/{id}": {
+    "/api/Admin/GetDoctor/{id}": {
       "get": {
         "tags": [
           "Admin"
@@ -67,7 +69,9 @@
             "description": "OK"
           }
         }
-      },
+      }
+    },
+    "/api/Admin/UpdateDoctor/{id}": {
       "put": {
         "tags": [
           "Admin"
@@ -107,7 +111,9 @@
             "description": "OK"
           }
         }
-      },
+      }
+    },
+    "/api/Admin/DeleteDoctor/{id}": {
       "delete": {
         "tags": [
           "Admin"
@@ -505,6 +511,41 @@
       "get": {
         "tags": [
           "Dashboard_Report"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Home/GetAll": {
+      "get": {
+        "tags": [
+          "Home"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Home/GetDoctor/{id}": {
+      "get": {
+        "tags": [
+          "Home"
         ],
         "parameters": [
           {

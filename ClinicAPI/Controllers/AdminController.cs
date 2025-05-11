@@ -24,7 +24,7 @@ namespace ClinicAPI.Controllers
             this.doctorRepository = doctorRepository;
         }
         [RoleAuthorize("Admin")]
-        [HttpPost]
+        [HttpPost("CreateDoctor")]
         public async Task<IActionResult> CreateDoctor([FromBody] AddDoctorRequestDto addDoctorRequestDto)
         {
             var userIdentity = new UserApplication
@@ -61,39 +61,38 @@ namespace ClinicAPI.Controllers
             }
             return BadRequest("something wrong");
         }
-        [HttpGet]
+        [HttpGet("GetAll")]
         [RoleAuthorize("Admin", "Patient")]
         public async Task<IActionResult> GetAll()
         {
             var doctors = await doctorRepository.GetDoctorsAsync();
             var doctorDtos = new List<GetDoctorsDto>();
+
             if (doctors != null)
             {
                 foreach (var doctor in doctors)
                 {
                     var role = await userManager.GetRolesAsync(doctor.userApplication);
-                    var doc = new GetDoctorsDto
+                    doctorDtos.Add(new GetDoctorsDto
                     {
                         UserId = doctor.UserId,
-
+                        Name = doctor.userApplication.UserName,
                         Email = doctor.userApplication.Email,
                         phone = doctor.userApplication.PhoneNumber,
                         Role = role.FirstOrDefault(),
                         DoctorId = doctor.Id.ToString(),
                         Specialty = doctor.Specialty,
                         Price = doctor.Price
-
-
-                    };
-                    doctorDtos.Add(doc);
+                    });
                 }
-                return Ok(doctorDtos);
-
             }
-            return BadRequest("Not Found");
+
+            // Always return a list, even if empty
+            return Ok(doctorDtos);
         }
+
         [HttpGet]
-        [Route("{id:guid}")]
+        [Route("GetDoctor/{id:guid}")]
         [RoleAuthorize("Admin", "Patient")]
 
         public async Task<IActionResult> GetDoctor([FromRoute] Guid id)
@@ -117,7 +116,7 @@ namespace ClinicAPI.Controllers
 
         }
         [HttpPut]
-        [Route("{id:guid}")]
+        [Route("UpdateDoctor/{id:guid}")]
         [RoleAuthorize("Admin")]
 
         public async Task<IActionResult> EditDoctor([FromRoute] Guid id, EditDoctorDto editDoctor)
@@ -142,7 +141,7 @@ namespace ClinicAPI.Controllers
             return Ok();
         }
         [HttpDelete]
-        [Route("{id:guid}")]
+        [Route("DeleteDoctor/{id:guid}")]
         [RoleAuthorize("Admin")]
 
         public async Task<IActionResult> Delete([FromRoute] Guid id)

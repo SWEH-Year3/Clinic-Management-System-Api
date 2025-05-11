@@ -55,7 +55,7 @@ namespace ClinicAPI.Repositories
 
         public async Task<Doctor?> GetDoctorAsync(Guid id)
         {
-            return await dbContext.Doctors.Include(d => d.userApplication).FirstOrDefaultAsync(u => u.Id == id);
+            return await dbContext.Doctors.Include(d => d.userApplication).Include(u=>u.Appointments).FirstOrDefaultAsync(u => u.Id == id);
         }
 
         public async Task<List<Doctor>> GetDoctorsAsync()
