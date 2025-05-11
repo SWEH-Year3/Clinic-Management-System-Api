@@ -54,7 +54,7 @@ namespace ClinicAPI.Controllers
             return NotFound();
         }
 
-        [HttpPut("{id:guid}/book")]
+        [HttpPut("Book/{id:guid}")]
         [RoleAuthorize("Patient")]
         public async Task<IActionResult> BookAppointment([FromRoute] Guid id, [FromBody] BookAppointmentRequestDto book)
         {

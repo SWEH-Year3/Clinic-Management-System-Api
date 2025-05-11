@@ -18,12 +18,19 @@ namespace ClinicAPI.Repositories
         {
             var profile = await dbContext.Users
                 .Where(u => u.Id == id.ToString())
+                .Include(u=>u.Appointments)
                 .Select(u => new GetProfileResponseDto
                 {
                    Id= u.Id,
                    UserName= u.UserName,
                    Email= u.Email,
                    PhoneNumber= u.PhoneNumber,
+                    Appointments = u.Appointments.Select(a => new AppointmentResponseDto
+                    {
+                        Id = a.Id,
+                        Date = a.Date,
+                        Time = a.Time,
+                    }).ToList()
                 })
                 .FirstOrDefaultAsync();
 

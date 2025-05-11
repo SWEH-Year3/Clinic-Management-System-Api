@@ -48,10 +48,9 @@ namespace ClinicAPI.Controllers
             return Ok(doctorDtos);
         }
         [HttpGet]
-        [Route("GetDoctor/{id:guid}")]
-        [RoleAuthorize("Admin", "Patient")]
+        [Route("DetailsDoctor/{id:guid}")]
+        [RoleAuthorize("Admin", "Patient","Doctor")]
 
-        [HttpGet("GetDoctor/{id}")]
         public async Task<IActionResult> GetDoctor([FromRoute] Guid id)
         {
             var doctor = await doctorRepository.GetDoctorAsync(id);

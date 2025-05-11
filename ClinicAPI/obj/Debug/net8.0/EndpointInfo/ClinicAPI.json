@@ -219,7 +219,7 @@
         }
       }
     },
-    "/api/Appointment/{id}/book": {
+    "/api/Appointment/Book/{id}": {
       "put": {
         "tags": [
           "Appointment"
@@ -542,7 +542,7 @@
         }
       }
     },
-    "/api/Home/GetDoctor/{id}": {
+    "/api/Home/DetailsDoctor/{id}": {
       "get": {
         "tags": [
           "Home"
