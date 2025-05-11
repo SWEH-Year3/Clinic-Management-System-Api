@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Personal Data\\college\\Third_Year\\Second_Term\\Projects\\IA\\sourceCode\\Clinic-Management-System-Api\\ChatAPI\\ChatAPI.csproj": {}
+    "D:\\Personal Data\\college\\Third_Year\\Second_Term\\Projects\\IA\\sourceCode\\Clinic-Management-System-Api\\ChatAPI\\ChatApi.csproj": {}
   },
   "projects": {
-    "D:\\Personal Data\\college\\Third_Year\\Second_Term\\Projects\\IA\\sourceCode\\Clinic-Management-System-Api\\ChatAPI\\ChatAPI.csproj": {
+    "D:\\Personal Data\\college\\Third_Year\\Second_Term\\Projects\\IA\\sourceCode\\Clinic-Management-System-Api\\ChatAPI\\ChatApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Personal Data\\college\\Third_Year\\Second_Term\\Projects\\IA\\sourceCode\\Clinic-Management-System-Api\\ChatAPI\\ChatAPI.csproj",
-        "projectName": "ChatAPI",
-        "projectPath": "D:\\Personal Data\\college\\Third_Year\\Second_Term\\Projects\\IA\\sourceCode\\Clinic-Management-System-Api\\ChatAPI\\ChatAPI.csproj",
+        "projectUniqueName": "D:\\Personal Data\\college\\Third_Year\\Second_Term\\Projects\\IA\\sourceCode\\Clinic-Management-System-Api\\ChatAPI\\ChatApi.csproj",
+        "projectName": "ChatApi",
+        "projectPath": "D:\\Personal Data\\college\\Third_Year\\Second_Term\\Projects\\IA\\sourceCode\\Clinic-Management-System-Api\\ChatAPI\\ChatApi.csproj",
         "packagesPath": "C:\\Users\\Ahmed\\.nuget\\packages\\",
         "outputPath": "D:\\Personal Data\\college\\Third_Year\\Second_Term\\Projects\\IA\\sourceCode\\Clinic-Management-System-Api\\ChatAPI\\obj\\",
         "projectStyle": "PackageReference",

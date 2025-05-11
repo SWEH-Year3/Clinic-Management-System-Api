@@ -1,18 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Study\\Year3Sem2\\Internet Applications\\Project\\Clinic-Management-System-Api\\ChatAPI\\",
+  "WorkspaceRootPath": "D:\\Personal Data\\college\\Third_Year\\Second_Term\\Projects\\IA\\sourceCode\\Clinic-Management-System-Api\\ChatAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Study\\Year3Sem2\\Internet Applications\\Project\\Clinic-Management-System-Api\\ChatAPI\\Data\\ChatContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Data\\ChatContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2137E418-E9CC-4BAB-A49C-52110ED19238}|ChatApi.csproj|d:\\personal data\\college\\third_year\\second_term\\projects\\ia\\sourcecode\\clinic-management-system-api\\chatapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2137E418-E9CC-4BAB-A49C-52110ED19238}|ChatApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Study\\Year3Sem2\\Internet Applications\\Project\\Clinic-Management-System-Api\\ChatAPI\\Hubs\\ChatHub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Hubs\\ChatHub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2137E418-E9CC-4BAB-A49C-52110ED19238}|ChatApi.csproj|d:\\personal data\\college\\third_year\\second_term\\projects\\ia\\sourcecode\\clinic-management-system-api\\chatapi\\chatdb.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{2137E418-E9CC-4BAB-A49C-52110ED19238}|ChatApi.csproj|solutionrelative:chatdb.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Study\\Year3Sem2\\Internet Applications\\Project\\Clinic-Management-System-Api\\ChatAPI\\Models\\Message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\Message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2137E418-E9CC-4BAB-A49C-52110ED19238}|ChatApi.csproj|d:\\personal data\\college\\third_year\\second_term\\projects\\ia\\sourcecode\\clinic-management-system-api\\chatapi\\data\\chatcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2137E418-E9CC-4BAB-A49C-52110ED19238}|ChatApi.csproj|solutionrelative:data\\chatcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2137E418-E9CC-4BAB-A49C-52110ED19238}|ChatApi.csproj|d:\\personal data\\college\\third_year\\second_term\\projects\\ia\\sourcecode\\clinic-management-system-api\\chatapi\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2137E418-E9CC-4BAB-A49C-52110ED19238}|ChatApi.csproj|solutionrelative:controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2137E418-E9CC-4BAB-A49C-52110ED19238}|ChatApi.csproj|d:\\personal data\\college\\third_year\\second_term\\projects\\ia\\sourcecode\\clinic-management-system-api\\chatapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2137E418-E9CC-4BAB-A49C-52110ED19238}|ChatApi.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2137E418-E9CC-4BAB-A49C-52110ED19238}|ChatApi.csproj|d:\\personal data\\college\\third_year\\second_term\\projects\\ia\\sourcecode\\clinic-management-system-api\\chatapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2137E418-E9CC-4BAB-A49C-52110ED19238}|ChatApi.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2137E418-E9CC-4BAB-A49C-52110ED19238}|ChatApi.csproj|d:\\personal data\\college\\third_year\\second_term\\projects\\ia\\sourcecode\\clinic-management-system-api\\chatapi\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2137E418-E9CC-4BAB-A49C-52110ED19238}|ChatApi.csproj|solutionrelative:hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2137E418-E9CC-4BAB-A49C-52110ED19238}|ChatApi.csproj|d:\\personal data\\college\\third_year\\second_term\\projects\\ia\\sourcecode\\clinic-management-system-api\\chatapi\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2137E418-E9CC-4BAB-A49C-52110ED19238}|ChatApi.csproj|solutionrelative:models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2137E418-E9CC-4BAB-A49C-52110ED19238}|ChatApi.csproj|d:\\personal data\\college\\third_year\\second_term\\projects\\ia\\sourcecode\\clinic-management-system-api\\chatapi\\chatdb.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{2137E418-E9CC-4BAB-A49C-52110ED19238}|ChatApi.csproj|solutionrelative:chatdb.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2137E418-E9CC-4BAB-A49C-52110ED19238}|ChatApi.csproj|d:\\personal data\\college\\third_year\\second_term\\projects\\ia\\sourcecode\\clinic-management-system-api\\chatapi\\dto\\getchatlistdto.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{2137E418-E9CC-4BAB-A49C-52110ED19238}|ChatApi.csproj|solutionrelative:dto\\getchatlistdto.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,23 +55,100 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Personal Data\\college\\Third_Year\\Second_Term\\Projects\\IA\\sourceCode\\Clinic-Management-System-Api\\ChatAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Personal Data\\college\\Third_Year\\Second_Term\\Projects\\IA\\sourceCode\\Clinic-Management-System-Api\\ChatAPI\\Program.cs*",
+              "RelativeToolTip": "Program.cs*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T14:46:28.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GetChatListDTO.cs",
+              "DocumentMoniker": "D:\\Personal Data\\college\\Third_Year\\Second_Term\\Projects\\IA\\sourceCode\\Clinic-Management-System-Api\\ChatAPI\\DTO\\GetChatListDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\GetChatListDTO.cs",
+              "ToolTip": "D:\\Personal Data\\college\\Third_Year\\Second_Term\\Projects\\IA\\sourceCode\\Clinic-Management-System-Api\\ChatAPI\\DTO\\GetChatListDTO.cs",
+              "RelativeToolTip": "DTO\\GetChatListDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T10:22:42.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "messageController.cs",
+              "DocumentMoniker": "D:\\Personal Data\\college\\Third_Year\\Second_Term\\Projects\\IA\\sourceCode\\Clinic-Management-System-Api\\ChatAPI\\Controllers\\messageController.cs",
+              "RelativeDocumentMoniker": "Controllers\\messageController.cs",
+              "ToolTip": "D:\\Personal Data\\college\\Third_Year\\Second_Term\\Projects\\IA\\sourceCode\\Clinic-Management-System-Api\\ChatAPI\\Controllers\\messageController.cs",
+              "RelativeToolTip": "Controllers\\messageController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwBsAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T10:21:21.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "chatdb.sql ",
+              "DocumentMoniker": "D:\\Personal Data\\college\\Third_Year\\Second_Term\\Projects\\IA\\sourceCode\\Clinic-Management-System-Api\\ChatAPI\\chatdb.sql",
+              "RelativeDocumentMoniker": "chatdb.sql",
+              "ToolTip": "D:\\Personal Data\\college\\Third_Year\\Second_Term\\Projects\\IA\\sourceCode\\Clinic-Management-System-Api\\ChatAPI\\chatdb.sql",
+              "RelativeToolTip": "chatdb.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-05-11T10:08:45.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Personal Data\\college\\Third_Year\\Second_Term\\Projects\\IA\\sourceCode\\Clinic-Management-System-Api\\ChatAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "D:\\Personal Data\\college\\Third_Year\\Second_Term\\Projects\\IA\\sourceCode\\Clinic-Management-System-Api\\ChatAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-11T09:50:06.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Personal Data\\college\\Third_Year\\Second_Term\\Projects\\IA\\sourceCode\\Clinic-Management-System-Api\\ChatAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Personal Data\\college\\Third_Year\\Second_Term\\Projects\\IA\\sourceCode\\Clinic-Management-System-Api\\ChatAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-11T09:49:59.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ChatContext.cs",
-              "DocumentMoniker": "E:\\Study\\Year3Sem2\\Internet Applications\\Project\\Clinic-Management-System-Api\\ChatAPI\\Data\\ChatContext.cs",
+              "DocumentMoniker": "D:\\Personal Data\\college\\Third_Year\\Second_Term\\Projects\\IA\\sourceCode\\Clinic-Management-System-Api\\ChatAPI\\Data\\ChatContext.cs",
               "RelativeDocumentMoniker": "Data\\ChatContext.cs",
-              "ToolTip": "E:\\Study\\Year3Sem2\\Internet Applications\\Project\\Clinic-Management-System-Api\\ChatAPI\\Data\\ChatContext.cs",
+              "ToolTip": "D:\\Personal Data\\college\\Third_Year\\Second_Term\\Projects\\IA\\sourceCode\\Clinic-Management-System-Api\\ChatAPI\\Data\\ChatContext.cs",
               "RelativeToolTip": "Data\\ChatContext.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAMAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAowEEAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-12T00:17:49.436Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "ChatHub.cs",
-              "DocumentMoniker": "E:\\Study\\Year3Sem2\\Internet Applications\\Project\\Clinic-Management-System-Api\\ChatAPI\\Hubs\\ChatHub.cs",
+              "DocumentMoniker": "D:\\Personal Data\\college\\Third_Year\\Second_Term\\Projects\\IA\\sourceCode\\Clinic-Management-System-Api\\ChatAPI\\Hubs\\ChatHub.cs",
               "RelativeDocumentMoniker": "Hubs\\ChatHub.cs",
-              "ToolTip": "E:\\Study\\Year3Sem2\\Internet Applications\\Project\\Clinic-Management-System-Api\\ChatAPI\\Hubs\\ChatHub.cs",
+              "ToolTip": "D:\\Personal Data\\college\\Third_Year\\Second_Term\\Projects\\IA\\sourceCode\\Clinic-Management-System-Api\\ChatAPI\\Hubs\\ChatHub.cs",
               "RelativeToolTip": "Hubs\\ChatHub.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -51,11 +156,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Message.cs",
-              "DocumentMoniker": "E:\\Study\\Year3Sem2\\Internet Applications\\Project\\Clinic-Management-System-Api\\ChatAPI\\Models\\Message.cs",
+              "DocumentMoniker": "D:\\Personal Data\\college\\Third_Year\\Second_Term\\Projects\\IA\\sourceCode\\Clinic-Management-System-Api\\ChatAPI\\Models\\Message.cs",
               "RelativeDocumentMoniker": "Models\\Message.cs",
-              "ToolTip": "E:\\Study\\Year3Sem2\\Internet Applications\\Project\\Clinic-Management-System-Api\\ChatAPI\\Models\\Message.cs",
+              "ToolTip": "D:\\Personal Data\\college\\Third_Year\\Second_Term\\Projects\\IA\\sourceCode\\Clinic-Management-System-Api\\ChatAPI\\Models\\Message.cs",
               "RelativeToolTip": "Models\\Message.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

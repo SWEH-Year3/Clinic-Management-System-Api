@@ -5,6 +5,9 @@
         public string senderID { get; set; }
         public string senderName { get; set; }
 
+        public string recieverID { get; set; }
+        public string recieverName { get; set; }
+
     }
 
     public class MessageDTO

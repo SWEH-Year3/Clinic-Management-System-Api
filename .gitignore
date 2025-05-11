@@ -1,2 +1,7 @@
-bin
-obj
+ChatAPI/bin/
+ChatAPI/obj/
+ChatAPI/.vs/
+
+ClinicAPI/.vs/
+ClinicAPI/bin/
+ClinicAPI/obj/

@@ -31,10 +31,11 @@ RETURNS TABLE
 AS
 RETURN
 (
-    SELECT DISTINCT senderID, senderName
+    SELECT DISTINCT senderID, senderName, recieverID, recieverName
     FROM messages
-    WHERE recieverID = @receiverID
+    WHERE (recieverID = @receiverID ) or (senderID = @receiverID)
 );
+
 
 SELECT * FROM GetDistinctSenders('201');
 

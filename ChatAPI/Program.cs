@@ -15,7 +15,8 @@ namespace ChatAPI
             {
                 options.AddPolicy("myPolicy", policy =>
                 {
-                    policy.WithOrigins("http://localhost:5173") // Only allow frontend origin
+                    policy.SetIsOriginAllowed(_ => true)
+                          //.WithOrigins("http://localhost:5173") // Only allow frontend origin
                           .AllowAnyMethod()
                           .AllowAnyHeader()
                           .AllowCredentials(); // ?? This is key when using SignalR
